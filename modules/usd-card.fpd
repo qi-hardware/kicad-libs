@@ -35,7 +35,7 @@ frame outline {
 
 	__0: vec @(0mm, W)
 	line @ . w
-	__1: vec __0(D1, 0mm)
+	__1: vec .(D1, 0mm)
 	line __0 . w
 	__2: vec .(D2, -D2)
 	line __1 . w
@@ -49,7 +49,7 @@ frame outline {
 	line __5 . w
 	__7: vec @(L, 0mm)
 	line @ . w
-	__8: vec __7(0mm, W-D5)
+	__8: vec .(0mm, W-D5)
 	line __6 . w
 	line __7 . w
 	frame push @
@@ -86,3 +86,4 @@ measx pads.__0 -> pads.__2 -2.3mm
 measx __1 >> pads.__1 1mm
 measx __0 >> __1 5.5mm
 measy pads.__2 >> pads.__1 -3mm
+measy outline.__7 >> outline.__8 -3mm
