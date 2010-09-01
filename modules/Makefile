@@ -1,4 +1,4 @@
-MODULES=usd-card
+MODULES=stdpass usd-card
 
 .SUFFIXES:	.fpd .mod
 .PHONY:		all clean
