@@ -1,9 +1,9 @@
 /* MACHINE-GENERATED ! */
 
 frame push {
-	set depth = 1.3mm
+	set push = 1.4mm
 
-	__0: vec @(-depth, 0mm)
+	__0: vec @(-push, 0mm)
 	__1: vec .(0mm, W)
 	line __0 . w
 }
