@@ -1,0 +1,18 @@
+/* MACHINE-GENERATED ! */
+
+frame pad {
+	__0: vec @(x/2, y/2)
+	__1: vec @(-x/2, -y/2)
+	rpad "1" . __0
+}
+
+package "PAD_$name"
+unit mm
+
+table
+    { name, x, y }
+    { "2mm", 2mm, 0.5mm }
+    { "60x60", 60mil, 60mil }
+    { "120x60", 120mil, 60mil }
+
+frame pad @
