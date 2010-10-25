@@ -1,0 +1,15 @@
+#
+# Tags:
+#
+# F     Footprint name (must be first)
+# N     Data sheet identifier (N tag of BOOKSHELF; can be omitted if equal to F)
+#
+
+# Standard rectangular passive components
+F: stdpass
+
+# Solder pads and test points
+F: pads
+
+# Printed uSD card contacs
+F: usd-card
