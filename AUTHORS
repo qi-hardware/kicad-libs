@@ -1,5 +1,6 @@
 Werner Almesberger <werner@openmoko.org>
 
+  components/usd-card.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/usd-card.fpd
