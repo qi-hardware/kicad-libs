@@ -87,3 +87,4 @@ measx __1 >> pads.__1 1mm
 measx __0 >> __1 5.5mm
 measy pads.__2 >> pads.__1 -3mm
 measy outline.__7 >> outline.__8 -3mm
+measx outline.__0 >> outline.__8 2mm
