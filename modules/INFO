@@ -11,5 +11,5 @@ F: stdpass
 # Solder pads and test points
 F: pads
 
-# Printed uSD card contacs
-F: usd-card
+# Printed 8:10 card contacs
+F: 8_10-card
