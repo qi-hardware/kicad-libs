@@ -27,7 +27,7 @@ frame pads {
 	__0: vec @(0mm, -(n-1)*e)
 	__1: vec .(x, 0mm)
 	__2: vec .(0mm, -y)
-	pad "$n" __0 .
+	pad "$n" __0 . bare
 }
 
 frame outline {
