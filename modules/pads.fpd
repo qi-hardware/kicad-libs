@@ -3,7 +3,7 @@
 frame pad {
 	__0: vec @(x/2, y/2)
 	__1: vec @(-x/2, -y/2)
-	rpad "1" . __0
+	rpad "1" . __0 bare
 }
 
 package "PAD_$name"
