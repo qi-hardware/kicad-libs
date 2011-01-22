@@ -31,17 +31,15 @@ package "$name$variant"
 unit mm
 
 table
-    { name, L, W, a0, b, e }
-    { "0201", 0.6mm, 0.3mm, 0.28mm, 0.43mm, 0.23mm }
-    { "0402", 1mm, 0.5mm, 0.5mm, 0.6mm, 0.5mm }
-    { "0603", 1.55mm, 0.85mm, 0.7mm, 0.9mm, 0.8mm }
-    { "0805", 2mm, 1.25mm, 0.7mm, 1.3mm, 1.2mm }
-    { "1206", 3.2mm, 1.6mm, 0.9mm, 1.7mm, 2mm }
-    { "1210", 3.2mm, 2.5mm, 0.9mm, 2.5mm, 2mm }
+    { name, L, W, a0, b, e, clear }
+    { "0201", 0.6mm, 0.3mm, 0.28mm, 0.43mm, 0.23mm, 0.15mm }
+    { "0402", 1mm, 0.5mm, 0.5mm, 0.6mm, 0.5mm, 0.15mm }
+    { "0603", 1.55mm, 0.85mm, 0.7mm, 0.9mm, 0.8mm, 0.25mm }
+    { "0805", 2mm, 1.25mm, 0.7mm, 1.3mm, 1.2mm, 0.25mm }
+    { "1206", 3.2mm, 1.6mm, 0.9mm, 1.7mm, 2mm, 0.25mm }
+    { "1210", 3.2mm, 2.5mm, 0.9mm, 2.5mm, 2mm, 0.25mm }
 
 set silk = 5mil
-
-set clear = 5mil
 
 set Ox = e+2*a+2*clear
 
