@@ -13,6 +13,7 @@ table
     { name, x, y }
     { "2mm", 2mm, 0.5mm }
     { "60x60", 60mil, 60mil }
+    { "80x80", 80mil, 80mil }
     { "120x60", 120mil, 60mil }
 
 frame pad @
