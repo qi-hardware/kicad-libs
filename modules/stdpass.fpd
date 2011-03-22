@@ -39,7 +39,7 @@ table
     { "1206", 3.2mm, 1.6mm, 0.9mm, 1.7mm, 2mm, 0.25mm }
     { "1210", 3.2mm, 2.5mm, 0.9mm, 2.5mm, 2mm, 0.25mm }
 
-set silk = 5mil
+set silk = 3mil
 
 set Ox = e+2*a+2*clear
 
