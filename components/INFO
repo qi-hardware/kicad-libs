@@ -1,2 +1,5 @@
 # PCB board connector in the shape of an 8:10 card
 S: 8_10-card
+
+# VGA DE15 connector
+S: vga

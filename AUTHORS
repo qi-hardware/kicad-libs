@@ -1,6 +1,8 @@
-Werner Almesberger <werner@openmoko.org>
+Werner Almesberger <werner@almesberger.net>
 
   components/8_10-card.lib
+  components/vga.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
+  modules/fiducial.fpd
