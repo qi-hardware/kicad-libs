@@ -112,3 +112,5 @@ LibName4=./74x1g125.lib
 LibName5=./74x2g126.lib
 LibName6=./74x1g08_5.lib
 LibName7=./74x1g08_6.lib
+LibName8=./74x1g07_5.lib
+LibName9=./74x1g07_4.lib
