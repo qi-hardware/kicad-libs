@@ -110,3 +110,5 @@ LibName2=./vga.lib
 LibName3=./74x1g00_5.lib
 LibName4=./74x1g125.lib
 LibName5=./74x2g126.lib
+LibName6=./74x1g08_5.lib
+LibName7=./74x1g08_6.lib

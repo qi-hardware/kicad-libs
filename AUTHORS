@@ -12,3 +12,5 @@ Werner Almesberger <werner@almesberger.net>
   modules/stdpass.fpd
   modules/8_10-card.fpd
   modules/fiducial.fpd
+  components/74x1g08_5.lib (based on 74x1g00_5.lib)
+  components/74x1g08_6.lib (based on 74x1g00_5.lib)
