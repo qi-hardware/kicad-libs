@@ -107,3 +107,6 @@ LabSize=60
 [eeschema/libraries]
 LibName1=./8_10-card.lib
 LibName2=./vga.lib
+LibName3=./74x1g00_5.lib
+LibName4=./74x1g125.lib
+LibName5=./74x2g126.lib
