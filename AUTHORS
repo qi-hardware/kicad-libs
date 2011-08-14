@@ -8,12 +8,14 @@ Werner Almesberger <werner@almesberger.net>
 
   components/8_10-card.lib
   components/vga.lib
-  modules/pads.fpd
-  modules/stdpass.fpd
-  modules/8_10-card.fpd
-  modules/fiducial.fpd
   components/74x1g08_5.lib (based on 74x1g00_5.lib)
   components/74x1g08_6.lib (based on 74x1g00_5.lib)
   components/74x1g07_5.lib
   components/74x1g07_4.lib
   components/74x1g07_6.lib
+  modules/pads.fpd
+  modules/stdpass.fpd
+  modules/8_10-card.fpd
+  modules/fiducial.fpd
+  modules/qfn.fpd
+  modules/qfp.fpd

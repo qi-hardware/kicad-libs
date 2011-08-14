@@ -16,3 +16,51 @@ F: 8_10-card
 
 # Fiducial (1 mm copper pad, 2 mm solder mask clearance)
 F: fiducial
+
+# "Generic" simple QFN
+F: qfn
+#
+# The information for these packages comes from various sources:
+#
+# - the C8051F326 data sheet, for the QFN28 footprint (N: mcu)
+# - the AT86F326 data sheet, for the QFN32 package dimensions (N: txrx)
+# - Atmel's general recommendations for QFN land patterns (N: atmel-qfn)
+# - NXP's SOT617-1 and SOT617-3, for package and land pattern:
+#   http://www.nxp.com/package/SOT617-1.html
+#   http://www.nxp.com/package/SOT617-3.html
+#
+# Solder paste:
+#
+# Footprint    Center pad  Closest NXP (with complete land pattern)
+# QFN28-Atmel  2.4 mm	   for further study
+# QFN28-SiLabs 3.3 mm	   use SiLab's specification
+# QFN32-VHHD-2 3.7 mm	   between SOT818-1 and SOT788-1
+# QFN32-VHHD-6 3.4 mm	   SOT818-1
+#
+# From NXP:
+#
+# Package   Pad  Paste zone  Islands  Isl. size  Isl. gap
+# SiLabs    3.25 3.1	     3 x 3    0.9	 
+# SOT818-1  3.4  1.75	     2 x 2    0.75	 0.25
+# SOT788-1  4.0  2.4	     3 x 3    0.6	 0.3
+#
+# NXP rules (AN10365):
+# - paste zone = 35% of pad area
+# - paste coverge = 20% of pad area
+#
+# Our parameters:
+#
+# Package       Pad  Paste zone  Islands  Isl. size  Isl. gap  Zone  Coverage
+# QFN32-VHHD-2  3.7  2.15	 3 x 3	  0.55	     0.25      34%   20%
+# QFN32-VHHD-6  3.4  1.95	 2 x 2	  0.75	     0.45      33%   19%
+#
+# Known bugs:
+#
+# - really ought to merge all the various QFN definitions (we have more
+#   over at gta02-core) into a single QFN file with a big mean table of
+#   everything
+#
+N: sot617-3-lp
+
+# "Generic" simple QFP (for now, just for Silabs' C8051F320)
+F: qfp

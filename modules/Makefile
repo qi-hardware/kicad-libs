@@ -1,4 +1,4 @@
-MODULES=8_10-card fiducial pads stdpass
+MODULES=8_10-card fiducial pads qfn qfp stdpass
 
 .SUFFIXES:	.fpd .mod
 .PHONY:		all clean
