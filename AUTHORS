@@ -31,3 +31,4 @@ Werner Almesberger <werner@almesberger.net>
   modules/qfp.fpd
   modules/usb-a-pcb.fpd
   modules/usb_a_plug_smt.fpd
+  modules/sot-323.fpd

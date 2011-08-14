@@ -89,3 +89,7 @@ F: usb_a_plug_smt
 
 # USB 2.0 from usb_20_040908, page 99
 F: usb-a-pcb
+
+# SOT-323 package with counter-clockweise or clockwise pin assignment
+F: sot-323
+N: mmst3904
