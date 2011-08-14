@@ -4,6 +4,10 @@ Alvaro Lopes <alvieboy@alvie.com>
   components/74x1g125.lib
   components/74x2g126.lib
 
+Rene Harder <rehar@saweb.de>
+
+  modules/mini-usb.fpd
+
 Werner Almesberger <werner@almesberger.net>
 
   components/8_10-card.lib
@@ -23,3 +27,4 @@ Werner Almesberger <werner@almesberger.net>
   modules/fiducial.fpd
   modules/qfn.fpd
   modules/qfp.fpd
+  moduled/usb_a_plug_smt.fpd

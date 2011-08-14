@@ -64,3 +64,25 @@ N: sot617-3-lp
 
 # "Generic" simple QFP (for now, just for Silabs' C8051F320)
 F: qfp
+
+# Mini-USB B receptable (SMT; almost generic)
+F: mini_usb_b
+
+# USB A plug for SMT
+#
+# Note: the signal pads are enlarged by 0.2 mm and their center is shifted by
+# 0.1 mm with respect to the reference.
+#
+# According to the data sheet, the leads terminate at (2.00+/-0.10 mm)/2+
+# 2.48 mm = 3.48+/-0.10 mm from the center. The reference footprint puts the
+# edge of the pads at (2.00+/-0.10 mm)/2+2.6 mm = 3.6 mm+/-0.10 mm, so the
+# maximum lead end could be at 3.58 mm while the minimum pad edge could be at
+# 3.5 mm.
+#
+# Assuming that the pad is intended to extend a bit beyond the lead, we need
+# to add 0.2 mm to compensate for these tolerances. (The pad tolerance may not
+# be intended to be used this way, however, we still have to consider small
+# errors in registration, which also amount to about 0.1 mm, so the calculation
+# remains valid.)
+#
+F: usb_a_plug_smt

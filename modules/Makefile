@@ -1,4 +1,4 @@
-MODULES=8_10-card fiducial pads qfn qfp stdpass
+MODULES=8_10-card fiducial mini-usb pads qfn qfp stdpass usb_a_plug_smt
 
 .SUFFIXES:	.fpd .mod
 .PHONY:		all clean
