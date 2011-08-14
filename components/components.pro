@@ -118,3 +118,4 @@ LibName10=./74x1g07_6
 LibName11=./atmega8u2
 LibName12=./c8051f320
 LibName13=./c8051f326
+LibName14=./atmega48-mmu

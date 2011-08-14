@@ -16,6 +16,7 @@ Werner Almesberger <werner@almesberger.net>
   components/atmega8u2.lib
   components/c8051f320.lib
   components/c8051f326.lib
+  components/atmega48-mmu.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd

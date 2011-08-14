@@ -12,3 +12,6 @@ S: c8051f326
 
 # ATmega8U2/16U2/32U2 MCU
 S: atmega8u2
+
+# ATmega48 MCU in 28MLF package
+S: atmega48-mmu
