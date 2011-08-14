@@ -3,6 +3,7 @@ Alvaro Lopes <alvieboy@alvie.com>
   components/74x1g00_5.lib
   components/74x1g125.lib
   components/74x2g126.lib
+  components/mini_usb_b.lib
 
 Rene Harder <rehar@saweb.de>
 
@@ -21,6 +22,7 @@ Werner Almesberger <werner@almesberger.net>
   components/c8051f320.lib
   components/c8051f326.lib
   components/atmega48-mmu.lib
+  components/usb_a_plug.lib (based on mini_usb_b.lib by Alvaro Lopes)
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd

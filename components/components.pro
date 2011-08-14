@@ -119,3 +119,5 @@ LibName11=./atmega8u2
 LibName12=./c8051f320
 LibName13=./c8051f326
 LibName14=./atmega48-mmu
+LibName15=./mini_usb_b
+LibName16=./usb_a_plug

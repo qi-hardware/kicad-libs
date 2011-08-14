@@ -15,3 +15,10 @@ S: atmega8u2
 
 # ATmega48 MCU in 28MLF package
 S: atmega48-mmu
+
+# mini_usb_b (generic)
+S: mini_usb_b
+
+# USB A plug
+S: usb_a_plug
+N: usb_a_plug_smt
