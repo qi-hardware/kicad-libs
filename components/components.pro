@@ -115,3 +115,6 @@ LibName7=./74x1g08_6.lib
 LibName8=./74x1g07_5.lib
 LibName9=./74x1g07_4.lib
 LibName10=./74x1g07_6.lib
+LibName11=./atmega8u2.lib
+LibName12=./c8051f320.lib
+LibName13=./c8051f326.lib

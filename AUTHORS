@@ -13,6 +13,9 @@ Werner Almesberger <werner@almesberger.net>
   components/74x1g07_5.lib
   components/74x1g07_4.lib
   components/74x1g07_6.lib
+  components/atmega8u2.lib
+  components/c8051f320.lib
+  components/c8051f326.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd

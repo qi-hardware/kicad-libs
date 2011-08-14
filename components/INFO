@@ -3,3 +3,12 @@ S: 8_10-card
 
 # VGA DE15 connector
 S: vga
+
+# C8051F320 MCU
+S: c8051f320
+
+# C8051F326 MCU
+S: c8051f326
+
+# ATmega8U2/16U2/32U2 MCU
+S: atmega8u2
