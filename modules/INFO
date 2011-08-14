@@ -86,3 +86,6 @@ F: mini_usb_b
 # remains valid.)
 #
 F: usb_a_plug_smt
+
+# USB 2.0 from usb_20_040908, page 99
+F: usb-a-pcb
