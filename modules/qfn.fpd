@@ -110,6 +110,10 @@ table
 
 set w = 5mil
 
+set zone_ratio_35 = ((SNX-1)*SE+SX)*((SNY-1)*SE+SY)/(X2*Y2)
+
+set paste_ratio_20 = SX*SY*SNX*SNY/(X2*Y2)
+
 frame pads @
 frame center @
 frame outline @
