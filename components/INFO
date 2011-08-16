@@ -22,3 +22,6 @@ S: mini_usb_b
 # USB A plug
 S: usb_a_plug
 N: usb_a_plug_smt
+
+# PIC18F46J50 MCU in 28QFN package
+S: pic18f46j50-ml

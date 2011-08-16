@@ -121,3 +121,4 @@ LibName13=./c8051f326
 LibName14=./atmega48-mmu
 LibName15=./mini_usb_b
 LibName16=./usb_a_plug
+LibName17=./pic18f46j50-ml
