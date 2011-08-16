@@ -96,3 +96,18 @@ N: mmst3904
 
 # http://www.nxp.com/#/page/content=[f=/packages/SOT341-1.xml]
 F: ssop
+
+# experimental generic SOT footprint; currently only for
+#
+# - SOT-323 aka SC-70
+#   http://www.onsemi.com/pub_link/Collateral/BAV99WT1-D.PDF
+# - SOT-363 aka SC-88 aka SC-70-6
+#   http://www.onsemi.com/pub_link/Collateral/MBT3946DW1T1-D.PDF
+# - SOT-523
+#   http://www.diodes.com/datasheets/ds31784.pdf
+# - SOT-563
+#   http://www.onsemi.com/pub_link/Collateral/NTZD3155C-D.PDF
+#
+# some conflicts with the outline exist
+
+F: sot

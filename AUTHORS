@@ -34,3 +34,4 @@ Werner Almesberger <werner@almesberger.net>
   modules/usb_a_plug_smt.fpd
   modules/sot-323.fpd
   modules/ssop.fpd
+  modules/sot.fpd
