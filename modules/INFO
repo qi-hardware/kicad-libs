@@ -93,3 +93,6 @@ F: usb-a-pcb
 # SOT-323 package with counter-clockweise or clockwise pin assignment
 F: sot-323
 N: mmst3904
+
+# http://www.nxp.com/#/page/content=[f=/packages/SOT341-1.xml]
+F: ssop
