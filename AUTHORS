@@ -5,6 +5,10 @@ Alvaro Lopes <alvieboy@alvie.com>
   components/74x2g126.lib
   components/mini_usb_b.lib
 
+Adam Wang <adam@qi-hardware.com>
+
+  components/wm9707scft.lib
+
 Rene Harder <rehar@saweb.de>
 
   modules/mini-usb.fpd

@@ -122,4 +122,4 @@ LibName14=./atmega48-mmu
 LibName15=./mini_usb_b
 LibName16=./usb_a_plug
 LibName17=./pic18f46j50-ml
-LibName18=wm9707scft
+LibName18=./wm9707scft
