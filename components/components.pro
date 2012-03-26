@@ -1,4 +1,4 @@
-update=Sat 07 Nov 2009 14:39:17 GMT
+update=Mon 26 Mar 2012 16:32:00 CST
 version=1
 last_client=eeschema
 [pcbnew]
@@ -101,9 +101,9 @@ offY_E=0
 RptD_X=0
 RptD_Y=100
 RptLab=1
-SimCmd=
-UseNetN=0
 LabSize=60
+PrintMonochrome=1
+ShowSheetReferenceAndTitleBlock=1
 [eeschema/libraries]
 LibName1=./8_10-card
 LibName2=./vga
@@ -122,3 +122,4 @@ LibName14=./atmega48-mmu
 LibName15=./mini_usb_b
 LibName16=./usb_a_plug
 LibName17=./pic18f46j50-ml
+LibName18=wm9707scft
