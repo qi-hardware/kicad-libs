@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: Tue 27 Mar 2012 11:48:46 CST
+#
+$CMP AVR-M1005C080MTACB
+D AVR-M1005C080MTACB, VARISTOR Voltage=8V Current-Surge=1A Maximum DC Volts=5.5VDC 33PF 0402 SMD
+K Varistor
+F http://www.tdk.co.jp/tefe02/e9c11_avr.pdf
+$ENDCMP
+#
+#End Doc Library

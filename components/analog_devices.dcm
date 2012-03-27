@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0  Date: Tue 27 Mar 2012 19:02:11 CST
+#
+$CMP AD1580BRTZ
+D AD1580BRTZ, 1.2 V Micropower, Precision Shunt Voltage Reference, SOT-23-3
+K Voltage Reference
+F http://www.analog.com/static/imported-files/data_sheets/AD1580.pdf
+$ENDCMP
+#
+$CMP ADV7125KSTZ140
+D ADV7125KSTZ140, CMOS, 330 MHz, Triple 8-Bit High Speed Video DAC, LQFP-48
+K Video DAC
+F http://www.analog.com/static/imported-files/data_sheets/ADV7125.pdf
+$ENDCMP
+#
+#End Doc Library

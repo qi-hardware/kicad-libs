@@ -8,6 +8,10 @@ Alvaro Lopes <alvieboy@alvie.com>
 Adam Wang <adam@qi-hardware.com>
 
   components/wm9707scft.lib
+  components/analog_devices.lib
+  components/microphone.lib
+  components/phonejack.lib
+  components/varistor.lib 	
 
 Rene Harder <rehar@saweb.de>
 
