@@ -1,7 +1,7 @@
-EESchema-DOCLIB  Version 2.0  Date: Tue 27 Mar 2012 09:38:05 CST
+EESchema-DOCLIB  Version 2.0  Date: Wed 28 Mar 2012 10:46:17 CST
 #
 $CMP WM9707SCFT/V
-D WM9707SCFT/V, AC-97 Revision 2.1 Audio CODEC with SPDIF Output 
+D WM9707SCFT/V, AC-97 Revision 2.1 Audio CODEC with SPDIF Output, 48-lead TQFP
 K Audio CODEC
 F http://www.wolfsonmicro.com/documents/uploads/data_sheets/en/WM9707.pdf
 $ENDCMP

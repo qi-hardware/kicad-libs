@@ -123,3 +123,7 @@ LibName15=./mini_usb_b
 LibName16=./usb_a_plug
 LibName17=./pic18f46j50-ml
 LibName18=./wm9707scft
+LibName19=./analog_devices
+LibName20=./microphone
+LibName21=./phonejack
+LibName22=./varistor
