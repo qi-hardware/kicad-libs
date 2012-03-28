@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: Wed 28 Mar 2012 12:29:15 CST
+#
+$CMP SN74LVC1G17DBV
+D SN74LVC1G17DBVR, SINGLE SCHMITT-TRIGGER BUFFER, SOT-235
+K SCHMITT-TRIGGER BUFFER
+F http://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf
+$ENDCMP
+#
+#End Doc Library
