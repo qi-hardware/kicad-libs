@@ -11,7 +11,13 @@ Adam Wang <adam@qi-hardware.com>
   components/analog_devices.lib
   components/microphone.lib
   components/phonejack.lib
-  components/varistor.lib 	
+  components/varistor.lib
+  components/fairchild.lib
+  components/ti.lib
+  components/micre.lib
+  components/molex.lib
+  components/nxp.lib
+  components/diodes_inc.lib	
 
 Rene Harder <rehar@saweb.de>
 

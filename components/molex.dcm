@@ -1,9 +1,15 @@
-EESchema-DOCLIB  Version 2.0  Date: Wed 28 Mar 2012 15:39:35 CST
+EESchema-DOCLIB  Version 2.0  Date: Fri 30 Mar 2012 17:30:32 CST
 #
 $CMP 48025-0002
 D 48025-0002, Telecom & Ethernet Connectors RA MOD JACK 8/8 W/ LEDS
 K ETHERNET CON
 F http://www.molex.com/pdm_docs/sd/480250002_sd.pdf
+$ENDCMP
+#
+$CMP 74320-1004
+D 74320-1004, CONN RECEPT ANALOG DIGITAL DVI
+K DVI CON
+F http://www.molex.com/pdm_docs/sd/743201004_sd.pdf
 $ENDCMP
 #
 #End Doc Library

@@ -95,3 +95,5 @@ LibName23=./fairchild
 LibName24=./ti
 LibName25=./micrel
 LibName26=./molex
+LibName27=./nxp
+LibName28=./diodes_inc

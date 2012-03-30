@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: Fri 30 Mar 2012 18:28:40 CST
+#
+$CMP APX803-40SAG-7
+D APX803-40SAG-7, IC MPU RESET CIRC 4.00V SOT23-3
+K RESET IC
+F http://www.diodes.com/datasheets/APX803.pdf
+$ENDCMP
+#
+#End Doc Library

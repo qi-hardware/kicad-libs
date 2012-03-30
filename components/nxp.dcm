@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: Fri 30 Mar 2012 17:57:51 CST
+#
+$CMP 74AUP1G08GW,125
+D 74AUP1G08GW,125; IC 2-IN AND GATE LP 5-TSSOP
+K AND
+F http://www.nxp.com/documents/data_sheet/74AUP1G08.pdf
+$ENDCMP
+#
+#End Doc Library
