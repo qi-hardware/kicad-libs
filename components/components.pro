@@ -1,4 +1,4 @@
-update=Wed 28 Mar 2012 15:28:52 CST
+update=Mon 02 Apr 2012 09:56:00 CST
 version=1
 last_client=eeschema
 [general]
@@ -86,7 +86,7 @@ LibName14=./atmega48-mmu
 LibName15=./mini_usb_b
 LibName16=./usb_a_plug
 LibName17=./pic18f46j50-ml
-LibName18=./wm9707scft
+LibName18=./wolfson
 LibName19=./analog_devices
 LibName20=./microphone
 LibName21=./phonejack
@@ -97,3 +97,4 @@ LibName25=./micrel
 LibName26=./molex
 LibName27=./nxp
 LibName28=./diodes_inc
+LibName29=./xc6slx45-2fgg484c

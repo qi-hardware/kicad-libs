@@ -7,7 +7,7 @@ Alvaro Lopes <alvieboy@alvie.com>
 
 Adam Wang <adam@qi-hardware.com>
 
-  components/wm9707scft.lib
+  components/wolfson.lib
   components/analog_devices.lib
   components/microphone.lib
   components/phonejack.lib
@@ -17,7 +17,8 @@ Adam Wang <adam@qi-hardware.com>
   components/micre.lib
   components/molex.lib
   components/nxp.lib
-  components/diodes_inc.lib	
+  components/diodes_inc.lib
+  components/xc6slx45-2fgg484c.lib	
 
 Rene Harder <rehar@saweb.de>
 
