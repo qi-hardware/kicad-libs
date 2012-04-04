@@ -1,9 +1,15 @@
-EESchema-DOCLIB  Version 2.0  Date: Fri 30 Mar 2012 18:05:17 CST
+EESchema-DOCLIB  Version 2.0  Date: Wed 04 Apr 2012 10:31:48 CST
 #
 $CMP SN74LVC1G17DBV
 D SN74LVC1G17DBVR, SINGLE SCHMITT-TRIGGER BUFFER, SOT-235
 K SCHMITT-TRIGGER BUFFER
 F http://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf
+$ENDCMP
+#
+$CMP SN75HVD12D
+D SN75HVD12D, 3.3V RS-485 TRANSCEIVERS, 1Mbps, SOIC-8
+K RS-485 TRANSCEIVERS
+F http://www.ti.com/lit/ds/symlink/sn75hvd12.pdf
 $ENDCMP
 #
 #End Doc Library
