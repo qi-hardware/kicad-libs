@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: Wed 04 Apr 2012 09:09:37 CST
+#
+$CMP FSMRA2JH
+D FSMRA2JH, SWITCH, TACTILE, SPNO, R/A, THROUGH HOLE
+K TACTILE SW
+F http://www.farnell.com/datasheets/51343.pdf
+$ENDCMP
+#
+#End Doc Library
