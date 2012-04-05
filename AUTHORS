@@ -15,11 +15,13 @@ Adam Wang <adam@qi-hardware.com>
   components/ir.lib
   components/js28f256j3f105.lib
   components/micre.lib
+  components/micron.lib
   components/microphone.lib
   components/molex.lib
   components/nxp.lib
   components/oscillator-cmos-out-4.lib
   components/phonejack.lib
+  components/pptc.lib
   components/ti.lib
   components/varistor.lib
   components/wolfson.lib

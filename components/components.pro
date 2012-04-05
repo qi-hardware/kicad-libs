@@ -1,4 +1,4 @@
-update=Wed 04 Apr 2012 20:14:14 CST
+update=Thu 05 Apr 2012 21:39:47 CST
 version=1
 last_client=eeschema
 [general]
@@ -104,3 +104,5 @@ LibName32=./din_5_2s
 LibName33=./xlr-3
 LibName34=./ir
 LibName35=./js28f256j3f105
+LibName36=./pptc
+LibName37=./micron
