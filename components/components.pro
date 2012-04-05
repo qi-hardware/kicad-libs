@@ -1,4 +1,4 @@
-update=Mon 02 Apr 2012 09:56:00 CST
+update=Wed 04 Apr 2012 20:14:14 CST
 version=1
 last_client=eeschema
 [general]
@@ -98,3 +98,9 @@ LibName26=./molex
 LibName27=./nxp
 LibName28=./diodes_inc
 LibName29=./xc6slx45-2fgg484c
+LibName30=./fsmra2jh
+LibName31=./oscillator-cmos-out-4
+LibName32=./din_5_2s
+LibName33=./xlr-3
+LibName34=./ir
+LibName35=./js28f256j3f105
