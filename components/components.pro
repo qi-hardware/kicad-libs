@@ -1,4 +1,4 @@
-update=Thu 05 Apr 2012 21:39:47 CST
+update=Mon 16 Apr 2012 09:32:31 CST
 version=1
 last_client=eeschema
 [general]
@@ -106,3 +106,7 @@ LibName34=./ir
 LibName35=./js28f256j3f105
 LibName36=./pptc
 LibName37=./micron
+LibName38=./c
+LibName39=./r
+LibName40=./led
+LibName41=./pwr

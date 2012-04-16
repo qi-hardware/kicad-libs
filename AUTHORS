@@ -27,6 +27,7 @@ Adam Wang <adam@qi-hardware.com>
   components/wolfson.lib
   components/xc6slx45-2fgg484c.lib
   components/xlr-3.lib
+  components/pwr.lib
 
 Rene Harder <rehar@saweb.de>
 
@@ -58,3 +59,10 @@ Werner Almesberger <werner@almesberger.net>
   modules/sot-323.fpd
   modules/ssop.fpd
   modules/sot.fpd
+
+Xiangfu  <xiangfu@openmobilefree.net>
+ 
+  components/c.lib
+  components/led.lib
+  components/r.lib
+
