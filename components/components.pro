@@ -110,3 +110,4 @@ LibName38=./c
 LibName39=./r
 LibName40=./led
 LibName41=./pwr
+LibName42=./filter
