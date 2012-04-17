@@ -120,3 +120,4 @@ LibName48=./dualpmosfet
 LibName49=./micro_usb_b
 LibName50=./pmosfet-gsd
 LibName51=./usb-a-pcb
+LibName52=./dual_trans
