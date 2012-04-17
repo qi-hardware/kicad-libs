@@ -1,4 +1,4 @@
-update=Mon 16 Apr 2012 09:32:31 CST
+update=Tue 17 Apr 2012 10:04:17 PM CST
 version=1
 last_client=eeschema
 [general]
@@ -66,8 +66,6 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
-PrintMonochrome=1
-ShowSheetReferenceAndTitleBlock=1
 [eeschema/libraries]
 LibName1=./8_10-card
 LibName2=./vga
@@ -133,3 +131,4 @@ LibName61=./at86rf231
 LibName62=./balun-smt6
 LibName63=./balun
 LibName64=./xtal-4
+LibName65=./con
