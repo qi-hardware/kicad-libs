@@ -1,0 +1,115 @@
+Passive
+	Basic
+		C
+		C_P
+		crystal
+		LED
+		filter
+		PPTC
+		R
+		r_pack4
+		zener
+Logic
+	Single
+		74x1g00_5
+		74x1g07_4
+		74x1g07_5
+		74x1g07_6
+		74x1g08_5
+		74x1g08_6
+		74x1g125
+	Dual
+		74x2g126
+Codec
+	Audio
+		wm9707scft/v
+Connector
+	Generic
+		TESTPOINT
+		conn_5x2
+	Card
+		8:10-card
+	Circular
+		DIN_5_2S
+		XLR-3-F-R
+		XLR-3-M-R
+	Power
+		DCJACK_NO
+	Video
+		rca_3
+		vga
+	USB
+		usb_a_plug
+		mini_usb_b
+Electromechanical
+	Switch
+		FSMRA2JH
+		SW_PUSH
+FPGA
+	Xilinx
+		xc6slx45-2fgg484c
+MCU
+	AVR
+		atmega48-mmu
+		atmega8u2
+	PIC
+		pic18f46j50-ml
+	SiLabs
+		c8051f320
+		c8051f326
+Oscillator
+	OSCILLATOR-VDD-4
+Power
+	Positive
+		1V2
+		1V8
+		2V5
+		3V3
+		4V3
+		5V
+	Ground
+		GND
+	Application
+		AUDIO_AGND
+		USBEXT5V
+		VIDEOIN_AGND
+Vendor
+	Analog
+		AD1580BRTZ
+		ADV7125KSTZ140
+		ADV7181C
+	Diodes
+		AP21X2A
+		APX803-40SAG-7
+	Fairchild
+		2N7002MTF
+		6N138
+	IR
+		BZX84
+		IR
+	Micrel
+		KSZ8001L
+		MIC2090-1YM5
+		MIC2550AYTS
+	Micron
+		JS28F256J3F105
+		MT46V32M16P
+	Microphone
+		MCE-100
+	Molex
+		48025-0002
+		67298-4090
+		74320-1004
+	NXP
+		74AUP1G08GW,125
+		BZX84
+	TI
+		LP38511TJ-ADJ
+		LP38690DT-xx
+		PTH04000WAH
+		SN74LVC1G17DBV
+		SN75HVD12D
+		TPS763xx
+	Varistor
+		AVR-M1005C080MTACB
+		EZJ-Z0V80010
