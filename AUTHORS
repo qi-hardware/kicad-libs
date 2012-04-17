@@ -56,6 +56,7 @@ Werner Almesberger <werner@almesberger.net>
   components/pmosfet-gsd.lib
   components/usb-a-pcb.lib
   components/dual_trans.lib
+  components/ft232rl.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
