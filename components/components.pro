@@ -126,3 +126,4 @@ LibName54=./opto-trans-4
 LibName55=./opto-trans-8
 LibName56=./spdt-c
 LibName57=./sw4
+LibName58=./74hc04-3

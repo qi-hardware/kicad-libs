@@ -61,6 +61,7 @@ Werner Almesberger <werner@almesberger.net>
   components/opto-trans-8.lib
   components/spdt-c.lib
   components/sw4.lib
+  components/74hc04-3.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
