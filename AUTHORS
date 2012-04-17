@@ -62,6 +62,12 @@ Werner Almesberger <werner@almesberger.net>
   components/spdt-c.lib
   components/sw4.lib
   components/74hc04-3.lib
+  components/antenna.lib
+  components/at86rf230.lib
+  components/at86rf231.lib
+  components/balun-smt6.lib
+  components/balun.lib
+  components/xtal-4.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
