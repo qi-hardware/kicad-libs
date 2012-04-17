@@ -122,3 +122,6 @@ LibName50=./pmosfet-gsd
 LibName51=./usb-a-pcb
 LibName52=./dual_trans
 LibName53=./ft232rl
+LibName54=./opto-trans-4
+LibName55=./opto-trans-8
+LibName56=./spdt-c
