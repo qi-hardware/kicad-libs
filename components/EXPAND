@@ -26,15 +26,20 @@ Codec
 Connector
 	Generic
 		TESTPOINT
+		conn_4
 		conn_5x2
+		conn_7x2
 	Card
 		8:10-card
+		MEMCARD8
 	Circular
 		DIN_5_2S
 		XLR-3-F-R
 		XLR-3-M-R
 	Power
 		DCJACK_NO
+	Audio
+		SCJ368R1NUS0B00G
 	Video
 		rca_3
 		vga
