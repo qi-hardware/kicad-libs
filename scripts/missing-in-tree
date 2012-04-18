@@ -1,0 +1,52 @@
+#!/bin/sh -e
+#
+# missing-in-tree - List components present in libraries but not in the tree
+#
+# Copyright 2012 by Werner Almesberger
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+
+
+usage()
+{
+	echo "usage: $0 [-L libdir ...] [-l lib ...] hierarchy" 1>&2
+	exit 1
+}
+
+
+scan_lib()
+{
+	for n in "$@"; do
+		sed '/^DEF ~\?/{s///;s/ .*//;p;};d' <$n >>_tmp2
+	done
+}
+
+
+trap "rm -f _tmp1 _tmp2" 0
+
+genex -D "$@" >_tmp1 || exit
+
+>_tmp2
+while [ "$1" ]; do
+	case "$1" in
+	-L)	shift
+		[ "`echo \"$1\"/*.lib`" = "$1/*.lib" ] ||
+		    scan_lib "$1"/*.lib;;
+	-l)	shift
+		scan_lib "$1";;
+	-*)	usage;;
+	*)	break;;
+	esac
+	shift
+done
+
+[ "$1" ] || usage
+[ -z "$2" ] || usage
+
+cat _tmp1 _tmp1 _tmp2 | sort | uniq -u
+
+exit 0
