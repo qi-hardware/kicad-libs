@@ -4,7 +4,7 @@
 # Note that we don't have the concept of a "library of everything" so far.
 #
 
-.PHONY:		all sch catalog missing clean spotless
+.PHONY:		all sch catalog view missing clean spotless
 
 all:		sch
 
@@ -20,6 +20,9 @@ DESCR-dcm:	*.dcm
 catalog:	DESCR-dcm
 		genex -p -L . EXPAND DESCR-dcm >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
+
+view:
+		$${DSV_PDFVIEWER:-xpdf} catalog.pdf
 
 missing:
 		../scripts/missing-in-tree -L . EXPAND
