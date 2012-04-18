@@ -4,7 +4,7 @@
 # Note that we don't have the concept of a "library of everything" so far.
 #
 
-.PHONY:		all sch
+.PHONY:		all sch catalog clean spotless
 
 all:		sch
 
@@ -14,5 +14,18 @@ all:		sch
 sch:
 		eeschema `pwd`/components.sch
 
+DESCR-dcm:	*.dcm
+		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
+
+catalog:	DESCR-dcm
+		genex -p -L . EXPAND DESCR-dcm >catalog.pdf || \
+		  { rm -f catalog.pdf; exit 1; }
+
 #loe:
 #		./mkloe
+
+clean:
+		rm -f DESCR-dcm
+
+spotless:	clean
+		rm -f catalog.pdf
