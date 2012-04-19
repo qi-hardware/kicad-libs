@@ -26,9 +26,12 @@ Codec
 Connector
 	Generic
 		TESTPOINT
+		conn_2
+		conn_3
 		conn_4
 		conn_5x2
 		conn_7x2
+		conn_10x2
 	Card
 		8:10-card
 		MEMCARD8
