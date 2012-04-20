@@ -135,3 +135,4 @@ LibName63=./balun
 LibName64=./xtal-4
 LibName65=./con
 LibName66=./hole
+LibName67=./diode
