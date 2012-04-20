@@ -3,6 +3,7 @@ Passive
 		C
 		C_P
 		crystal
+		DIODE
 		LED
 		filter
 		PPTC
