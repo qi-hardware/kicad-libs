@@ -68,6 +68,7 @@ Werner Almesberger <werner@almesberger.net>
   components/balun-smt6.lib
   components/balun.lib
   components/xtal-4.lib
+  components/powered.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd

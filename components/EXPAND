@@ -71,6 +71,7 @@ MCU
 Oscillator
 	OSCILLATOR-VDD-4
 Power
+	powered
 	Positive
 		1V2
 		1V8
