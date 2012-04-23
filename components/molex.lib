@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: Thu 05 Apr 2012 21:38:13 CST
+EESchema-LIBRARY Version 2.3  Date: Mon 23 Apr 2012 15:22:21 CST
 #
 # 48025-0002
 #
@@ -163,9 +163,9 @@ X Analog_vertical_sync 8 350 -450 150 U 50 25 1 1 P
 X Analog_vertical_sync 8 350 -450 150 U 50 25 1 1 P
 X TMDS_Data_1- 9 450 -450 150 U 50 25 1 1 P
 X TMDS_Data_1+ 10 550 -450 150 U 50 25 1 1 P
-X TMDS_data_5- 20 -50 800 150 D 50 25 1 1 P
+X TMDS_Data_5- 20 -50 800 150 D 50 25 1 1 P
 X TMDS_Data_1/3_shield 11 650 -450 150 U 50 25 1 1 P
-X TMDS_data_5+ 21 50 800 150 D 50 25 1 1 P
+X TMDS_Data_5+ 21 50 800 150 D 50 25 1 1 P
 X Analog_red C1 650 800 150 D 50 25 1 1 P
 X TMDS_Data_3- 12 750 -450 150 U 50 25 1 1 P
 X TMDS_clock_shield 22 150 800 150 D 50 25 1 1 P
