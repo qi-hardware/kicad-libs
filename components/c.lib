@@ -1,10 +1,11 @@
-EESchema-LIBRARY Version 2.3  Date: Mon 16 Apr 2012 11:59:50 CST
+EESchema-LIBRARY Version 2.3  Date: 2012年04月27日 (週五) 11時29分34秒
+#encoding utf-8
 #
 # C
 #
 DEF C C 0 10 N Y 1 F N
-F0 "C" 50 100 50 H V L CNN
-F1 "C" 50 -100 50 H V L CNN
+F0 "C" 50 100 60 H V L CNN
+F1 "C" 50 -100 60 H V L CNN
 $FPLIST
  SM*
  C?
@@ -21,8 +22,8 @@ ENDDEF
 # C_P
 #
 DEF C_P C 0 10 N N 1 F N
-F0 "C" 50 100 50 H V L CNN
-F1 "C_P" 50 -100 50 H V L CNN
+F0 "C" 50 100 60 H V L CNN
+F1 "C_P" 50 -100 60 H V L CNN
 $FPLIST
  CP*
  SM*
