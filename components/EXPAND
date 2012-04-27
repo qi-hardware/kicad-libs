@@ -9,6 +9,7 @@ Passive
 		PPTC
 		R
 		r_pack4
+		VARISTOR
 		zener
 Logic
 	Single
@@ -123,7 +124,6 @@ Vendor
 		SN75HVD12D
 		TPS763xx
 	Varistor
-		AVR-M1005C080MTACB
 		EZJ-Z0V80010
 Unclassified
 	werner-17042012
