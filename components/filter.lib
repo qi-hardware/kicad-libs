@@ -1,4 +1,5 @@
-EESchema-LIBRARY Version 2.3  Date: Mon 16 Apr 2012 15:32:12 CST
+EESchema-LIBRARY Version 2.3  Date: 2012年04月27日 (週五) 14時44分09秒
+#encoding utf-8
 #
 # FILTER
 #
@@ -12,8 +13,8 @@ A 0 0 0 0 0 0 1 0 N 0 0 0 0
 A 50 0 50 1 1799 0 1 0 N 100 0 0 0
 A 150 0 50 1 1799 0 1 0 N 200 0 100 0
 S -225 75 225 -50 0 1 0 N
-X 1 1 -350 0 150 R 40 40 1 1 P
-X 2 2 350 0 150 L 40 40 1 1 P
+X 1 1 -350 0 150 R 50 50 1 1 P
+X 2 2 350 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
