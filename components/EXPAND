@@ -82,10 +82,6 @@ Power
 		5V
 	Ground
 		GND
-	Application
-		AUDIO_AGND
-		USBEXT5V
-		VIDEOIN_AGND
 Vendor
 	Analog
 		AD1580BRTZ
