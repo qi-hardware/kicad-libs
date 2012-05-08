@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 2012年05月07日 (週一) 20時26分48秒
+EESchema-LIBRARY Version 2.3  Date: 2012年05月08日 (週二) 15時08分44秒
 #encoding utf-8
 #
 # LP38511TJ-ADJ
@@ -85,8 +85,7 @@ T 0 -325 -50 50 0 0 0 DE  Normal 0 C C
 T 0 300 -200 50 0 0 0 GND  Normal 0 C C
 T 0 -300 100 50 0 0 0 nRE  Normal 0 C C
 T 0 -350 250 50 0 0 0 R  Normal 0 C C
-T 0 -250 -350 50 0 0 0 RS-485  Normal 0 C C
-T 0 140 -425 50 0 0 0 TRANSCEIVERS  Normal 0 R C
+T 0 30 -350 50 0 0 0 RS-485~TRANSCEIVERS  Normal 0 C C
 T 0 300 250 50 0 0 0 VCC  Normal 0 C C
 S -400 350 400 -300 0 1 0 N
 X R 1 -600 250 200 R 50 50 1 1 O
