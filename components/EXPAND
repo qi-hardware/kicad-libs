@@ -10,7 +10,8 @@ Passive
 		R
 		r_pack4
 		VARISTOR
-		zener
+		ZENER
+		ZENER-13
 Logic
 	Single
 		74x1g00_5
