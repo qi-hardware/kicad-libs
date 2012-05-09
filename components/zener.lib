@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 2012年04月27日 (週五) 17時25分20秒
+EESchema-LIBRARY Version 2.3  Date: 2012年05月09日 (週三) 10時15分42秒
 #encoding utf-8
 #
 # ZENER
@@ -14,8 +14,8 @@ $ENDFPLIST
 DRAW
 P 5 0 1 0  50 0  -50 50  -50 -50  50 0  50 0 F
 P 5 0 1 8  70 50  50 30  50 -30  30 -50  30 -50 N
-X A 1 -200 0 150 R 50 50 1 1 P
-X K 2 200 0 150 L 50 50 1 1 P
+X A A -200 0 150 R 50 50 1 1 P
+X C C 200 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
