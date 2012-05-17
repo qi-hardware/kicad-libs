@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 2012年05月07日 (週一) 20時39分01秒
+EESchema-LIBRARY Version 2.3  Date: 2012年05月17日 (週四) 09時11分53秒
 #encoding utf-8
 #
 # KSZ8001L
@@ -90,12 +90,12 @@ T 0 -300 -350 50 0 0 0 SUS  Normal 0 C C
 T 0 20 -500 50 0 0 0 TRANSCEIVER  Normal 0 C C
 T 0 -330 -500 50 0 0 0 USB  Normal 0 C C
 T 0 270 150 50 0 0 0 VBUS  Normal 0 C C
-T 0 -315 250 50 0 0 0 VIN  Normal 0 C C
+T 0 -315 250 50 0 0 0 VIF  Normal 0 C C
 T 0 -320 -250 50 0 0 0 VM  Normal 0 C C
 T 0 -320 -150 50 0 0 0 VP  Normal 0 C C
 T 0 270 250 50 0 0 0 VTRM  Normal 0 C C
 S -400 350 400 -450 0 1 0 N
-X VIN 1 -600 250 200 R 50 50 1 1 W
+X VIF 1 -600 250 200 R 50 50 1 1 W
 X SPD 2 -600 150 200 R 50 50 1 1 I
 X RCV 3 -600 -50 200 R 50 50 1 1 O
 X VP 4 -600 -150 200 R 50 50 1 1 B
