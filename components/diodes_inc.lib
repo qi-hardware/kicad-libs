@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 2012年05月08日 (週二) 14時43分46秒
+EESchema-LIBRARY Version 2.3  Date: 2012年05月17日 (週四) 10時42分36秒
 #encoding utf-8
 #
 # AP21X2A
@@ -7,8 +7,8 @@ DEF AP21X2A U 0 1 Y N 1 F N
 F0 "U" -350 400 60 H V C CNN
 F1 "AP21X2A" 100 400 60 H V C CNN
 DRAW
-T 0 -310 -390 50 0 0 0 0.5A~  Normal 0 C C
-T 0 -130 -450 50 0 0 0 DUAL~CHANNEL  Normal 0 C C
+T 0 -310 -410 50 0 0 0 0.5A~  Normal 0 C C
+T 0 -130 -490 50 0 0 0 DUAL~CHANNEL  Normal 0 C C
 T 0 -320 50 50 0 0 0 EN1  Normal 0 C C
 T 0 -320 -50 50 0 0 0 EN2  Normal 0 C C
 T 0 290 150 50 0 0 0 FLG1  Normal 0 C C
@@ -17,7 +17,7 @@ T 0 -310 -250 50 0 0 0 GND  Normal 0 C C
 T 0 -350 250 50 0 0 0 IN  Normal 0 C C
 T 0 290 250 50 0 0 0 OUT1  Normal 0 C C
 T 0 290 -150 50 0 0 0 OUT2  Normal 0 C C
-T 0 -130 -510 50 0 0 0 POWER~SWITCH  Normal 0 C C
+T 0 -130 -570 50 0 0 0 POWER~SWITCH  Normal 0 C C
 S -400 350 400 -350 0 1 0 N
 X GND 1 -600 -250 200 R 50 50 1 1 W
 X IN 2 -600 250 200 R 50 50 1 1 I
