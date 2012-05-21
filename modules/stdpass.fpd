@@ -27,11 +27,11 @@ frame outline {
 	rect ll . silk
 }
 
-package "$name$variant"
+package "$name"
 unit mm
 
 table
-    { name, L, W, a0, b, e, clear }
+    { name, L, W, a, b, e, clear }
     { "0201", 0.6mm, 0.3mm, 0.28mm, 0.43mm, 0.23mm, 0.15mm }
     { "0402", 1mm, 0.5mm, 0.5mm, 0.6mm, 0.5mm, 0.15mm }
     { "0603", 1.55mm, 0.85mm, 0.7mm, 0.9mm, 0.8mm, 0.25mm }
@@ -46,11 +46,6 @@ set silk = 3mil
 set Ox = e+2*a+2*clear
 
 set Oy = b+2*clear
-
-table
-    { variant, a }
-    { "", a0 }
-    { "-M", a0 }
 
 frame pads @
 frame outline @
