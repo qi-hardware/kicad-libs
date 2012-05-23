@@ -4,6 +4,8 @@ frame pin {
 	__0: vec @(-Px/2, Py/2)
 	__1: vec @(Px/2, -Py/2)
 	pad "$n" __0 .
+	__2: vec @(Px/2, Py/2)
+	__3: vec @(-Px/2, -Py/2)
 }
 
 frame pin_top {
@@ -52,19 +54,26 @@ frame outline {
 }
 
 package "MDIP-$N-${width}"
-unit mm
+unit mil
 
 set N = 2*side
 
-set width = 300mil
+set width = 355mil
 
 set pitch = 100mil
 
-set Px = 1.78mm
+set Px = 70mil
 
-set Py = 1.52mm
+set Py = 60mil
 
 loop side = 2, 6
 
 frame outline @
 frame pins @
+measy pins.__2 -> pins.__1 4mm
+measy pin.__1 >> pin.__0 6mm
+measy pin.__0 -> pin.__1 2mm
+measy pin.__1 -> pin.__0 7mm
+measx pin.__3 -> pin.__1 -1mm
+measx pin.__1 -> pin.__3 -1mm
+measx pins.__1 >> pins.__1 2mm
