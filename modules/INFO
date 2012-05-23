@@ -111,3 +111,21 @@ F: ssop
 # some conflicts with the outline exist
 
 F: sot
+
+# MDIP
+F: mdip
+#
+# From FAIRCHILD:
+#
+# - the 6N138S data sheet
+#   http://www.fairchildsemi.com/ds/6N/6N138.pdf
+#
+# Package Type:
+#
+# - MDIP 8L
+#   http://www.fairchildsemi.com/package/packageDetails.html?id=PN_192-B08
+#
+# Package Drawing:
+#
+#   http://www.fairchildsemi.com/dwg/N0/N08H.pdf
+
