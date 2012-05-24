@@ -95,6 +95,8 @@ F: sot-323
 N: mmst3904
 
 # http://www.nxp.com/#/page/content=[f=/packages/SOT341-1.xml]
+# http://www.nxp.com/packages/SOT341-1.html
+# http://www.nxp.com/documents/reflow_soldering/SSOP-TSSOP-VSO-REFLOW.pdf
 F: ssop
 
 # experimental generic SOT footprint; currently only for
