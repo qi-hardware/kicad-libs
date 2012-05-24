@@ -60,7 +60,7 @@ unit mm
 
 table
     { name, pins, X1, Y1, e, C1, C2, D1, E1 }
-    { "LQFP32", 32, 0.55mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
+    { "LQFP32", 32, 0.45mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
 
 set X2 = X1+(pins/4-1)*E
 
