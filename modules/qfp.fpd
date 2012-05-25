@@ -64,14 +64,13 @@ frame outline {
 	line __2 . w
 }
 
-package "QFP$pins-$variant"
+package "$name"
 unit mm
 
 table
-    { variant, pins, X1, Y1, e, C1, C2, D1, E1 }
-    { "SiLabs", 32, 0.45mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
-    { "Maxim_C48", 48, 0.27mm, 1.45mm, 0.5mm, 8.2mm, 8.2mm, 7mm, 7mm }
-    { "AD_ST-48", 48, 0.3mm, 0.8mm, 0.5mm, 8mm, 8mm, 7mm, 7mm }
+    { name, pins, X1, Y1, e, C1, C2, D1, E1 }
+    { "QFP32", 32, 0.45mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
+    { "QFP48", 48, 0.27mm, 1.45mm, 0.5mm, 8.2mm, 8.2mm, 7mm, 7mm }
 
 set w = 5mil
 
