@@ -77,16 +77,6 @@ F: qfp
 # - LQFP48, TQFP48: C48 -> package land pattern
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0093.PDF
 #  
-# according to Analog Device web: 
-#   http://www.analog.com/en/technical-library/packages/qfp-quad-flat-pack/lqfp-1_4mm-thick/index.html
-#    
-# - LQFP48: ST-48 -> package drawing
-#   http://www.analog.com/static/imported-files/packages/PKG_PDF/LQFP(ST)/ST_48.pdf
-#   note that its D and E (i.e. 9 mm) doesn't meet to land pattern suggested below as a total 8.8 mm
-#	
-# - LQFP48: ST-48 -> package land pattern
-#   http://www.analog.com/static/imported-files/footprints/LQFP/ST-48.pdf
-#   
 
 # Mini-USB B receptable (SMT; almost generic)
 F: mini_usb_b
