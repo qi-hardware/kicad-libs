@@ -9,7 +9,9 @@ frame pad {
 
 	__0: vec @(px, py)
 	__1: vec @(-px, -py)
-	pad "$pin" __0 .
+	pad "$pin" . __0
+	__2: vec @(px, -py)
+	__3: vec @(-px, py)
 }
 
 frame side {
@@ -33,41 +35,55 @@ frame pads {
 	frame side .
 }
 
-frame index {
-}
-
 frame outline {
-	set mx = D1/2
+	table
+	    { index, dx, dy }
+	    { 1, -1, 0 }
+	    { 0, 0, -1 }
+	    { 0, 1, 0 }
+	    { 0, 0, 1 }
 
-	set my = E1/2
+	set cx = (dx*C1+dy*C2)/2
 
-	set cf = 0.8
+	set cy = (dy*C2-dx*C1)/2
 
-	set rf = (1-cf)/2
+	set ax = -Y1/2*dx
 
-	set r = mx*rf
+	set ay = -Y1/2*dy
 
-	__0: vec @(mx, my)
-	__1: vec @(-mx, -my)
-	rect . __0 w
-	__2: vec @(-mx*cf, my*cf)
-	__3: vec .(0mm, r)
-	circ __2 . w
+	set bx = -Y1/2*dy
+
+	set by = Y1/2*dx
+
+	__0: vec @(cx, cy)
+	w: vec .(ax, ay)
+	line __0 . w
+	__2: vec __0(bx, by)
+	line __0 . w
+	__1: vec .(index*(ax-bx), index*(ay-by))
+	line __2 . w
 }
 
-package "$name"
+package "QFP$pins-$variant"
 unit mm
 
 table
-    { name, pins, X1, Y1, e, C1, C2, D1, E1 }
-    { "LQFP32", 32, 0.45mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
-
-set X2 = X1+(pins/4-1)*E
-
-set Y2 = X2
+    { variant, pins, X1, Y1, e, C1, C2, D1, E1 }
+    { "SiLabs", 32, 0.45mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
+    { "Maxim_C48", 48, 0.27mm, 1.45mm, 0.5mm, 8.2mm, 8.2mm, 7mm, 7mm }
+    { "AD_ST-48", 48, 0.3mm, 0.8mm, 0.5mm, 8mm, 8mm, 7mm, 7mm }
 
 set w = 5mil
 
 frame pads @
 frame outline @
-measy pad.__1 -> pad.__0 1mm
+measy pad.__1 -> pad.__0 2.5mm
+meas side.__0 -> side.__0 -1.6mm
+meas pad.__2 -> pad.__1 -0.5mm
+meas pad.__1 -> pad.__2 -1.5mm
+measy side.__0 >> side.__0 3.5mm
+measy pad.__1 >> pad.__1 4mm
+measx pads.__0 >> side.__0 -7.5mm
+measx pad.__0 >> pad.__2 -5mm
+measy pad.__0 >> pad.__3 3mm
+measx pad.__3 >> pad.__1 -4mm

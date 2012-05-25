@@ -64,6 +64,29 @@ N: sot617-3-lp
 
 # "Generic" simple QFP (for now, just for Silabs' C8051F320)
 F: qfp
+#
+# - the C8051F320 data sheet
+#   http://www.silabs.com/Support%20Documents/TechnicalDocs/C8051F32x.pdf
+# 
+# according to MAXIM web: http://www.maxim-ic.com/design/packaging/
+# the LQPF48/TQFP48 referred to the same package drawing and land pattern
+#
+# - LQFP48, TQFP48: C48 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0054.PDF
+#	
+# - LQFP48, TQFP48: C48 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0093.PDF
+#  
+# according to Analog Device web: 
+#   http://www.analog.com/en/technical-library/packages/qfp-quad-flat-pack/lqfp-1_4mm-thick/index.html
+#    
+# - LQFP48: ST-48 -> package drawing
+#   http://www.analog.com/static/imported-files/packages/PKG_PDF/LQFP(ST)/ST_48.pdf
+#   note that its D and E (i.e. 9 mm) doesn't meet to land pattern suggested below as a total 8.8 mm
+#	
+# - LQFP48: ST-48 -> package land pattern
+#   http://www.analog.com/static/imported-files/footprints/LQFP/ST-48.pdf
+#   
 
 # Mini-USB B receptable (SMT; almost generic)
 F: mini_usb_b
