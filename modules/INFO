@@ -162,3 +162,11 @@ F: soic
 #   - R-PDSO-G16
 #   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
 
+# IR Receiver Module
+F: ir
+#
+# From Vishay:
+#
+# - the TSOP322.., TSOP324.., TSOP348.., TSOP344.. data sheet
+#   http://www.vishay.com/docs/81732/tsop348.pdf
+
