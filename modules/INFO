@@ -144,3 +144,21 @@ F: mdip
 #
 #   http://www.fairchildsemi.com/dwg/N0/N08H.pdf
 
+# SOIC
+F: soic
+#
+# From TI:
+#
+# - the SN75HVD12DR data sheet
+#   http://www.ti.com/lit/ds/symlink/sn75hvd12.pdf
+#
+# Package Drawing:
+#
+# - D(JEDEC)
+#   - R-PDSO-G8
+#   http://www-s.ti.com/sc/psheets/msoi002j/msoi002j.pdf
+#   - R-PDSO-G14
+#   http://www-s.ti.com/sc/psheets/mpds177g/mpds177g.pdf
+#   - R-PDSO-G16
+#   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
+
