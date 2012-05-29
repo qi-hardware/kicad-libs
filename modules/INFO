@@ -179,6 +179,13 @@ F: tsop
 # according to MAXIM web: http://www.maxim-ic.com/design/packaging/
 # the TSOP32 referred to the same package drawing and land pattern
 #
+# - TSOP28: Z28 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0273.PDF
+#	
+# - TSOP28: Z28 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0319.PDF
+#  
+#
 # - TSOP32: Z32 -> package drawing
 #   http://pdfserv.maxim-ic.com/package_dwgs/21-0274.PDF
 #	
@@ -186,4 +193,13 @@ F: tsop
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
 #  
 
+# "Generic" simple TO-252
+F: tsop
+#
+# - for example: the LP38690DT-3.3 data sheet, it's TO-252
+#   http://www.ti.com/lit/ds/symlink/lp38690.pdf
+# 
+# - JEDEC Spec: TO-252 AA  -> package drawing and land pattern
+#   http://www.national.com/packaging/mkt/td03b.pdf
+#	
 

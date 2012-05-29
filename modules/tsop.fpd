@@ -1,8 +1,8 @@
 /* MACHINE-GENERATED ! */
 
 frame pin {
-	__0: vec @(pad_w/2, C/2)
-	__1: vec @(-pad_w/2, -C/2)
+	__0: vec @(padw/2, C/2)
+	__1: vec @(-padw/2, -C/2)
 	pad "$n" . __0
 }
 
@@ -23,7 +23,7 @@ frame pins_bottom {
 frame pins {
 	set y = W/2
 
-	set x = (i-(N/2-1)/2)*Pitch
+	set x = (i-(N/2-1)/2)*e
 
 	loop i = 0, N/2-1
 
@@ -34,7 +34,7 @@ frame pins {
 }
 
 frame marker {
-	set r = ((N/2-1)*Pitch-x)/2-w
+	set r = ((N/2-1)*e-x)/2-w
 
 	__0: vec @(-x/2-1.5*Z, -(y/2-C/4))
 	__1: vec .(-r/3, 0mm)
@@ -59,20 +59,18 @@ frame outline {
 package "$name-$N"
 unit mm
 
-set Pitch = 0.5mm
-
-set pad_w = 0.27mm
-
 table
-    { name, N, A, B, C, D, D1, E, W, Z }
-    { "TSOP", 56, 6.8mm, 18.1mm, 1.39mm, 20mm, 18.4mm, 14mm, 19.49mm, 0.25mm }
+    { name, N, B, C, D, D1, E, e, padw, W, Z }
+    { "TSOP", 28, 11.25mm, 1.4mm, 13.425mm, 11.8mm, 8mm, 0.55mm, 0.2mm, 12.65mm, 0.25mm }
+    { "TSOP", 32, 18.1mm, 1.39mm, 20mm, 18.4mm, 8mm, 0.5mm, 0.27mm, 19.49mm, 0.25mm }
+    { "TSOP", 56, 18.1mm, 1.39mm, 20mm, 18.4mm, 14mm, 0.5mm, 0.27mm, 19.49mm, 0.25mm }
 
 frame outline @
 frame pins @
 measy pin.__1 -> pin.__0 1mm
 measy pin.__1 >> pin.__0 -E-3mm
 measy pin.__0 >> pin.__1 -E-1mm
-measx pin.__1 -> pin.__0 -Pitch
+measx pin.__1 -> pin.__0 -e
 measx pins_top.__0 -> pins_top.__0 -2mm
 measy pins.__0 << pins_bottom.__0 -2.5mm
 measy outline.__0 >> outline.__1 -E-C
