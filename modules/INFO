@@ -170,3 +170,20 @@ F: ir
 # - the TSOP322.., TSOP324.., TSOP348.., TSOP344.. data sheet
 #   http://www.vishay.com/docs/81732/tsop348.pdf
 
+# "Generic" simple TSOP
+F: tsop
+#
+# - the JS28F256J3F105 data sheet, it's TSOP-56
+#   http://www.micron.com/parts/nor-flash/parallel-nor-flash/~/media/Documents/Products/Data%20Sheet/NOR%20Flash/6062319942_J3_65_256M_MLC_DS.ashx
+# 
+# according to MAXIM web: http://www.maxim-ic.com/design/packaging/
+# the TSOP32 referred to the same package drawing and land pattern
+#
+# - TSOP32: Z32 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0274.PDF
+#	
+# - TSOP32: Z32 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
+#  
+
+
