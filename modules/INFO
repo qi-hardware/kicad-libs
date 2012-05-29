@@ -144,3 +144,62 @@ F: mdip
 #
 #   http://www.fairchildsemi.com/dwg/N0/N08H.pdf
 
+# SOIC
+F: soic
+#
+# From TI:
+#
+# - the SN75HVD12DR data sheet
+#   http://www.ti.com/lit/ds/symlink/sn75hvd12.pdf
+#
+# Package Drawing:
+#
+# - D(JEDEC)
+#   - R-PDSO-G8
+#   http://www-s.ti.com/sc/psheets/msoi002j/msoi002j.pdf
+#   - R-PDSO-G14
+#   http://www-s.ti.com/sc/psheets/mpds177g/mpds177g.pdf
+#   - R-PDSO-G16
+#   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
+
+# IR Receiver Module
+F: ir
+#
+# From Vishay:
+#
+# - the TSOP322.., TSOP324.., TSOP348.., TSOP344.. data sheet
+#   http://www.vishay.com/docs/81732/tsop348.pdf
+
+# "Generic" simple TSOP
+F: tsop
+#
+# - the JS28F256J3F105 data sheet, it's TSOP-56
+#   http://www.micron.com/parts/nor-flash/parallel-nor-flash/~/media/Documents/Products/Data%20Sheet/NOR%20Flash/6062319942_J3_65_256M_MLC_DS.ashx
+# 
+# according to MAXIM web: http://www.maxim-ic.com/design/packaging/
+# the TSOP32 referred to the same package drawing and land pattern
+#
+# - TSOP28: Z28 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0273.PDF
+#	
+# - TSOP28: Z28 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0319.PDF
+#  
+#
+# - TSOP32: Z32 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0274.PDF
+#	
+# - TSOP32: Z32 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
+#  
+
+# "Generic" simple TO-252
+F: to-252
+#
+# - for example: the LP38690DT-3.3 data sheet, it's TO-252
+#   http://www.ti.com/lit/ds/symlink/lp38690.pdf
+# 
+# - JEDEC Spec: TO-252 AA  -> package drawing and land pattern
+#   http://www.national.com/packaging/mkt/td03b.pdf
+#	
+
