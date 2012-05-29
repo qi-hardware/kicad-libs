@@ -194,7 +194,7 @@ F: tsop
 #  
 
 # "Generic" simple TO-252
-F: tsop
+F: to-252
 #
 # - for example: the LP38690DT-3.3 data sheet, it's TO-252
 #   http://www.ti.com/lit/ds/symlink/lp38690.pdf
