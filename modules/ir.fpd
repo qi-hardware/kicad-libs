@@ -51,6 +51,7 @@ frame outline {
 	__15: vec __7(0.29mm, 0mm)
 	arc __9 . __14 w
 	line __7 . w
+	line __14 . w
 }
 
 package "TSOP348"
