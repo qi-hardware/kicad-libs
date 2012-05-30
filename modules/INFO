@@ -5,17 +5,49 @@
 # N     Data sheet identifier (N tag of BOOKSHELF; can be omitted if equal to F)
 #
 
-# Standard rectangular passive components
-F: stdpass
-
-# Solder pads and test points
-F: pads
-
 # Printed 8:10 card contacs
 F: 8_10-card
 
+# EUS (R-PDSS-T6)
+F: eus
+#
+# - for example: the PTH04000WAH data sheet, it's EUS
+#   http://www.ti.com/lit/ds/symlink/pth04000w.pdf
+# 
+
 # Fiducial (1 mm copper pad, 2 mm solder mask clearance)
 F: fiducial
+
+# IR Receiver Module
+F: ir
+#
+# From Vishay:
+#
+# - the TSOP322.., TSOP324.., TSOP348.., TSOP344.. data sheet
+#   http://www.vishay.com/docs/81732/tsop348.pdf
+
+# MDIP
+F: mdip
+#
+# From FAIRCHILD:
+#
+# - the 6N138S data sheet
+#   http://www.fairchildsemi.com/ds/6N/6N138.pdf
+#
+# Package Type:
+#
+# - MDIP 8L
+#   http://www.fairchildsemi.com/package/packageDetails.html?id=PN_192-B08
+#
+# Package Drawing:
+#
+#   http://www.fairchildsemi.com/dwg/N0/N08H.pdf
+
+# Mini-USB B receptable (SMT; almost generic)
+F: mini_usb_b
+
+# Solder pads and test points
+F: pads
 
 # "Generic" simple QFN
 F: qfn
@@ -78,30 +110,28 @@ F: qfp
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0093.PDF
 #  
 
-# Mini-USB B receptable (SMT; almost generic)
-F: mini_usb_b
+# SOIC
+F: soic
+#
+# From TI:
+#
+# - the SN75HVD12DR data sheet
+#   http://www.ti.com/lit/ds/symlink/sn75hvd12.pdf
+#
+# Package Drawing:
+#
+# - D(JEDEC)
+#   - R-PDSO-G8
+#   http://www-s.ti.com/sc/psheets/msoi002j/msoi002j.pdf
+#   - R-PDSO-G14
+#   http://www-s.ti.com/sc/psheets/mpds177g/mpds177g.pdf
+#   - R-PDSO-G16
+#   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
 
-# USB A plug for SMT
-#
-# Note: the signal pads are enlarged by 0.2 mm and their center is shifted by
-# 0.1 mm with respect to the reference.
-#
-# According to the data sheet, the leads terminate at (2.00+/-0.10 mm)/2+
-# 2.48 mm = 3.48+/-0.10 mm from the center. The reference footprint puts the
-# edge of the pads at (2.00+/-0.10 mm)/2+2.6 mm = 3.6 mm+/-0.10 mm, so the
-# maximum lead end could be at 3.58 mm while the minimum pad edge could be at
-# 3.5 mm.
-#
-# Assuming that the pad is intended to extend a bit beyond the lead, we need
-# to add 0.2 mm to compensate for these tolerances. (The pad tolerance may not
-# be intended to be used this way, however, we still have to consider small
-# errors in registration, which also amount to about 0.1 mm, so the calculation
-# remains valid.)
-#
-F: usb_a_plug_smt
+F: sot
 
-# USB 2.0 from usb_20_040908, page 99
-F: usb-a-pcb
+# Standard rectangular passive components
+F: stdpass
 
 # SOT-323 package with counter-clockweise or clockwise pin assignment
 F: sot-323
@@ -124,51 +154,6 @@ F: ssop
 #   http://www.onsemi.com/pub_link/Collateral/NTZD3155C-D.PDF
 #
 # some conflicts with the outline exist
-
-F: sot
-
-# MDIP
-F: mdip
-#
-# From FAIRCHILD:
-#
-# - the 6N138S data sheet
-#   http://www.fairchildsemi.com/ds/6N/6N138.pdf
-#
-# Package Type:
-#
-# - MDIP 8L
-#   http://www.fairchildsemi.com/package/packageDetails.html?id=PN_192-B08
-#
-# Package Drawing:
-#
-#   http://www.fairchildsemi.com/dwg/N0/N08H.pdf
-
-# SOIC
-F: soic
-#
-# From TI:
-#
-# - the SN75HVD12DR data sheet
-#   http://www.ti.com/lit/ds/symlink/sn75hvd12.pdf
-#
-# Package Drawing:
-#
-# - D(JEDEC)
-#   - R-PDSO-G8
-#   http://www-s.ti.com/sc/psheets/msoi002j/msoi002j.pdf
-#   - R-PDSO-G14
-#   http://www-s.ti.com/sc/psheets/mpds177g/mpds177g.pdf
-#   - R-PDSO-G16
-#   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
-
-# IR Receiver Module
-F: ir
-#
-# From Vishay:
-#
-# - the TSOP322.., TSOP324.., TSOP348.., TSOP344.. data sheet
-#   http://www.vishay.com/docs/81732/tsop348.pdf
 
 # "Generic" simple TSOP
 F: tsop
@@ -202,4 +187,27 @@ F: to-252
 # - JEDEC Spec: TO-252 AA  -> package drawing and land pattern
 #   http://www.national.com/packaging/mkt/td03b.pdf
 #	
+
+# USB A plug for SMT
+#
+# Note: the signal pads are enlarged by 0.2 mm and their center is shifted by
+# 0.1 mm with respect to the reference.
+#
+# According to the data sheet, the leads terminate at (2.00+/-0.10 mm)/2+
+# 2.48 mm = 3.48+/-0.10 mm from the center. The reference footprint puts the
+# edge of the pads at (2.00+/-0.10 mm)/2+2.6 mm = 3.6 mm+/-0.10 mm, so the
+# maximum lead end could be at 3.58 mm while the minimum pad edge could be at
+# 3.5 mm.
+#
+# Assuming that the pad is intended to extend a bit beyond the lead, we need
+# to add 0.2 mm to compensate for these tolerances. (The pad tolerance may not
+# be intended to be used this way, however, we still have to consider small
+# errors in registration, which also amount to about 0.1 mm, so the calculation
+# remains valid.)
+#
+F: usb_a_plug_smt
+
+# USB 2.0 from usb_20_040908, page 99
+F: usb-a-pcb
+
 
