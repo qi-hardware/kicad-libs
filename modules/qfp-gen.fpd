@@ -1,5 +1,12 @@
 /* MACHINE-GENERATED ! */
 
+frame meas_aux {
+	set ?dy = -1
+
+	__0: vec @(-wx/2, -wy/2)
+	__1: vec @(wx/2, wy/2)
+}
+
 frame land {
 	table
 	    { dx, dy, n }
@@ -23,9 +30,10 @@ frame land {
 	__0: vec @(ix, iy)
 	__1: vec .(sx, sy)
 	__2: vec .(ox-ix, oy-iy)
+	frame meas_aux .
 	__4: vec .(wx/2, wy/2)
 	__3: vec __1(-wx/2, -wy/2)
-	pad "?" . __4
+	pad "$n" . __4
 	__5: vec @((ix+ox)/2, (iy+oy)/2)
 }
 
@@ -71,14 +79,21 @@ table
     { F, P }
     { pcb_tolerance, placement_tolerance }
 
-set Zmax = Dmin+2*Jt+sqrt(Cl*Cl+F*F+P*P)
+set Zmax_raw = Dmin+2*Jt+sqrt(Cl*Cl+F*F+P*P)
 
-set Gmin = Smax-2*Jh-sqrt(Cs*Cs+F*F+P*P)
+set Gmin_raw = Smax-2*Jh-sqrt(Cs*Cs+F*F+P*P)
 
-set Xmax = b1min+2*Js+sqrt(Cw*Cw+F*F+P*P)
+set Xmax_raw = b1min+2*Js+sqrt(Cw*Cw+F*F+P*P)
+
+set Zmax = floor(Zmax_raw/Jt_round+0.5)*Jt_round
+
+set Gmin = floor(Gmin_raw/Jh_round+0.5)*Jh_round
+
+set Xmax = floor(Xmax_raw/Js_round+0.5)*Js_round
 
 frame land @
-measy land.__2 -> land.__1 1mm
-measy land.__0 >> land.__0
-measy land.__2 >> land.__4 4mm
-measy land.__5 >> land.__5 6mm
+measy land.__2 -> land.__1 -7mm
+measy land.__0 >> land.__0 6mm
+measy land.__2 >> land.__4 5mm
+measy land.__5 >> land.__5 7mm
+measx meas_aux.__0 -> land.__4 -1mm
