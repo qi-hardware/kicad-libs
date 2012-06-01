@@ -1,33 +1,6 @@
 /* MACHINE-GENERATED ! */
 
-frame pin_b {
-	__0: vec @(Hole/2, Hole/2)
-	__1: vec @(-Hole/2, -Hole/2)
-	hole . __0
-	__2: vec @(-ratio*Hole/2, ratio*Hole/2)
-	__3: vec @(ratio*Hole/2, -ratio*Hole/2)
-	rpad "$n" __2 .
-}
-
-frame pins_bottom {
-	set n = i+1
-
-	__0: vec @(x, 0mm)
-	frame pin_b .
-}
-
-frame pins_b {
-	set y = h/2
-
-	set x = (i-(N/2-1)/2)*Pitch
-
-	loop i = 0, N/2-1
-
-	__1: vec @(0mm, -y)
-	frame pins_bottom .
-}
-
-frame pin_t {
+frame pin {
 	__0: vec @(Hole/2, Hole/2)
 	__1: vec @(-Hole/2, -Hole/2)
 	hole . __0
@@ -36,22 +9,22 @@ frame pin_t {
 	rpad "$n" . __2
 }
 
-frame pins_top {
-	set n = N-i-2
+frame pins {
+	table
+	    { n, top, ix }
+	    { 1, 0, 0 }
+	    { 2, 0, 1 }
+	    { 3, 0, 2 }
+	    { 4, 0, 3 }
+	    { 5, 1, 3 }
+	    { 6, 1, 0 }
 
-	__0: vec @(x, 0mm)
-	frame pin_t .
-}
+	set x = (ix-N/4+0.5)*Pitch
 
-frame pins_t {
-	set y = h/2
+	set y = h*(top-0.5)
 
-	set x = (3*i-(N/2-1)/2)*Pitch
-
-	loop i = 0, 1
-
-	__0: vec @(0mm, y)
-	frame pins_top .
+	__0: vec @(x, y)
+	frame pin .
 }
 
 frame marker {
@@ -73,11 +46,10 @@ frame outline {
 	__1: vec @(-x/2, -y/2)
 	rect . __0 w
 	frame marker @
-	frame pins_t @
 }
 
 package "EUS"
-unit mm
+unit auto
 
 set Pitch = 3.18mm
 
@@ -87,18 +59,17 @@ set ratio = 1.8
 
 table
     { name, N, B, H, h, W }
-    { "SOIC", 8, 2.8mm, 19.94mm, 15.88mm, 13.59mm }
+    { "EUS", 8, 2.8mm, 19.94mm, 15.88mm, 13.59mm }
 
 frame outline @
-frame pins_b @
-measy pin_b.__1 >> pin_b.__0 -16mm
-measx pin_b.__1 -> pin_b.__0 -2mm
-measy outline.__0 >> outline.__1 -19mm
-measx outline.__1 >> outline.__0 -2mm
-measy pin_b.__3 -> pin_b.__2 7.5mm
-measy pins_bottom.__0 >> outline.__1 -5mm
-measx outline.__1 -> pins_bottom.__0 5mm
-measx pins_bottom.__0 -> pins_bottom.__0 3mm
-measy outline.__0 << pins_top.__0 -4mm
-measx outline.__0 << pins_top.__0 3mm
-meas pins_top.__0 >> pins_top.__0 3mm
+frame pins @
+measy outline.__0 >> outline.__1 -18mm
+measx outline.__1 >> outline.__0 -3mm
+measx outline.__0 << pins.__0 3mm
+measy outline.__0 << pins.__0 -4mm
+measx pins.__0 >> pins.__0 h+3mm
+measx outline.__1 -> pins.__0 5mm
+measx pins.__0 -> pins.__0 3mm
+measx pin.__1 -> pin.__0 -2.5mm
+measy pin.__2 -> pin.__3 6mm
+measx pin.__3 -> pin.__2 -6mm
