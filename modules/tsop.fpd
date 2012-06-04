@@ -34,9 +34,9 @@ frame pins {
 }
 
 frame marker {
-	set r = ((N/2-1)*e-x)/2-w
+	set r = 0.7mm
 
-	__0: vec @(-x/2-1.5*Z, -(y/2-C/4))
+	__0: vec @(-(E/2+0.6mm), -(y/2-C/4))
 	__1: vec .(-r/3, 0mm)
 	circ __0 . w
 }
@@ -61,19 +61,20 @@ unit mm
 
 table
     { name, N, B, C, D, D1, E, e, padw, W, Z }
-    { "TSOP", 28, 11.25mm, 1.4mm, 13.425mm, 11.8mm, 8mm, 0.55mm, 0.2mm, 12.65mm, 0.25mm }
+    { "TSOP", 28, 11.25mm, 1.4mm, 13.425mm, 11.8mm, 8mm, 0.55mm, 0.2mm, 12.65mm, 0.425mm }
     { "TSOP", 32, 18.1mm, 1.39mm, 20mm, 18.4mm, 8mm, 0.5mm, 0.27mm, 19.49mm, 0.25mm }
     { "TSOP", 56, 18.1mm, 1.39mm, 20mm, 18.4mm, 14mm, 0.5mm, 0.27mm, 19.49mm, 0.25mm }
+    { "TSOP", 66, 9.85mm, 1.25mm, 11.76mm, 10.16mm, 22.22mm, 0.65mm, 0.45mm, 11.1mm, 0.71mm }
 
 frame outline @
 frame pins @
 measy pin.__1 -> pin.__0 1mm
-measy pin.__1 >> pin.__0 -E-3mm
+measy pin.__1 >> pin.__0 -E-4mm
 measy pin.__0 >> pin.__1 -E-1mm
 measx pin.__1 -> pin.__0 -e
 measx pins_top.__0 -> pins_top.__0 -2mm
-measy pins.__0 << pins_bottom.__0 -2.5mm
+measy pins.__0 << pins_bottom.__0 -4mm
 measy outline.__0 >> outline.__1 -E-C
 measx outline.__1 >> outline.__0 8mm
-measx pins_bottom.__0 >> outline.__1 -2mm
 measy outline.__2 >> outline.__3 -3mm
+measx outline.__2 -> pins_top.__0 -1mm

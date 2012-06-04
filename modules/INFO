@@ -177,6 +177,14 @@ F: tsop
 # - TSOP32: Z32 -> package land pattern
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
 #  
+#
+# - TSOP66: for example: the MT46V32M16P-5B:F data sheet, it's 400 mil, package drawing
+#   http://download.micron.com/pdf/datasheets/dram/ddr/512MBDDRx4x8x16.pdf 
+#	
+# - TSOP66: currently referred to M1rc3 design files land pattern:
+#   width of pad  -> 0.4 mm, it's rectangle not round one
+#   length of pad -> 1.25 mm
+#   Width of body -> 400 mil
 
 # "Generic" simple TO-252, TO-263
 F: to
