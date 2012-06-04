@@ -38,12 +38,12 @@ frame outline {
 
 	table
 	    { r, d }
-	    { 0.5mm, 2*r }
+	    { 0.3mm, 2*r }
 
 	__0: vec @(H/2, F/2)
 	__1: vec @(-H/2, -F/2)
 	rect . __0 w
-	__2: vec @(d-H/2, d-B/2)
+	__2: vec @(-(H/2+2*r), -(A+B)/4)
 	__3: vec .(r, 0mm)
 	circ __2 . w
 }
@@ -62,13 +62,14 @@ table
     { "SSOP", 20, 8.1mm, 5.9mm, 1.1mm, 8.35mm, 6.5mm }
     { "SSOP", 24, 8.1mm, 5.9mm, 1.1mm, 8.35mm, 7.8mm }
     { "SSOP", 28, 8.1mm, 5.9mm, 1.1mm, 8.35mm, 9.1mm }
+    { "TSSOP", 14, 6.8mm, 4.6mm, 1.1mm, 7.05mm, 5mm }
     { "TSSOP", 20, 6.8mm, 4.6mm, 1.1mm, 7.05mm, 6.75mm }
 
 frame outline @
 frame pins @
-measy outline.__1 >> outline.__0 1.5mm
+measy outline.__1 >> outline.__0 2mm
 measx outline.__1 >> outline.__0 F+1mm
-measy pin.__1 -> pin.__0 1mm
+measy pin.__1 -> pin.__0 1.5mm
 measy pin.__1 >> pin.__0 -H-2mm
 measy pin.__0 >> pin.__1 -H
 measx pin.__1 -> pin.__0 -1mm

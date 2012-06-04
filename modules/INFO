@@ -140,7 +140,6 @@ N: mmst3904
 # http://www.nxp.com/#/page/content=[f=/packages/SOT341-1.xml]
 # http://www.nxp.com/packages/SOT341-1.html
 # http://www.nxp.com/documents/reflow_soldering/SSOP-TSSOP-VSO-REFLOW.pdf
-F: ssop
 
 # experimental generic SOT footprint; currently only for
 #
@@ -154,6 +153,17 @@ F: ssop
 #   http://www.onsemi.com/pub_link/Collateral/NTZD3155C-D.PDF
 #
 # some conflicts with the outline exist
+
+# "Generic" simple SSOP
+F: ssop
+#
+# - TSSOP14: for example: the MIC2550AYTS data sheet, package drawing
+#   http://www.micrel.com/_PDF/mic2550a.pdf
+#	
+# - TSSOP14: from NXP -> package land pattern
+#   http://www.nxp.com/packages/SOT402-1.html
+#   http://www.nxp.com/documents/reflow_soldering/sot402-1_fr.pdf
+ 
 
 # "Generic" simple TSOP
 F: tsop
