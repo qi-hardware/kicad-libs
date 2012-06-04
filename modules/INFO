@@ -178,14 +178,20 @@ F: tsop
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
 #  
 
-# "Generic" simple TO-252
-F: to-252
+# "Generic" simple TO-252, TO-263
+F: to
 #
-# - for example: the LP38690DT-3.3 data sheet, it's TO-252
+# - TO-252 for example: the LP38690DT-3.3 data sheet, it's TO-252
 #   http://www.ti.com/lit/ds/symlink/lp38690.pdf
 # 
 # - JEDEC Spec: TO-252 AA  -> package drawing and land pattern
 #   http://www.national.com/packaging/mkt/td03b.pdf
+#	
+# - TO-263 for example: the LP38511TJ-ADJ/NOPB data sheet, it's TO-263
+#   http://www.ti.com/lit/ds/symlink/lp38511-adj.pdf
+# 
+# - JEDEC Spec: TO-263 THIN  -> package drawing and land pattern
+#   http://www.national.com/packaging/mkt/tj5a.pdf
 #	
 
 # USB A plug for SMT
