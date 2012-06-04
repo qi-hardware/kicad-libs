@@ -109,6 +109,15 @@ F: qfp
 # - LQFP48, TQFP48: C48 -> package land pattern
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0093.PDF
 #  
+# - LQFP64, JEDEC MS-026-BCD for example: the ADV7181CBSTZ data sheet, package drawing
+#   http://www.analog.com/static/imported-files/data_sheets/ADV7181C.pdf 
+#	
+# - LQFP64, C64 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0083.PDF
+#	
+# - LQFP64, C64 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0141.PDF
+#  
 
 # SOIC
 F: soic

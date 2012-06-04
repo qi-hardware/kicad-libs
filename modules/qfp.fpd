@@ -71,6 +71,7 @@ table
     { name, pins, X1, Y1, e, C1, C2, D1, E1 }
     { "QFP32", 32, 0.45mm, 1.3mm, 0.8mm, 8.45mm, 8.45mm, 7mm, 7mm }
     { "QFP48", 48, 0.27mm, 1.45mm, 0.5mm, 8.2mm, 8.2mm, 7mm, 7mm }
+    { "QFP64", 64, 0.27mm, 1.45mm, 0.5mm, 11.25mm, 11.25mm, 10mm, 10mm }
 
 set w = 5mil
 
