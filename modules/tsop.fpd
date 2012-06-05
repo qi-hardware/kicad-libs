@@ -6,15 +6,15 @@ frame pin {
 	pad "$n" . __0
 }
 
-frame pins_top {
-	set n = N-i
+frame pins_bottom {
+	set n = i+1
 
 	__0: vec @(x, 0mm)
 	frame pin .
 }
 
-frame pins_bottom {
-	set n = i+1
+frame pins_top {
+	set n = N-i
 
 	__0: vec @(x, 0mm)
 	frame pin .
@@ -36,7 +36,7 @@ frame pins {
 frame marker {
 	set r = 0.7mm
 
-	__0: vec @(-(E/2+0.6mm), -(y/2-C/4))
+	__0: vec @(-(E/2+0.6mm), -W/2)
 	__1: vec .(-r/3, 0mm)
 	circ __0 . w
 }
@@ -69,12 +69,12 @@ table
 frame outline @
 frame pins @
 measy pin.__1 -> pin.__0 1mm
-measy pin.__1 >> pin.__0 -E-4mm
-measy pin.__0 >> pin.__1 -E-1mm
+measy pin.__1 >> pin.__0 -E-3mm
+measy pin.__0 >> pin.__1 -E-0.2mm
 measx pin.__1 -> pin.__0 -e
 measx pins_top.__0 -> pins_top.__0 -2mm
-measy pins.__0 << pins_bottom.__0 -4mm
+measy pins.__0 << pins_bottom.__0 -C-1.2mm
 measy outline.__0 >> outline.__1 -E-C
-measx outline.__1 >> outline.__0 8mm
-measy outline.__2 >> outline.__3 -3mm
+measx outline.__1 >> outline.__0 B+C+1mm
+measy outline.__2 >> outline.__3 -C-0.5mm
 measx outline.__2 -> pins_top.__0 -1mm
