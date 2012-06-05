@@ -8,6 +8,16 @@
 # Printed 8:10 card contacs
 F: 8_10-card
 
+# BGA
+F: bga
+# - 484-Pin FineLine BGA(FBGA), from Altera
+#   http://www.altera.com/devicepackaging/04R00416-02.pdf
+#
+# - FG(G)484 Fine-Pitch BGA, from Xilinx
+#   http://www.xilinx.com/support/documentation/user_guides/ug385.pdf
+#
+
+
 # EUS (R-PDSS-T6)
 F: eus
 #
