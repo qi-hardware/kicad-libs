@@ -146,7 +146,20 @@ F: soic
 #   - R-PDSO-G16
 #   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
 
+# SOT generic package
 F: sot
+# experimental generic SOT footprint; currently only for
+#
+# - SOT-323 aka SC-70
+#   http://www.onsemi.com/pub_link/Collateral/BAV99WT1-D.PDF
+# - SOT-363 aka SC-88 aka SC-70-6
+#   http://www.onsemi.com/pub_link/Collateral/MBT3946DW1T1-D.PDF
+# - SOT-523
+#   http://www.diodes.com/datasheets/ds31784.pdf
+# - SOT-563
+#   http://www.onsemi.com/pub_link/Collateral/NTZD3155C-D.PDF
+#
+# some conflicts with the outline exist
 
 # SOT23 generic package with counter-clockweise or clockwise pin assignment
 F: sot23
@@ -166,19 +179,6 @@ N: mmst3904
 # http://www.nxp.com/packages/SOT341-1.html
 # http://www.nxp.com/documents/reflow_soldering/SSOP-TSSOP-VSO-REFLOW.pdf
 
-# experimental generic SOT footprint; currently only for
-#
-# - SOT-323 aka SC-70
-#   http://www.onsemi.com/pub_link/Collateral/BAV99WT1-D.PDF
-# - SOT-363 aka SC-88 aka SC-70-6
-#   http://www.onsemi.com/pub_link/Collateral/MBT3946DW1T1-D.PDF
-# - SOT-523
-#   http://www.diodes.com/datasheets/ds31784.pdf
-# - SOT-563
-#   http://www.onsemi.com/pub_link/Collateral/NTZD3155C-D.PDF
-#
-# some conflicts with the outline exist
-
 # "Generic" simple SSOP
 F: ssop
 #
@@ -188,38 +188,6 @@ F: ssop
 # - TSSOP14: from NXP -> package land pattern
 #   http://www.nxp.com/packages/SOT402-1.html
 #   http://www.nxp.com/documents/reflow_soldering/sot402-1_fr.pdf
- 
-
-# "Generic" simple TSOP
-F: tsop
-#
-# - the JS28F256J3F105 data sheet, it's TSOP-56
-#   http://www.micron.com/parts/nor-flash/parallel-nor-flash/~/media/Documents/Products/Data%20Sheet/NOR%20Flash/6062319942_J3_65_256M_MLC_DS.ashx
-# 
-# according to MAXIM web: http://www.maxim-ic.com/design/packaging/
-# the TSOP32 referred to the same package drawing and land pattern
-#
-# - TSOP28: Z28 -> package drawing
-#   http://pdfserv.maxim-ic.com/package_dwgs/21-0273.PDF
-#	
-# - TSOP28: Z28 -> package land pattern
-#   http://pdfserv.maxim-ic.com/land_patterns/90-0319.PDF
-#  
-#
-# - TSOP32: Z32 -> package drawing
-#   http://pdfserv.maxim-ic.com/package_dwgs/21-0274.PDF
-#	
-# - TSOP32: Z32 -> package land pattern
-#   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
-#  
-#
-# - TSOP66: for example: the MT46V32M16P-5B:F data sheet, it's 400 mil, package drawing
-#   http://download.micron.com/pdf/datasheets/dram/ddr/512MBDDRx4x8x16.pdf 
-#	
-# - TSOP66: currently referred to M1rc3 design files land pattern:
-#   width of pad  -> 0.4 mm, it's rectangle not round one
-#   length of pad -> 1.25 mm
-#   Width of body -> 400 mil
 
 # "Generic" simple TO-252, TO-263
 F: to
@@ -236,6 +204,44 @@ F: to
 # - JEDEC Spec: TO-263 THIN  -> package drawing and land pattern
 #   http://www.national.com/packaging/mkt/tj5a.pdf
 #	
+
+# "Generic" simple TSOP
+F: tsop
+#
+# - TSOP28: Z28 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0273.PDF
+#	
+# - TSOP28: Z28 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0319.PDF
+#  
+# according to MAXIM web: http://www.maxim-ic.com/design/packaging/
+# the TSOP32 referred to the same package drawing and land pattern
+#
+# - TSOP32: Z32 -> package drawing
+#   http://pdfserv.maxim-ic.com/package_dwgs/21-0274.PDF
+#	
+# - TSOP32: Z32 -> package land pattern
+#   http://pdfserv.maxim-ic.com/land_patterns/90-0320.PDF
+#  
+# - TSOP56: the JS28F256J3F105 data sheet, it's TSOP-56
+#   http://www.micron.com/parts/nor-flash/parallel-nor-flash/~/media/Documents/Products/Data%20Sheet/NOR%20Flash/6062319942_J3_65_256M_MLC_DS.ashx
+#
+# - TSOP66: for example: the MT46V32M16P-5B:F data sheet, it's 400 mil, package drawing
+#   http://download.micron.com/pdf/datasheets/dram/ddr/512MBDDRx4x8x16.pdf 
+#	
+# - TSOP66: currently referred to M1rc3 design files land pattern:
+#   width of pad  -> 0.4 mm, it's rectangle not round one
+#   length of pad -> 1.25 mm
+#   Width of body -> 400 mil
+
+# "Generic" TSSOP
+F: tssop
+#
+# - TSSOP5: for example: the NXP 74AUP1G08GW data sheet, package drawing SOT353-1
+#   http://www.nxp.com/documents/data_sheet/74AUP1G08.pdf
+#   http://www.nxp.com/packages/SOT353-1.html
+#   but without real land pattern found, still could refer link below for more in details:
+#   http://www.nxp.com/documents/application_note/AN10365.pdf	
 
 # USB A plug for SMT
 #
