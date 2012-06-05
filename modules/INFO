@@ -17,7 +17,6 @@ F: bga
 #   http://www.xilinx.com/support/documentation/user_guides/ug385.pdf
 #
 
-
 # EUS (R-PDSS-T6)
 F: eus
 #
@@ -148,6 +147,13 @@ F: soic
 #   http://www-s.ti.com/sc/psheets/mpds178g/mpds178g.pdf
 
 F: sot
+
+# SOT23 generic package with counter-clockweise or clockwise pin assignment
+F: sot23
+#
+# - SOT23: for example, the APX803-40SAG-7 data sheet, package drawing and land pattern
+#   http://www.diodes.com/datasheets/APX803.pdf
+#	
 
 # Standard rectangular passive components
 F: stdpass
