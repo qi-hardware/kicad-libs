@@ -297,4 +297,7 @@ F: usb_a_plug_smt
 # USB 2.0 from usb_20_040908, page 99
 F: usb-a-pcb
 
-
+# Open clip for AA batteries, through-hole
+# http://www.memoryprotectiondevices.com/datasheets/BK-92-datasheet.pdf
+# Note: should generalize this for AAA and maybe also larger sizes
+F: bat-clip-aa-th
