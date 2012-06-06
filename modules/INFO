@@ -17,6 +17,19 @@ F: bga
 #   http://www.xilinx.com/support/documentation/user_guides/ug385.pdf
 #
 
+# DO-214
+F: do-214
+#
+# - DO-214AA(SMB), from Fairchild, for example its 2N7002MTF uses it
+#   http://www.fairchildsemi.com/dwg/DO/DO214AA.pdf
+#
+# - DO-214AB(SMC), from Fairchild
+#   http://www.fairchildsemi.com/dwg/DO/DO214AB.pdf
+#
+# - DO-214AC(SMC), from Fairchild
+#   http://www.fairchildsemi.com/dwg/DO/DO214AC.pdf
+#
+
 # EUS (R-PDSS-T6)
 F: eus
 #
