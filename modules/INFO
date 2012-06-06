@@ -234,14 +234,21 @@ F: tsop
 #   length of pad -> 1.25 mm
 #   Width of body -> 400 mil
 
-# "Generic" TSSOP
-F: tssop
+# TSSOP5 for NXP
+F: tssop5
 #
-# - TSSOP5: for example: the NXP 74AUP1G08GW data sheet, package drawing SOT353-1
+# - TSSOP5 aka for example package drawing SOT353-1 from NXP 74AUP1G08GW data sheet, 
 #   http://www.nxp.com/documents/data_sheet/74AUP1G08.pdf
 #   http://www.nxp.com/packages/SOT353-1.html
 #   but without real land pattern found, still could refer link below for more in details:
 #   http://www.nxp.com/documents/application_note/AN10365.pdf	
+#
+#   also check OnSemi's MC74VHC1G135-D http://www.onsemi.cn/pub_link/Collateral/MC74VHC1G135-D.PDF for SOT-353
+#   they both TSSOP5(NXP) and SOT-353(OnSemi) are quite similar. OnSemi has land pattern for it.
+#
+#   NXP's Lp is 0.46 mm in max., OnSemi's K is 0.3 mm max. with a land pattern of pad length 0.5 mm.
+#   could use a land pattern of pad length to be 0.7 mm.
+#
 
 # USB A plug for SMT
 #
