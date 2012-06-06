@@ -164,9 +164,12 @@ F: sot
 # SOT23 generic package with counter-clockweise or clockwise pin assignment
 F: sot23
 #
-# - SOT23: for example, the APX803-40SAG-7 data sheet, package drawing and land pattern
+# - SOT23: aka JEDEC TO-236 for example, the APX803-40SAG-7 data sheet, package drawing and land pattern
 #   http://www.diodes.com/datasheets/APX803.pdf
-#	
+#
+#   for another example from Fairchildsemi 2N7002MTF, package drawing and land pattern
+#   http://www.fairchildsemi.com/dwg/MA/MA03D.pdf
+#
 
 # Standard rectangular passive components
 F: stdpass
