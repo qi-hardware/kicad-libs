@@ -48,6 +48,15 @@ F: ir
 # - the TSOP322.., TSOP324.., TSOP348.., TSOP344.. data sheet
 #   http://www.vishay.com/docs/81732/tsop348.pdf
 
+# LED right angle package
+F: ledsmd
+#
+# - LEDSMD-0603R: for example: the APA1606SURCK data sheet, package drawing
+#   http://www.us.kingbright.com/images/catalog/SPEC/APA1606SURCK.pdf
+#   added a letter 'R' stands for right angle land pattern
+#   could expand it as else land pattern for 0603, 0805, 0805R, etc.
+#	
+
 # MDIP
 F: mdip
 #
