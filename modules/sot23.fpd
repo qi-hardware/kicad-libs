@@ -59,7 +59,8 @@ frame pads @
 measx outline.__2 >> outline.__0 1.5mm
 measy outline.__3 >> outline.__2 0.5mm
 measx pads.__0 -> pads.__0 1.7mm+f/2
-measy pads.__0 >> pads.__0 1.5mm
+measy pads.__0 >> pads.__0 1.3mm
 measy pad.__1 -> pad.__0 0.5mm
 measx pad.__1 -> pad.__0 -0.5mm
 measx pads.__0 >> pads.__0 1mm
+measy pad.__1 >> pad.__0 1.3mm
