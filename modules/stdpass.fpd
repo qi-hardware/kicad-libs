@@ -21,25 +21,41 @@ frame pads {
 	frame pad_r .
 }
 
+frame polarized {
+	loop if = cathode, 0
+
+	__0: vec @(Ox/2+1.5*clear, 0mm)
+	__1: vec .(0mm, Oy/2-clear/2)
+	__2: vec __0(0mm, -(Oy/2-clear/2))
+	line . __1 2*(silk+2mil)
+}
+
 frame outline {
 	ll: vec @(-Ox/2, -Oy/2)
 	ur: vec @(Ox/2, Oy/2)
 	rect ll . silk
+	frame polarized @
 }
 
 package "$name"
 unit mm
 
 table
-    { name, L, W, a, b, e, clear }
-    { "0201", 0.6mm, 0.3mm, 0.28mm, 0.43mm, 0.23mm, 0.15mm }
-    { "0402", 1mm, 0.5mm, 0.5mm, 0.6mm, 0.5mm, 0.15mm }
-    { "0603", 1.55mm, 0.85mm, 0.7mm, 0.9mm, 0.8mm, 0.25mm }
-    { "0805", 2mm, 1.25mm, 0.7mm, 1.3mm, 1.2mm, 0.25mm }
-    { "1206", 3.2mm, 1.6mm, 0.9mm, 1.7mm, 2mm, 0.25mm }
-    { "1210", 3.2mm, 2.5mm, 0.9mm, 2.5mm, 2mm, 0.25mm }
-    { "2010", 5mm, 2.5mm, 1mm, 2.5mm, 3.6mm, 0.25mm }
-    { "2512", 6.3mm, 3.2mm, 1mm, 3.2mm, 5mm, 0.25mm }
+    { name, cathode, L, W, a, b, e, clear }
+    { "0201", 1, 0.6mm, 0.3mm, 0.28mm, 0.43mm, 0.23mm, 0.15mm }
+    { "0402", 1, 1mm, 0.5mm, 0.5mm, 0.6mm, 0.5mm, 0.15mm }
+    { "0603", 1, 1.55mm, 0.85mm, 0.7mm, 0.9mm, 0.8mm, 0.25mm }
+    { "0603P", 0, 1.55mm, 0.85mm, 0.7mm, 0.9mm, 0.8mm, 0.25mm }
+    { "0805", 1, 2mm, 1.25mm, 0.7mm, 1.3mm, 1.2mm, 0.25mm }
+    { "0805P", 0, 2mm, 1.25mm, 0.7mm, 1.3mm, 1.2mm, 0.25mm }
+    { "1206", 1, 3.2mm, 1.6mm, 0.9mm, 1.7mm, 2mm, 0.25mm }
+    { "1206P", 0, 3.2mm, 1.6mm, 0.9mm, 1.7mm, 2mm, 0.25mm }
+    { "1210", 1, 3.2mm, 2.5mm, 0.9mm, 2.5mm, 2mm, 0.25mm }
+    { "1210P", 0, 3.2mm, 2.5mm, 0.9mm, 2.5mm, 2mm, 0.25mm }
+    { "2010", 1, 5mm, 2.5mm, 1mm, 2.5mm, 3.6mm, 0.25mm }
+    { "2010P", 0, 5mm, 2.5mm, 1mm, 2.5mm, 3.6mm, 0.25mm }
+    { "2512", 1, 6.3mm, 3.2mm, 1mm, 3.2mm, 5mm, 0.25mm }
+    { "2512P", 0, 6.3mm, 3.2mm, 1mm, 3.2mm, 5mm, 0.25mm }
 
 set silk = 3mil
 
@@ -53,5 +69,5 @@ measx pad_l.w >> pad_r.ll -0.3mm
 measx pad_l.ll -> pad_l.w -0.3mm
 measy pad_l.ll >> pad_l.h 0.3mm
 measx outline.ll >> outline.ur Oy+0.3mm
-measy outline.ur >> outline.ll 0.3mm
+measy outline.ur >> outline.ll silk
 measx pad_l.ll >> pad_r.x -0.5mm

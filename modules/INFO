@@ -195,6 +195,10 @@ F: sot23
 
 # Standard rectangular passive components
 F: stdpass
+#
+# packages: 0201, 0402, 0603, 0805, 1206, 1210, 2010, 2512
+# polarized(marked the cathode) packages: starts from 0603P to 2512P
+#
 
 # SOT-323 package with counter-clockweise or clockwise pin assignment
 F: sot-323
