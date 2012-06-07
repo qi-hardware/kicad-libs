@@ -22,6 +22,20 @@ F: bga
 #   http://www.xilinx.com/support/documentation/user_guides/ug385.pdf
 #
 
+# Chip SMD Aluminum Electrolytic Capacitors
+F: c-smd
+#
+#   for example 10TZV220M6.3X8 from RUBYCON
+#
+# - c-smd-5mmx6.1mm, c-smd-6.3mmx8mm, c-smd-8mmx10.5mm, c-smd-10mmx10.5mm
+#
+#   package drawing 
+#   http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/e_TZV.pdf
+#
+#   land pattern
+#   http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/Chip_Alumi_Eng.pdf
+#
+
 # DO-214
 F: do-214
 #
