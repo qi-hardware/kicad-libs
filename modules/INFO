@@ -36,6 +36,18 @@ F: c-smd
 #   http://www.rubycon.co.jp/en/catalog/e_pdfs/aluminum/Chip_Alumi_Eng.pdf
 #
 
+# Chip SMD Tantalum Capacitors
+F: c-t-smd
+#
+#   for example T520B157M006ATE070 from KEMET
+#   
+# - TC-$Case-$EIA-$Density
+#   the density is based on the conditions outlined in IPC standard 7351 (IPC-7351).
+#
+#   package drawing ( page 62 ), land pattern ( page 73 ) 
+#   http://www.kemet.com/kemet/web/homepage/kechome.nsf/vapubfiles/KEM_TC102_LOWESR.pdf/$file/KEM_TC102_LOWESR.pdf
+#
+
 # DO-214
 F: do-214
 #
