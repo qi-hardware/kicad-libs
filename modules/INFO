@@ -227,9 +227,12 @@ F: sot23
 # Standard rectangular passive components
 F: stdpass
 #
-# packages: 0201, 0402, 0603, 0805, 1206, 1210, 2010, 2512
+# packages: 0201, 0402, 0603, 0805, 1206, 1210, 1812, 2010, 2512
 # polarized(marked the cathode) packages: starts from 0603P to 2512P
 #
+# be noticed that 1812 land pattern based on a p/n: miniSMDC200F from Tycoelectronics
+# http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Catalog+Section%7FSURFACE-MOUNT%7FA1%7Fpdf%7FEnglish%7FENG_CS_SURFACE-MOUNT_A1.pdf%7FRF1410-000
+# 
 
 # SOT-323 package with counter-clockweise or clockwise pin assignment
 F: sot-323
