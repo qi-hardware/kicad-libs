@@ -1,0 +1,29 @@
+/* MACHINE-GENERATED ! */
+
+frame pad {
+	__0: vec @(x/2, y/2)
+	__1: vec @(-x/2, -y/2)
+	rpad "$n" . __0 bare
+}
+
+package "PAD_${name}_${N}x$e"
+unit mm
+
+table
+    { name, x, y }
+    { "2mm", 2mm, 0.5mm }
+    { "60x60", 60mil, 60mil }
+    { "80x80", 80mil, 80mil }
+    { "120x60", 120mil, 60mil }
+
+table
+    { ?name, e, N }
+    { "2mm", 50mil, 20 }
+    { "60x60", 0mm, 1 }
+    { "80x80", 0mm, 1 }
+    { "120x60", 0mm, 1 }
+
+loop n = 1, N
+
+__0: vec @(0mm, e*(n-1))
+frame pad .
