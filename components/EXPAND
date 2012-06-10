@@ -139,6 +139,9 @@ Electromechanical
 		SW_PUSH
 	Case
 		MH
+Sensor
+	Acceleration
+		ADXL32X
 FPGA
 	Xilinx
 		xc6slx45-2fgg484c
