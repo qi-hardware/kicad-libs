@@ -137,3 +137,4 @@ LibName65=./con
 LibName66=./hole
 LibName67=./diode
 LibName68=./powered
+LibName69=./gencon

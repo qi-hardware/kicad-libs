@@ -4,6 +4,8 @@
 # Note that we don't have the concept of a "library of everything" so far.
 #
 
+GEN = gencon.lib
+
 .PHONY:		all sch catalog view upload missing clean spotless
 
 all:		sch
@@ -11,13 +13,13 @@ all:		sch
 #		@echo "make what ? targets: sch loe"
 #		@exit 1
 
-sch:
+sch:		$(GEN)
 		eeschema `pwd`/components.sch
 
 DESCR-dcm:	*.dcm
 		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
 
-catalog catalog.pdf: EXPAND DESCR-dcm *.lib
+catalog catalog.pdf: EXPAND DESCR-dcm *.lib $(GEN)
 		genex -p -L . EXPAND DESCR-dcm >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
@@ -27,8 +29,11 @@ view:		catalog.pdf
 upload:		catalog.pdf
 		qippl catalog.pdf tmp/kicad-libs-components.pdf
 
-missing:
+missing:	$(GEN)
 		../scripts/missing-in-tree -L . EXPAND
+
+%.lib:		%.pl
+		./$< >$@ || { rm -f $@; exit 1; }
 
 #loe:
 #		./mkloe
@@ -37,4 +42,4 @@ clean:
 		rm -f DESCR-dcm
 
 spotless:	clean
-		rm -f catalog.pdf
+		rm -f catalog.pdf $(GEN)
