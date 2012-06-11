@@ -181,6 +181,14 @@ F: qfp
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0141.PDF
 #  
 
+# 3.5mm audio stereo phone jack
+F: scj368r1
+# From TI:
+#
+# - the SCJ368R1NUS0B00G data sheet, drawing
+#   http://downloads.qi-hardware.com/hardware/milkymist_one/datasheet/Audio/SCJ368R1NUS0B00G.pdf
+#
+
 # SOIC
 F: soic
 #
