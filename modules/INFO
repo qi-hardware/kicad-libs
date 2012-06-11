@@ -185,10 +185,12 @@ F: qfp
 #  
 
 # 3.5mm audio stereo phone jack
-F: scj368r1
-# From TI:
+F: phonejack
+# 
+# phonejack-${size}-${N}
+# From SCPRE:
 #
-# - the SCJ368R1NUS0B00G data sheet, drawing
+# - phonejack-3.5-5, the SCJ368R1NUS0B00G data sheet, drawing
 #   http://downloads.qi-hardware.com/hardware/milkymist_one/datasheet/Audio/SCJ368R1NUS0B00G.pdf
 #
 

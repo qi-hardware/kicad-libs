@@ -28,7 +28,7 @@ frame outline {
 	rect . __0 w
 	__2: vec @(fx, 0mm)
 	__3: vec .(0mm, -fy/2)
-	__4: vec __3(-fx, 0mm)
+	__4: vec .(-fx, 0mm)
 	line __3 . w
 	__5: vec __2(0mm, fy/2)
 	line . __3 w
@@ -39,28 +39,14 @@ frame outline {
 	__9: vec @(-9.3mm, -1.15mm)
 }
 
-package "SCJ368R1"
+package "phonejack-${size}-${N}"
 unit mm
 
-set roundx = 0.6mm
-
-set roundy = 2mm
-
-set ratio = 1.8
-
-set rty = 4.9mm
-
-set rby = 8.2mm-rty
-
-set fx = 4mm
-
-set rx = 14mm
-
-set fy = 6mm
+table
+    { size, N, roundx, roundy, ratio, rty, rby, fx, fy, rx, diff }
+    { 3.5, 5, 0.6mm, 2mm, 1.8, 4.9mm, 8.2mm-rty, 4mm, 6mm, 14mm, 0.85mm }
 
 set w = 5mil
-
-set diff = 0.85mm
 
 frame pads @
 frame outline @
