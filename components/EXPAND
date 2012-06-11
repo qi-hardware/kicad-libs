@@ -27,6 +27,87 @@ Codec
 	Audio
 		wm9707scft/v
 Connector
+	Generated
+		conn_1
+		conn_2
+		conn_3
+		conn_4
+		conn_5
+		conn_6
+		conn_7
+		conn_8
+		conn_9
+		conn_10
+		conn_11
+		conn_12
+		conn_13
+		conn_14
+		conn_15
+		conn_16
+		conn_17
+		conn_18
+		conn_19
+		conn_20
+		conn_21
+		conn_22
+		conn_23
+		conn_24
+		conn_25
+		conn_26
+		conn_27
+		conn_28
+		conn_29
+		conn_30
+		conn_31
+		conn_32
+		conn_33
+		conn_34
+		conn_35
+		conn_36
+		conn_37
+		conn_38
+		conn_39
+		conn_40
+		conn_1x2
+		conn_2x2
+		conn_3x2
+		conn_4x2
+		conn_5x2
+		conn_6x2
+		conn_7x2
+		conn_8x2
+		conn_9x2
+		conn_10x2
+		conn_11x2
+		conn_12x2
+		conn_13x2
+		conn_14x2
+		conn_15x2
+		conn_16x2
+		conn_17x2
+		conn_18x2
+		conn_19x2
+		conn_20x2
+		conn_21x2
+		conn_22x2
+		conn_23x2
+		conn_24x2
+		conn_25x2
+		conn_26x2
+		conn_27x2
+		conn_28x2
+		conn_29x2
+		conn_30x2
+		conn_31x2
+		conn_32x2
+		conn_33x2
+		conn_34x2
+		conn_35x2
+		conn_36x2
+		conn_37x2
+		conn_38x2
+		conn_39x2
+		conn_40x2
 	Generic
 		TESTPOINT
 		conn_2
@@ -58,6 +139,9 @@ Electromechanical
 		SW_PUSH
 	Case
 		MH
+Sensor
+	Acceleration
+		ADXL32X
 FPGA
 	Xilinx
 		xc6slx45-2fgg484c

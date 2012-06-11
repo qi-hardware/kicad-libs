@@ -111,6 +111,9 @@ F: mini_usb_b
 # Solder pads and test points
 F: pads
 
+# "pads" in typical array formations
+F: pads-array
+
 # "Generic" simple QFN
 F: qfn
 #

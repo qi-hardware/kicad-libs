@@ -1,4 +1,5 @@
-MODULES=8_10-card fiducial mini-usb pads qfn qfp sot sot-323 ssop stdpass \
+MODULES=8_10-card bat-clip-aa-th \
+        fiducial mini-usb pads pads-array qfn qfp sot sot-323 ssop stdpass \
         usb-a-pcb usb_a_plug_smt
 
 .SUFFIXES:	.fpd .mod
