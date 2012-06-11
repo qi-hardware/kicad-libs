@@ -8,7 +8,7 @@ GEN = gencon.lib
 
 .PHONY:		all sch catalog view upload missing clean spotless
 
-all:		sch
+all:		$(GEN)
 
 #		@echo "make what ? targets: sch loe"
 #		@exit 1
