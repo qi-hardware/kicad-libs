@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: Sun Jun 10 11:27:51 2012
+EESchema-LIBRARY Version 2.3  Date: Mon Jun 11 07:17:58 2012
 #encoding utf-8
 #
 # ADXL32X
@@ -24,6 +24,7 @@ X Yout 10 750 -50 300 L 50 50 1 1 O
 X NC 11 750 50 300 L 50 50 1 1 N
 X Xout 12 750 150 300 L 50 50 1 1 O
 X NC 13 150 750 300 D 50 50 1 1 N
+X PAD 17 350 -750 300 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
