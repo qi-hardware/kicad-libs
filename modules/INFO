@@ -194,6 +194,13 @@ F: phonejack
 #   http://downloads.qi-hardware.com/hardware/milkymist_one/datasheet/Audio/SCJ368R1NUS0B00G.pdf
 #
 
+# RJ45, 8 pins, two leds
+F: rj45
+# 
+# - RJ45-8-LED, the 48025-0002 data sheet, drawing, from MOLEX
+#   http://www.molex.com/pdm_docs/sd/480250002_sd.pdf
+#
+
 # SOIC
 F: soic
 #
