@@ -20,6 +20,14 @@ frame pins_bottom {
 	frame pin .
 }
 
+frame npth {
+	set r = 1mm
+
+	__0: vec @(r/2, r/2)
+	__1: vec @(-r/2, -r/2)
+	hole . __0
+}
+
 frame pins {
 	set y = (gap+py)/2
 
@@ -31,9 +39,10 @@ frame pins {
 	frame pins_top .
 	__1: vec @(0mm, -y)
 	frame pins_bottom .
-}
-
-frame npth {
+	__2: vec @(-(N/2-1)/2*pitch+0.5*pitch, 0mm)
+	frame npth .
+	__3: vec @((N/2-1)/2*pitch-0.5*pitch, 0mm)
+	frame npth .
 }
 
 frame outline {
@@ -47,24 +56,41 @@ frame outline {
 	circ __2 . w
 }
 
-package "${n}x2pins-${pitch}"
+package "he-shrouded-${n}x2pins-${pitch}"
 unit auto
 
 table
-    { N, n, pitch, px, py, gap, H, base, W }
-    { 4, N/2, 2mm, 1mm, 2.75mm, 1.5mm, 6.3mm, 6.65mm, base+(N-4)*1mm }
-    { 14, N/2, 2mm, 1mm, 2.75mm, 1.5mm, 6.3mm, 6.65mm, base+(N-4)*1mm }
+    { N, n }
+    { 4, N/2 }
+    { 6, N/2 }
+    { 14, N/2 }
 
 set w = 5mil
+
+set px = 1mm
+
+set py = 2.75mm
+
+set pitch = 2mm
+
+set gap = 1.5mm
+
+set H = 6.3mm
+
+set base = 6.65mm
+
+set W = base+(N-4)*1mm
 
 frame outline @
 frame pins @
 measy outline.__1 >> outline.__0 -(W+px)
-measx outline.__1 >> outline.__0 H+py/2+4*w
+measx outline.__1 >> outline.__0 H+py/2+6*w
 measy pin.__1 -> pin.__0 px/2
 measy pin.__1 >> pin.__0 -(W/2+pitch)
 measy pin.__0 >> pin.__1 -(pitch+px/2)
 measx pins_top.__0 -> pins_top.__0 px/2
 measy pins.__0 << pins_bottom.__0 -3*px/2
 measx pin.__1 -> pin.__0 -4*w
-meas pins_top.__0 >> pins_top.__0 py/2+4*w
+meas pins_top.__0 >> pins_top.__0 py/2+7*w
+measy npth.__1 -> npth.__0 0.5mm
+meas pins.__2 >> pins.__3 gap/2+py+4*w
