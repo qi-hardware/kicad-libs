@@ -71,6 +71,13 @@ F: eus
 # Fiducial (1 mm copper pad, 2 mm solder mask clearance)
 F: fiducial
 
+# Header with outline for shrouded wafer for example, SMD type
+F: he-shrouded
+#
+# - ${n}x2pins-${pitch}: for example Molex: the 87832-1420 data sheet, package drawing
+#   http://www.molex.com/pdm_docs/sd/878321420_sd.pdf
+#
+
 # IR Receiver Module
 F: ir
 #
