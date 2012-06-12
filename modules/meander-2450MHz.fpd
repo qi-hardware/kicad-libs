@@ -72,7 +72,7 @@ frame antenna {
 	frame via @
 }
 
-package "MEANDER-2.4GHz-$orient-$pcb"
+package "MEANDER-2450MHz-$orient-$pcb"
 unit mm
 allow touch
 
