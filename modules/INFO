@@ -386,3 +386,6 @@ F: xtal-4
 #   http://www.abracon.com/Resonators/ABMM2.pdf
 #
 
+# Small Size 2.4 GHz PCB Antenna
+# http://focus.ti.com/lit/an/swra117d/swra117d.pdf
+F: meander-2.4GHz
