@@ -1,5 +1,5 @@
 MODULES=8_10-card bat-clip-aa-th \
-        fiducial meander-2.4GHz mini-usb pads pads-array \
+        fiducial meander-2450MHz mini-usb pads pads-array \
 	qfn qfp sot sot-323 ssop stdpass \
         usb-a-pcb usb_a_plug_smt
 
