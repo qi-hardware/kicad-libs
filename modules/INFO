@@ -374,6 +374,14 @@ F: xlr-socket
 #   http://www.neutrik.us/en-us/xlr/a-series/nc3fah1
 #
 
+# XLR, PLUG, PANEL, HORIZ/PCB
+F: xlr-plug
+#
+# - XLR-PANEL-HORIZ/PCB-PLUG, package drawing, land pattern
+#   for example NEUTRIK NC3MAH
+#   http://www.neutrik.us/en-us/xlr/a-series/nc3mah
+#
+
 # 2-pins rectangular smd xtal
 F: xtal-2
 #
