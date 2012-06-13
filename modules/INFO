@@ -112,6 +112,10 @@ F: mdip
 #
 #   http://www.fairchildsemi.com/dwg/N0/N08H.pdf
 
+# Small Size 2.4 GHz PCB Antenna
+# http://focus.ti.com/lit/an/swra117d/swra117d.pdf
+F: meander-2.4GHz
+
 # Mini-USB B receptable (SMT; almost generic)
 F: mini_usb_b
 
@@ -362,6 +366,14 @@ F: usb_a_plug_smt
 # USB 2.0 from usb_20_040908, page 99
 F: usb-a-pcb
 
+# XLR, SOCKET, PANEL, HORIZ/PCB
+F: xlr-socket
+#
+# - XLR-PANEL-HORIZ/PCB-SOCKET, package drawing, land pattern
+#   for example NEUTRIK NC3FAH1
+#   http://www.neutrik.us/en-us/xlr/a-series/nc3fah1
+#
+
 # 2-pins rectangular smd xtal
 F: xtal-2
 #
@@ -386,6 +398,4 @@ F: xtal-4
 #   http://www.abracon.com/Resonators/ABMM2.pdf
 #
 
-# Small Size 2.4 GHz PCB Antenna
-# http://focus.ti.com/lit/an/swra117d/swra117d.pdf
-F: meander-2.4GHz
+
