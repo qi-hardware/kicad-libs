@@ -360,6 +360,14 @@ F: tssop5
 #   could use a land pattern of pad length to be 0.7 mm.
 #
 
+# USB DUAL STACKED A RECEPT CON R/A
+# F: usb-a-dual-recept-r
+#
+# - USB-A-DUAL-RECEPT-RA, package drawing, land pattern
+#   for example MOLEX 67298-4090
+#   http://www.molex.com/pdm_docs/sd/672984090_sd.pdf
+#
+
 # USB A plug for SMT
 #
 # Note: the signal pads are enlarged by 0.2 mm and their center is shifted by
