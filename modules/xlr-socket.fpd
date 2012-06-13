@@ -5,11 +5,11 @@ frame outline {
 	__1: vec @(leftx, edgey)
 	rect __0 . w
 	__2: vec @(panelcutoutx/2, edgey+fronty)
-	__4: vec __2(0mm, -fronty)
+	__4: vec .(0mm, -fronty)
 	line __2 . w
 	__3: vec @(-panelcutoutx/2, edgey+fronty)
 	line __2 . w
-	__5: vec __3(0mm, -fronty)
+	__5: vec .(0mm, -fronty)
 	line __3 . w
 	__6: vec @(screwx/2, edgey)
 	__7: vec @(-screwx/2, edgey)
@@ -32,7 +32,7 @@ set r1 = 1.6mm
 
 set r3 = 1.2mm
 
-set factor = 1.5
+set factor = 1.6
 
 set fronty = 2.7mm
 
@@ -75,8 +75,8 @@ rpad "2" . __16
 __18: vec __2(factor*r1/2, -factor*r1/2)
 __19: vec __2(-factor*r1/2, factor*r1/2)
 rpad "1" . __18
-__20: vec __1(factor*r1/2, -factor*r1/2)
-__21: vec __1(-factor*r1/2, factor*r1/2)
+__20: vec __1(factor*r3/2, -factor*r3/2)
+__21: vec __1(-factor*r3/2, factor*r3/2)
 rpad "3" . __20
 __22: vec __3(0mm, fronty)
 frame outline @
