@@ -48,6 +48,14 @@ F: c-t-smd
 #   http://www.kemet.com/kemet/web/homepage/kechome.nsf/vapubfiles/KEM_TC102_LOWESR.pdf/$file/KEM_TC102_LOWESR.pdf
 #
 
+# SOCKET, DIN, PCB, 180, 5PIN, 5WAYS, 45 DEGREE
+F: din-5
+#
+# - DIN-SOCKET-PCB-5-45, package drawing, land pattern
+#   for example DELTRON 671-0500
+#   http://www.farnell.com/datasheets/65433.pdf
+#
+
 # DO-214
 F: do-214
 #
