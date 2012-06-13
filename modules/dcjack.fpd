@@ -1,0 +1,75 @@
+/* MACHINE-GENERATED ! */
+
+frame outline {
+	__0: vec @(0mm, W/2)
+	__4: vec __0(p2x+px/2, 0mm)
+	line __0 . w
+	__1: vec @(L, -W/2)
+	__5: vec __1(0mm, W/2-factor*py/2)
+	line . __1 w
+	__2: vec @(fronthead, -W/2)
+	rect __0 . w
+	line __1 . w
+	__3: vec @(L, W/2)
+	__6: vec __3(0mm, -(W/2-factor*py/2))
+	line __3 . w
+	__7: vec __3(-factor*px/2, 0mm)
+	line . __3 w
+}
+
+package "DCJACK-${L}x${W}"
+unit auto
+
+set p1x = 13.8mm
+
+set p2x = 7.5mm
+
+set p3x = 10.8mm
+
+set p3y = 5mm
+
+set L = 14.4mm
+
+set W = 9mm
+
+set px = 1mm
+
+set py = 3.2mm
+
+set factor = 1.6
+
+set fronthead = 3.5mm
+
+set w = 5mil
+
+__0: vec @(p2x, 0mm)
+__1: vec @(p3x, 0mm)
+__11: vec __1(0mm, p3y)
+__2: vec @(p1x, 0mm)
+__3: vec __0(px/2, py/2)
+__4: vec __0(-px/2, -py/2)
+hole . __3
+__5: vec __2(px/2, py/2)
+__6: vec __2(-px/2, -py/2)
+hole . __5
+__7: vec __0(-factor*px/2, factor*py/2)
+__8: vec __2(-factor*px/2, factor*py/2)
+__9: vec __2(factor*px/2, -factor*py/2)
+rpad "1" __8 .
+__10: vec __0(factor*px/2, -factor*py/2)
+rpad "2" __7 .
+__12: vec .(py/2, px/2)
+__13: vec __11(-py/2, -px/2)
+hole . __12
+__14: vec __11(-factor*py/2, factor*px/2)
+__15: vec __11(factor*py/2, -factor*px/2)
+rpad "3" __14 .
+frame outline @
+measx outline.__0 >> __0 1mm
+measx outline.__0 >> __1 1.5mm
+measx outline.__0 >> __2 2mm
+measx __4 >> __3 -py/2
+measy __4 >> __3 factor*px/2
+meas outline.__1 >> outline.__3 -1mm
+meas outline.__0 >> outline.__3 2.5mm
+measx outline.__0 >> outline.__2 0.6mm

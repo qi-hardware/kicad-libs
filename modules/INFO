@@ -48,6 +48,14 @@ F: c-t-smd
 #   http://www.kemet.com/kemet/web/homepage/kechome.nsf/vapubfiles/KEM_TC102_LOWESR.pdf/$file/KEM_TC102_LOWESR.pdf
 #
 
+# SOCKET, PCB, DC POWER JACK
+F: dcjack
+#
+# - DCJACK-${L}x${W}, package drawing, land pattern
+#   for example SCPRE SCD441CPS011B00G
+#   http://downloads.qi-hardware.com/hardware/milkymist_one/datasheet/Supply/SCD441CPS011B00G.pdf
+#
+
 # SOCKET, DIN, PCB, 180, 5PIN, 5WAYS, 45 DEGREE
 F: din-5
 #
