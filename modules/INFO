@@ -229,6 +229,14 @@ F: phonejack
 #   http://downloads.qi-hardware.com/hardware/milkymist_one/datasheet/Audio/SCJ368R1NUS0B00G.pdf
 #
 
+# CONN RCA JACK 3-CONs RIGHT ANGLE
+F: rca-3-ra
+#
+# - RCA-3-RA, package drawing, land pattern
+#   for example SCPRE SCP662CNS257U00G
+#   http://downloads.qi-hardware.com/hardware/milkymist_one/datasheet/VideoIn/SCP662CNS257U00G.pdf
+#
+
 # RJ45, 8 pins, two leds
 F: rj45
 # 
