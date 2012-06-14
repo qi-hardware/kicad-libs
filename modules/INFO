@@ -13,6 +13,14 @@ F: 8_10-card
 # Note: should generalize this for AAA and maybe also larger sizes
 F: bat-clip-aa-th
 
+# 8:10 Card Socket Connectors RIGHT ANGLE SMT Hinge Type 
+F: 8_10-socket-ra
+#
+# - 8:10-SOCKET-RA, package drawing, land pattern
+#   for example MOLEX 500901-0801
+#   http://www.molex.com/pdm_docs/sd/5009010801_sd.pdf
+#
+
 # BGA
 F: bga
 # - 484-Pin FineLine BGA(FBGA), from Altera
