@@ -77,6 +77,14 @@ F: do-214
 #   http://www.fairchildsemi.com/dwg/DO/DO214AC.pdf
 #
 
+# CONN RECEPT ANALOG DIGITAL DVI RIGHT ANGLE
+F: dvi-recept-ra
+#
+# - DVI-RECEPT-RA, package drawing, land pattern
+#   for example MOLEX 74320-1004
+#   http://www.molex.com/pdm_docs/sd/743201004_sd.pdf
+#
+
 # EUS (R-PDSS-T6)
 F: eus
 #
