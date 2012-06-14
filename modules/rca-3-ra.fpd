@@ -88,7 +88,7 @@ frame outline {
 	rect . __22 w
 }
 
-package "RCA-3"
+package "RCA-3-RA"
 unit mm
 
 set gap = 4.5mm
