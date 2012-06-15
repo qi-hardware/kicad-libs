@@ -329,6 +329,17 @@ N: mmst3904
 # http://www.nxp.com/packages/SOT341-1.html
 # http://www.nxp.com/documents/reflow_soldering/SSOP-TSSOP-VSO-REFLOW.pdf
 
+# mechanical mounting holes
+F: spacer
+#
+# - SPACER-$nominal-$disc-$keepout$type
+#   nominal --> hole dia.
+#   disc    --> copper dia.
+#   keepout --> keepout dia.
+#   type    --> "-BARE" : no copper area
+#           --> ""      : with copper area
+#
+
 # "Generic" simple SSOP
 F: ssop
 #
