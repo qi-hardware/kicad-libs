@@ -103,6 +103,13 @@ F: eus
 # Fiducial (1 mm copper pad, 2 mm solder mask clearance)
 F: fiducial
 
+# 2 rows of Header with outline for through hole type
+F: he-2row-dip
+#
+# - HE-${n}x2-${px}: for example FCI: the 87606-310LF data sheet, package drawing
+#   http://portal.fciconnect.com/res/en/pdffiles/doc_search/87606.pdf
+#
+
 # Header with outline for shrouded wafer for example, SMD type
 F: he-shrouded
 #
