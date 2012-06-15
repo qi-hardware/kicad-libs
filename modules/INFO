@@ -339,6 +339,14 @@ F: ssop
 #   http://www.nxp.com/packages/SOT402-1.html
 #   http://www.nxp.com/documents/reflow_soldering/sot402-1_fr.pdf
 
+# SWITCH, TACTILE, SPST, R/A, THROUGH HOLE
+F: tactile-sw-spst-ra-dip.fpd
+#
+# - TACTIL-SW-${TYPE}-RA-${A}-${B}, package drawing, land pattern
+#   for example TYCO ELECTRONICS FSMRA2JH
+#   http://www.farnell.com/datasheets/51343.pdf
+#
+
 # "Generic" simple TO-252, TO-263
 F: to
 #
