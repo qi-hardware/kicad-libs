@@ -155,6 +155,15 @@ F: mdip
 # http://focus.ti.com/lit/an/swra117d/swra117d.pdf
 F: meander-2.4GHz
 
+# Microphone, through hole type, bent pins
+F: mic-ra-dip
+#
+# - MIC-RA-DIP-${Dia}x${Height}: for example PRO SIGNAL the MP33125 data sheet, package drawing
+#   http://www.farnell.com/datasheets/359234.pdf
+#   be noted that placements of two pins based on bending pins to suitable right angle purpose.
+#   the py# is the option to change to distance that you want.
+#
+
 # Mini-USB B receptable (SMT; almost generic)
 F: mini_usb_b
 
