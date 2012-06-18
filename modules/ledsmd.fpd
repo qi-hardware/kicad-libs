@@ -39,7 +39,7 @@ frame outline {
 	__7: vec @(-Ox/2, Oy/2)
 	line ll . w
 	line . __4 w
-	__12: vec @(-Ox/2-2*clear, 0mm)
+	__12: vec @(Ox/2+2*clear, 0mm)
 	__13: vec .(0mm, Oy/2)
 	__14: vec __12(0mm, -Oy/2)
 	line __13 . w
@@ -62,7 +62,7 @@ frame pads @
 frame outline @
 measx pad_l.w >> pad_r.ll -0.5mm
 measx pad_l.ll -> pad_l.w -0.5mm
-measy pad_l.ll >> pad_l.h 1mm
+measy pad_l.ll >> pad_l.h 0.5mm
 measx outline.ll >> outline.ur Oy+1mm
-measy outline.ur >> outline.ll 0.3mm
+measy outline.ur >> outline.ll -Ox-1mm
 measx pad_l.ll >> pad_r.x -1mm
