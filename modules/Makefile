@@ -1,7 +1,21 @@
-MODULES=8_10-card bat-clip-aa-th \
-        fiducial meander-2450MHz mini-usb pads pads-array \
-	qfn qfp sot sot-323 ssop stdpass \
-        usb-a-pcb usb_a_plug_smt
+MODULES=8_10-card 8_10-socket-ra \
+	bat-clip-aa-th bga \
+	c-smd c-t-smd \
+	dcjack din-5 dip do-214 dvi-recept-ra \
+	eus \
+        fiducial \
+	he-2row-dip he-shrouded \
+	ir \
+	ledsmd \
+	mdip meander-2450MHz mic-ra-dip mini-usb\
+	pads pads-array phonejack \
+	qfn qfp \
+	rca-3-ra rj45 \
+	soic sot23 spacer sot sot-323 ssop stdpass \
+	tactile-sw-spst-ra-dip to tsop tssop5 \
+	usb-a-dual-recept-r usb-a-pcb usb_a_plug_smt \
+	xlr-plug xlr-socket \
+ 	xtal-2 xtal-4 \
 
 .SUFFIXES:	.fpd .mod
 .PHONY:		all clean
