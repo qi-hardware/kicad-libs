@@ -178,6 +178,11 @@ F: mini_usb_b
 
 # Solder pads and test points
 F: pads
+#
+# - PAD_${type}_$size
+#   type --> C: circle, R: round, S: square
+#   size --> dimension
+#
 
 # "pads" in typical array formations
 F: pads-array

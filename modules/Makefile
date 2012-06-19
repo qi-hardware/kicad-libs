@@ -4,7 +4,7 @@ MODULES=8_10-card 8_10-socket-ra \
 	dcjack din-5 dip do-214 dvi-recept-ra \
 	eus \
         fiducial \
-	he-2row-dip he-shrouded \
+	header he-2row-dip he-shrouded \
 	ir \
 	ledsmd \
 	mdip meander-2450MHz mic-ra-dip mini-usb\
