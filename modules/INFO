@@ -290,6 +290,8 @@ F: soic
 F: sot
 # experimental generic SOT footprint; currently only for
 #
+# - SOT-235, for example, TI SOT-23, DBV(R-PDSO-G5) package
+#   http://www.ti.com/lit/ds/symlink/tps76301.pdf
 # - SOT-323 aka SC-70
 #   http://www.onsemi.com/pub_link/Collateral/BAV99WT1-D.PDF
 # - SOT-363 aka SC-88 aka SC-70-6
