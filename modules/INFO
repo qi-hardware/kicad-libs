@@ -110,6 +110,15 @@ F: he-2row-dip
 #   http://portal.fciconnect.com/res/en/pdffiles/doc_search/87606.pdf
 #
 
+# generic header through hole type
+F: header
+#
+# - HDR-${C}x${R}-$P
+#   C --> column number
+#   R --> row number
+#   P --> pitch
+#
+
 # Header with outline for shrouded wafer for example, SMD type
 F: he-shrouded
 #
