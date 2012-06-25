@@ -241,7 +241,7 @@ F: qfp
 # according to MAXIM web: http://www.maxim-ic.com/design/packaging/
 # the LQPF48/TQFP48 referred to the same package drawing and land pattern
 #
-# - LQFP48, TQFP48: C48 -> package drawing
+# - LQFP48, TQFP48: C48 -> ackage drawping
 #   http://pdfserv.maxim-ic.com/package_dwgs/21-0054.PDF
 #	
 # - LQFP48, TQFP48: C48 -> package land pattern
@@ -256,6 +256,20 @@ F: qfp
 # - LQFP64, C64 -> package land pattern
 #   http://pdfserv.maxim-ic.com/land_patterns/90-0141.PDF
 #  
+# comparisons of pads dimension of WM9707, KS8001, ADV7125
+# 	
+#	MIN	NOM	MAX	chip	
+# "b" 	0.17mm	0.22mm	0.27mm	WM9707
+# 	0.19mm	0.22mm	0.25mm	KS8001	
+# 	0.17mm	0.22mm	0.27mm	ADV7125
+# "L"	0.45mm	0.6mm	0.75mm	WM9707
+#	0.5mm	0.6mm	0.7mm	KS8001
+#	0.45mm	0.6mm	0.75mm	ADV7125
+#
+# so a combination of both ackage drawping and land pattern from Maxim
+# the lad pattern for QFP48 is 0.27mm for "b", 1.45mm for "L"
+# it should be safe.
+#
 
 # 3.5mm audio stereo phone jack
 F: phonejack
