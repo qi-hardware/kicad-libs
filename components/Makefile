@@ -20,7 +20,7 @@ DESCR-dcm:	*.dcm
 		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
 
 catalog catalog.pdf: EXPAND DESCR-dcm *.lib $(GEN)
-		genex -p -L . EXPAND DESCR-dcm >catalog.pdf || \
+		gencat -p -L . EXPAND DESCR-dcm >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
 view:		catalog.pdf
