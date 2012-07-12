@@ -36,7 +36,7 @@ scan_fped()
 
 trap "rm -f _tmp1 _tmp2" 0
 
-gencat -D "$@" >_tmp1 || exit
+genkicat -D "$@" >_tmp1 || exit
 
 ext=.lib
 

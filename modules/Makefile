@@ -26,7 +26,7 @@ all:		$(MODULES:%=%.mod)
 		fped -k $< $@
 
 catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd)
-		gencat -F -p $(MODULES:%=-l %.fpd) HIERARCHY DESCR \
+		genkicat -F -p $(MODULES:%=-l %.fpd) HIERARCHY DESCR \
 		  >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
