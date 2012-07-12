@@ -18,7 +18,7 @@ MODULES=8_10-card 8_10-socket-ra \
  	xtal-2 xtal-4 \
 
 .SUFFIXES:	.fpd .mod
-.PHONY:		all catalog view upload clean
+.PHONY:		all catalog view upload missing clean
 
 all:		$(MODULES:%=%.mod)
 
@@ -41,3 +41,6 @@ view:		catalog.pdf
 
 upload:		catalog.pdf
 		qippl catalog.pdf tmp/kicad-libs-modules.pdf
+
+missing:
+		../scripts/missing-in-tree -F $(MODULES:%=-l %.fpd) HIERARCHY
