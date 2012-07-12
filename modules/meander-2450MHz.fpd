@@ -8,6 +8,12 @@ frame via {
 	hole . __0
 }
 
+frame tail {
+	loop if = 1, have_tail
+	__0: vec @(d*tail, W2)
+	pad "X" @ .
+}
+
 frame antenna {
 	set w = 5mil
 
@@ -61,8 +67,7 @@ frame antenna {
 	__31: vec .(-d*W2, 0mm)
 	__32: vec __30(0mm, -L1)
 	pad "X" __31 .
-	__38: vec .(d*tail, W2)
-	pad "X" __32 .
+	frame tail .
 	__35: vec __29(d*(D3+tail), D2)
 	line . __34 w
 	__36: vec .(0mm, -(D2+W2+L6-D4))
@@ -89,9 +94,9 @@ table
     { 0.5mm, 0.3mm, 0.3mm, 0.5mm, 1.4mm, 1.7mm }
 
 table
-    { pcb, tail }
-    { "0.8mm", 3*W2 }
-    { "1.0mm", 0mm }
+    { pcb, have_tail, tail }
+    { "0.8mm", 1, 3*W2 }
+    { "1.0mm", 0, 0mm }
 
 table
     { orient, d }
@@ -128,4 +133,4 @@ measy antenna.__12 >> antenna.__7 0.5mm
 measy antenna.__32 >> antenna.__30 -1mm-tail
 measx antenna.__34 >> antenna.__35 1.5mm-D2
 measy antenna.__5 >> antenna.__34 1.5mm-D1
-measx antenna.__32 >> antenna.__38 -1mm
+measx antenna.__32 >> tail.__0 -1mm
