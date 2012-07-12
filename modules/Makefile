@@ -18,15 +18,9 @@ MODULES=8_10-card 8_10-socket-ra \
  	xtal-2 xtal-4 \
 
 .SUFFIXES:	.fpd .mod
-.PHONY:		all catalog view upload missing clean
+.PHONY:		all catalog view upload missing clean spotless
 
 all:		$(MODULES:%=%.mod)
-
-clean:
-		rm -f *~*.fpd
-
-spotless:	clean
-		rm -f $(MODULES:%=%.mod)
 
 .fpd.mod:
 		fped -k $< $@
@@ -44,3 +38,10 @@ upload:		catalog.pdf
 
 missing:
 		../scripts/missing-in-tree -F $(MODULES:%=-l %.fpd) HIERARCHY
+
+clean:
+		rm -f *~*.fpd
+
+spotless:	clean
+		rm -f $(MODULES:%=%.mod)
+
