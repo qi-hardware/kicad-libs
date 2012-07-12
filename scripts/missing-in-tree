@@ -28,7 +28,7 @@ scan_lib()
 
 trap "rm -f _tmp1 _tmp2" 0
 
-genex -D "$@" >_tmp1 || exit
+gencat -D "$@" >_tmp1 || exit
 
 >_tmp2
 while [ "$1" ]; do
