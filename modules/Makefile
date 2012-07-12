@@ -31,8 +31,8 @@ spotless:	clean
 .fpd.mod:
 		fped -k $< $@
 
-catalog catalog.pdf: HIERARCHY *.fpd
-		gencat -F -p -L . HIERARCHY >catalog.pdf || \
+catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd)
+		gencat -F -p $(MODULES:%=-l %.fpd) HIERARCHY >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
 view:		catalog.pdf
