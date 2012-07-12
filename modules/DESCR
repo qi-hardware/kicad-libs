@@ -1,0 +1,7 @@
+USB-A-PCB: Figure 6-9 (page 99) of the
+  Universal Serial Bus Specification;
+  Revision 2.0; April 27, 2000
+USB-A-PCB: http://www.poweredusb.org/pdf/usb20.pdf
+# unofficial copy of the specification. We reference it here because the
+# original is in a ZIP, making access less convenient:
+# http://www.usb.org/developers/docs/usb_20_071012.zip
