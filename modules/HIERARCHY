@@ -306,8 +306,8 @@ Structure
 	Antenna
 		MEANDER-2450MHz-right-0.8mm
 		MEANDER-2450MHz-left-0.8mm
-	#	MEANDER-2450MHz-right-1.0mm
-	#	MEANDER-2450MHz-left-1.0mm
+		MEANDER-2450MHz-right-1.0mm
+		MEANDER-2450MHz-left-1.0mm
 Mechanical
 	FIDUCIAL
 	Spacer
