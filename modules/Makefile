@@ -18,7 +18,7 @@ MODULES=8_10-card 8_10-socket-ra \
  	xtal-2 xtal-4 \
 
 .SUFFIXES:	.fpd .mod
-.PHONY:		all clean
+.PHONY:		all catalog view upload clean
 
 all:		$(MODULES:%=%.mod)
 
@@ -30,3 +30,13 @@ spotless:	clean
 
 .fpd.mod:
 		fped -k $< $@
+
+catalog catalog.pdf: HIERARCHY *.fpd
+		gencat -F -p -L . HIERARCHY >catalog.pdf || \
+		  { rm -f catalog.pdf; exit 1; }
+
+view:		catalog.pdf
+		$${DSV_PDFVIEWER:-xpdf} catalog.pdf
+
+upload:		catalog.pdf
+		qippl catalog.pdf tmp/kicad-libs-modules.pdf
