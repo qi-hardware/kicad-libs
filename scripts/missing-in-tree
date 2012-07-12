@@ -1,6 +1,6 @@
 #!/bin/sh -e
 #
-# missing-in-tree - List components present in libraries but not in the tree
+# missing-in-tree - List items present in libraries but not in the tree
 #
 # Copyright 2012 by Werner Almesberger
 #
@@ -13,15 +13,23 @@
 
 usage()
 {
-	echo "usage: $0 [-L libdir ...] [-l lib ...] hierarchy" 1>&2
+	echo "usage: $0 [-F] [-L libdir ...] [-l lib ...] hierarchy" 1>&2
 	exit 1
 }
 
 
-scan_lib()
+scan_comp()
 {
 	for n in "$@"; do
 		sed '/^DEF ~\?/{s///;s/ .*//;p;};d' <$n >>_tmp2
+	done
+}
+
+
+scan_fped()
+{
+	for n in "$@"; do
+		fped -k $n - | sed '/^\$MODULE /s///p;d' >>_tmp2
 	done
 }
 
@@ -30,14 +38,21 @@ trap "rm -f _tmp1 _tmp2" 0
 
 gencat -D "$@" >_tmp1 || exit
 
+ext=.lib
+
 >_tmp2
 while [ "$1" ]; do
 	case "$1" in
+	-F)	ext=.fpd;;
 	-L)	shift
-		[ "`echo \"$1\"/*.lib`" = "$1/*.lib" ] ||
-		    scan_lib "$1"/*.lib;;
+		[ "`echo \"$1\"/*.$ext`" = "$1/*.$ext" ] ||
+		    scan_lib "$1"/*.$ext;;
 	-l)	shift
-		scan_lib "$1";;
+		if [ $ext = .lib ]; then
+			scan_comp "$1"
+		else
+			scan_fped "$1"
+		fi;;
 	-*)	usage;;
 	*)	break;;
 	esac
