@@ -96,7 +96,7 @@ set w = 5mil
 frame pads6 @
 frame pads3 @
 frame pads5 @
-measx outline.__2 >> outline.__0 1mm
+measx outline.__2 >> outline.__0 (cy-E+py)/2+0.5mm
 measy outline.__3 >> outline.__2 0.5mm
 measx pad.__1 -> pad.__0 -0.5mm
 measy pad.__1 -> pad.__0 0.2mm
