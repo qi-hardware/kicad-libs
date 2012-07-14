@@ -71,3 +71,8 @@ loop side = 2, 20
 
 frame outline @
 frame pins @
+measx pin.__1 -> pin.__0 -1mm
+measx pin.__2 -> pin.__3 -3mm
+measy pins.__2 -> pins.__1 3mm
+measy outline.__1 >> outline.__0 -(side-1)*pitch-3mm
+measx outline.__1 >> outline.__0 -4.5mm
