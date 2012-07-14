@@ -66,3 +66,4 @@ frame outline @
 measy outline.__1 >> outline.__0 1mm
 measx pin.__2 -> pin.__0 -P/2-1mm
 measx pin.__3 -> pin.__1 (R-0.5)*P+1mm
+measx outline.__1 >> outline.__0 -2.2mm
