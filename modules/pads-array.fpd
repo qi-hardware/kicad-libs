@@ -7,7 +7,7 @@ frame pad {
 }
 
 package "PAD_${name}_${N}x$e"
-unit mm
+unit auto
 
 table
     { name, x, y }
@@ -19,9 +19,9 @@ table
 table
     { ?name, e, Nmax }
     { "2mm", 50mil, 20 }
-    { "60x60", 0mm, 1 }
-    { "80x80", 0mm, 1 }
-    { "120x60", 0mm, 1 }
+    { "60x60", 100mil, 10 }
+    { "80x80", 100mil, 10 }
+    { "120x60", 100mil, 10 }
 
 loop N = 2, Nmax
 
@@ -29,3 +29,7 @@ loop n = 1, N
 
 __0: vec @(0mm, e*(n-1))
 frame pad .
+measx pad.__1 -> pad.__0 -1mm
+measy pad.__1 -> pad.__0 1mm
+measy __0 >> __0 -x/2-2mm
+measy __0 -> __0 -x/2-1mm
