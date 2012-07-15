@@ -7,10 +7,10 @@ frame hole {
 }
 
 frame pin {
-	frame hole @
 	__2: vec @(-ratio*hole/2, ratio*hole/2)
 	__3: vec @(ratio*hole/2, -ratio*hole/2)
 	rpad "$n" __2 .
+	frame hole @
 }
 
 frame pin_top {
@@ -72,6 +72,7 @@ package "DIP-${N}/${M}-${width}"
 unit mm
 
 set N = 2*populated
+
 set M = 2*side
 
 set width = 300mil
@@ -83,8 +84,15 @@ set ratio = 2
 set pitch = 100mil
 
 set side = 3
+
 set populated = 2
 
 frame outline @
 frame pins @
 frame holes @
+measx hole.__1 -> hole.__0 -1mm
+measx pin.__2 -> pin.__3 -3mm
+measx outline.__1 >> outline.__0 -4mm
+measy outline.__0 >> outline.__1 1mm
+measy holes.__1 >> holes.__2 3mm
+measx pins.__2 >> pins.__2 2mm

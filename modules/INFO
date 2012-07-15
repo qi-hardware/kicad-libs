@@ -519,4 +519,9 @@ F: xtal-4
 #   http://www.abracon.com/Resonators/ABMM2.pdf
 #
 
-
+# DIP4 component in a DIP6 socket
+F: dip4of6
+#
+# The smallest DIP socket commonly available is DIP6, but there are some
+# components that come in a DIP4 package.
+#
