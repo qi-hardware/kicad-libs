@@ -64,6 +64,7 @@ loop C = 1, 20
 frame pins @
 frame outline @
 measy outline.__1 >> outline.__0 1mm
-measx pin.__2 -> pin.__0 -P/2-1mm
-measx pin.__3 -> pin.__1 (R-0.5)*P+1mm
-measx outline.__1 >> outline.__0 -2.2mm
+measx pin.__2 -> pin.__0 -(P-hole)/2-1mm
+measx pin.__3 -> pin.__1 -(P+ratio*hole)/2-1.5mm
+measx outline.__1 >> outline.__0 -2mm
+measx pins.__1 -> pins.__0 P/2+1mm
