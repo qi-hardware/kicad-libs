@@ -19,7 +19,7 @@ frame contacts {
 	__0: vec @(x, y)
 	__1: vec .(s/2, h/2)
 	__2: vec __0(-s/2, -h/2)
-	pad "$n" . __1
+	pad "$n" . __1 bare
 }
 
 frame outline {
