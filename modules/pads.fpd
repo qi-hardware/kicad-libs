@@ -9,7 +9,7 @@ frame padS {
 
 	__0: vec @(x/2, y/2)
 	__1: vec @(-x/2, -y/2)
-	pad "1" __0 .
+	pad "1" __0 . bare
 	__2: vec @(-x1, y1)
 	__3: vec @(x1, -y1)
 	rect __2 . w
@@ -24,7 +24,7 @@ frame padR {
 
 	__0: vec @(x/2, y/2)
 	__1: vec @(-x/2, -y/2)
-	rpad "1" . __0
+	rpad "1" . __0 bare
 	__2: vec @(-x1, y1)
 	__3: vec @(x1, -y1)
 	rect __2 . w
