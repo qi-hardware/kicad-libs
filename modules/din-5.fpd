@@ -50,10 +50,10 @@ __6: vec __2(-shieldr/2, -shieldr/2)
 hole . __5
 __7: vec __2(-factor*shieldr/2, factor*shieldr/2)
 __8: vec __2(factor*shieldr/2, -factor*shieldr/2)
-rpad "6" __7 .
+rpad "6" __7 . bare
 __9: vec __1(-factor*shieldr/2, factor*shieldr/2)
 __10: vec __1(factor*shieldr/2, -factor*shieldr/2)
-rpad "7" __9 .
+rpad "7" __9 . bare
 __11: vec __0(leftx, 0mm)
 __12: vec __0(-(frontx-leftx), 0mm)
 __13: vec @(0mm, -npthy)
@@ -89,18 +89,18 @@ hole __34 .
 __36: vec __24(factor*r/2, -factor*r/2)
 __37: vec __26(factor*r/2, -factor*r/2)
 __38: vec __24(-factor*r/2, factor*r/2)
-rpad "3" __36 .
+rpad "3" __36 . bare
 __39: vec __26(-factor*r/2, factor*r/2)
-rpad "5" __37 .
+rpad "5" __37 . bare
 __40: vec __20(factor*r/2, -factor*r/2)
 __41: vec __20(-factor*r/2, factor*r/2)
-rpad "2" __40 .
+rpad "2" __40 . bare
 __42: vec __27(-factor*r/2, factor*r/2)
 __43: vec __27(factor*r/2, -factor*r/2)
-rpad "4" . __42
+rpad "4" . __42 bare
 __44: vec __25(factor*r/2, -factor*r/2)
 __45: vec __25(-factor*r/2, factor*r/2)
-rpad "1" __44 .
+rpad "1" __44 . bare
 frame outline @
 measy __6 >> __5 shieldr/2
 measy __19 >> __18 npthr/2

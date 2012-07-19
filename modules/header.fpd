@@ -8,7 +8,7 @@ frame pin {
 	__2: vec @(-hole/2, -hole/2)
 	hole . __0
 	__3: vec @(-hole*ratio/2, hole*ratio/2)
-	rpad "$n" . __1
+	rpad "$n" . __1 bare
 }
 
 frame pins {

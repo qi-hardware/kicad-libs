@@ -15,7 +15,7 @@ frame pShield {
 	hole . __1
 	__3: vec __0(rout, -rout)
 	__4: vec __0(-rout, rout)
-	rpad "$n" __3 .
+	rpad "$n" __3 . bare
 }
 
 frame hNPTH {
@@ -53,7 +53,7 @@ frame pins {
 	hole . __1
 	__3: vec __0(rout, -rout)
 	__4: vec __0(-rout, rout)
-	rpad "$n" . __3
+	rpad "$n" . __3 bare
 	__5: vec @(0mm, pitchP)
 	__6: vec .(pitchP/2, 0mm)
 	__7: vec .(i*pitchP, 0mm)
@@ -62,7 +62,7 @@ frame pins {
 	hole . __8
 	__10: vec __7(rout, -rout)
 	__11: vec __7(-rout, rout)
-	rpad "$m" __10 .
+	rpad "$m" __10 . bare
 }
 
 frame pLed {
@@ -82,7 +82,7 @@ frame pLed {
 	__3: vec __0(-rin, -rin)
 	hole . __2
 	__4: vec __0(-rout, rout)
-	rpad "$n" __1 .
+	rpad "$n" __1 . bare
 	__5: vec @(pitchP+LEDx, 0mm)
 	__6: vec .(i*pitchP, 0mm)
 	__7: vec .(rin, rin)
@@ -90,7 +90,7 @@ frame pLed {
 	hole . __7
 	__9: vec __6(rout, -rout)
 	__10: vec __6(-rout, rout)
-	rpad "$m" __9 .
+	rpad "$m" __9 . bare
 }
 
 frame outline {

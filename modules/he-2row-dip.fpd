@@ -6,7 +6,7 @@ frame pin {
 	__2: vec @(-d/2, -d/2)
 	hole . __0
 	__3: vec @(-d/2*aspect, -d/2*aspect)
-	rpad "$n" . __1
+	rpad "$n" . __1 bare
 }
 
 frame pins {

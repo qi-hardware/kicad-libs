@@ -5,7 +5,7 @@ frame copper {
 
 	__2: vec @(disc/2, -disc/2)
 	__3: vec @(-disc/2, disc/2)
-	rpad "1" . __2
+	rpad "1" . __2 bare
 }
 
 package "SPACER-$nominal-$disc-$keepout$type"

@@ -31,7 +31,7 @@ frame pins {
 	hole . __1
 	__3: vec __0(factor*pinsDia/2, -factor*pinsDia/2)
 	__4: vec __0(-factor*pinsDia/2, factor*pinsDia/2)
-	rpad "$n" . __3
+	rpad "$n" . __3 bare
 	__5: vec @(0mm, pins2shieldsy)
 	__6: vec .(dx*shieldsdiffx/2, 0mm)
 	__7: vec .(shieldsDia/2, shieldsDia/2)
@@ -39,7 +39,7 @@ frame pins {
 	hole . __7
 	__9: vec __6(factor*shieldsDia/2, -factor*shieldsDia/2)
 	__10: vec __6(-factor*shieldsDia/2, factor*shieldsDia/2)
-	rpad "$m" . __9
+	rpad "$m" . __9 bare
 }
 
 package "TACTIL-SW-${TYPE}-RA-${A}-${B}"

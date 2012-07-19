@@ -7,7 +7,7 @@ frame pin {
 
 	__0: vec @(Rr, Rr)
 	__1: vec @(-Rr, -Rr)
-	rpad "$name" . __0
+	rpad "$name" . __0 bare
 	__2: vec @(Rh, -Rh)
 	__3: vec @(-Rh, Rh)
 	hole . __2

@@ -25,7 +25,7 @@ frame gnds {
 	hole . __1
 	__3: vec __0(factor*grx/2, -factor*gry/2)
 	__4: vec __0(-factor*grx/2, factor*gry/2)
-	rpad "$n" . __3
+	rpad "$n" . __3 bare
 }
 
 frame pins {
@@ -41,7 +41,7 @@ frame pins {
 	hole . __1
 	__3: vec __0(factor*prx/2, -factor*pry/2)
 	__4: vec __0(-factor*prx/2, factor*pry/2)
-	rpad "$n" . __3
+	rpad "$n" . __3 bare
 }
 
 frame outline {

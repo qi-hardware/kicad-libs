@@ -55,15 +55,15 @@ hole . __5
 __7: vec __0(-factor*px/2, factor*py/2)
 __8: vec __2(-factor*px/2, factor*py/2)
 __9: vec __2(factor*px/2, -factor*py/2)
-rpad "1" __8 .
+rpad "1" __8 . bare
 __10: vec __0(factor*px/2, -factor*py/2)
-rpad "2" __7 .
+rpad "2" __7 . bare
 __13: vec __11(-py/2, -px/2)
 __12: vec __11(py/2, px/2)
 hole __13 .
 __14: vec __11(-factor*py/2, factor*px/2)
 __15: vec __11(factor*py/2, -factor*px/2)
-rpad "3" __14 .
+rpad "3" __14 . bare
 frame outline @
 measy outline.__2 >> outline.__0 fronthead+1mm
 measy __11 >> __2 -(p1x-p3x+1.5mm)

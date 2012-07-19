@@ -6,7 +6,7 @@ frame Spad {
 	hole . __0
 	__2: vec @(-factor*sr/2, factor*sr/2)
 	__3: vec @(factor*sr/2, -factor*sr/2)
-	rpad "S$n" __2 .
+	rpad "S$n" __2 . bare
 }
 
 frame Spads {
@@ -29,7 +29,7 @@ frame pin2 {
 	hole . __0
 	__2: vec @(-factor*pr/2, factor*pr/2)
 	__3: vec @(factor*pr/2, -factor*pr/2)
-	rpad "$m" __2 .
+	rpad "$m" __2 . bare
 }
 
 frame pin1 {
@@ -38,7 +38,7 @@ frame pin1 {
 	hole . __0
 	__2: vec @(factor*pr/2, -factor*pr/2)
 	__3: vec @(-factor*pr/2, factor*pr/2)
-	rpad "$n" . __2
+	rpad "$n" . __2 bare
 }
 
 frame pins {
@@ -60,11 +60,11 @@ frame outline {
 	__0: vec @(0mm, -(spady/2+fronty))
 	__1: vec @(0mm, L-fronty-spady/2)
 	__2: vec __0(W/2, 0mm)
-	__6: vec __2(0mm, fronty-factor*sr/2-0.5mm)
+	__6: vec .(0mm, fronty-factor*sr/2-0.5mm)
 	line . __2 w
 	__3: vec __0(-W/2, 0mm)
 	line __2 . w
-	__7: vec __3(0mm, fronty-factor*sr/2-0.5mm)
+	__7: vec .(0mm, fronty-factor*sr/2-0.5mm)
 	line . __3 w
 	__4: vec __1(W/2-factor*sr/2, 0mm)
 	__5: vec __1(-(W/2-factor*sr/2), 0mm)

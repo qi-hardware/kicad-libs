@@ -16,7 +16,7 @@ frame Cpins {
 	hole . __1
 	__3: vec __0(factor*Cr/2, -factor*Cr/2)
 	__4: vec __0(-factor*Cr/2, factor*Cr/2)
-	rpad "C$n" . __3
+	rpad "C$n" . __3 bare
 }
 
 frame shield {
@@ -31,7 +31,7 @@ frame shield {
 	hole . __1
 	__3: vec __0(factor*shr/2, -factor*shr/2)
 	__4: vec __0(-factor*shr/2, factor*shr/2)
-	rpad "$n" . __3
+	rpad "$n" . __3 bare
 }
 
 frame ckt17pins {
@@ -43,7 +43,7 @@ frame ckt17pins {
 	hole . __1
 	__3: vec __0(-factor*cktr/2, factor*cktr/2)
 	__4: vec __0(factor*cktr/2, -factor*cktr/2)
-	rpad "$n" __3 .
+	rpad "$n" __3 . bare
 }
 
 frame ckt9pins {
@@ -55,7 +55,7 @@ frame ckt9pins {
 	hole . __1
 	__3: vec __0(-factor*cktr/2, factor*cktr/2)
 	__4: vec __0(factor*cktr/2, -factor*cktr/2)
-	rpad "$n" __3 .
+	rpad "$n" __3 . bare
 }
 
 frame ckt1pins {
@@ -67,7 +67,7 @@ frame ckt1pins {
 	hole . __1
 	__3: vec __0(-factor*cktr/2, factor*cktr/2)
 	__4: vec __0(factor*cktr/2, -factor*cktr/2)
-	rpad "$n" __3 .
+	rpad "$n" __3 . bare
 }
 
 frame ckt {

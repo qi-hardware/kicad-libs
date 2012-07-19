@@ -6,7 +6,7 @@ frame pad {
 	hole . __0
 	__2: vec @(ratio*roundx/2, -ratio*roundy/2)
 	__3: vec @(-ratio*roundx/2, ratio*roundy/2)
-	rpad "$n" . __2
+	rpad "$n" . __2 bare
 }
 
 frame pads {

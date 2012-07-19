@@ -67,20 +67,20 @@ __13: vec __5(-r1/2, -r1/2)
 hole . __12
 __16: vec __0(factor*r1/2, -factor*r1/2)
 __17: vec __0(-factor*r1/2, factor*r1/2)
-rpad "1" . __16
+rpad "1" . __16 bare
 __18: vec __2(factor*r1/2, -factor*r1/2)
 __19: vec __2(-factor*r1/2, factor*r1/2)
-rpad "2" . __18
+rpad "2" . __18 bare
 __20: vec __1(factor*r3/2, -factor*r3/2)
 __21: vec __1(-factor*r3/2, factor*r3/2)
-rpad "3" . __20
+rpad "3" . __20 bare
 __22: vec __3(0mm, fronty)
 __23: vec @(r3/2, r3/2)
 __24: vec @(-r3/2, -r3/2)
 hole . __23
 __25: vec @(factor*r3/2, -factor*r3/2)
 __26: vec @(-factor*r3/2, factor*r3/2)
-rpad "4" . __25
+rpad "4" . __25 bare
 __27: vec @(-2.5mm, 0mm)
 frame outline @
 measy __9 >> __8 -(factor+2)*r1/2

@@ -21,7 +21,7 @@ frame pins {
 	hole . __2
 	__4: vec __1(factor*hole/2, -factor*hole/2)
 	__5: vec __1(-factor*hole/2, factor*hole/2)
-	rpad "$n" . __4
+	rpad "$n" . __4 bare
 }
 
 package "MIC-RA-DIP-${Dia}x${Height}"
