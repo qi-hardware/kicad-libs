@@ -10,8 +10,9 @@ frame via {
 
 frame tail {
 	loop if = 1, have_tail
+
 	__0: vec @(d*tail, W2)
-	pad "X" @ .
+	pad "X" @ . trace
 }
 
 frame antenna {
@@ -22,8 +23,8 @@ frame antenna {
 	__2: vec .(d*D5, 0mm)
 	__3: vec .(d*W2, 0mm)
 	__4: vec @(-d*W1/2, D4/2)
-	pad "1" __0 .
-	pad "X" . __1
+	pad "1" __0 . trace
+	pad "X" . __1 trace
 	__5: vec .(-d*D1, 0mm)
 	__6: vec __1(-d*W1, 0mm)
 	__33: vec .(0mm, W2)
@@ -32,41 +33,41 @@ frame antenna {
 	__7: vec __3(d*D6, 0mm)
 	__8: vec .(d*W2, 0mm)
 	__9: vec .(0mm, W2)
-	pad "X" __6 .
+	pad "X" __6 . trace
 	__10: vec __3(0mm, -L6)
 	__11: vec .(-W2, D4)
-	pad "2" . __10
-	pad "X" . __3
+	pad "2" . __10 trace
+	pad "X" . __3 trace
 	__12: vec __7(0mm, -L4)
 	__13: vec .(d*W2, 0mm)
-	pad "X" __7 .
+	pad "X" __7 . trace
 	__14: vec .(d*L5, 0mm)
 	__15: vec .(0mm, W2)
-	pad "X" __13 .
+	pad "X" __13 . trace
 	__18: vec .(0mm, L4)
 	__19: vec .(d*L2, 0mm)
 	__20: vec .(0mm, -W2)
-	pad "X" __18 .
+	pad "X" __18 . trace
 	__25: vec .(-d*W2, 0mm)
 	__21: vec .(0mm, -L4)
 	__22: vec .(d*W2, 0mm)
-	pad "X" __25 .
+	pad "X" __25 . trace
 	__23: vec .(d*L5, 0mm)
 	__16: vec __14(d*W2, 0mm)
 	__17: vec .(0mm, L4)
-	pad "X" __14 .
+	pad "X" __14 . trace
 	__24: vec __23(d*W2, 0mm)
 	__26: vec .(0mm, L4)
-	pad "X" __23 .
+	pad "X" __23 . trace
 	__27: vec __23(0mm, W2)
-	pad "X" __22 .
+	pad "X" __22 . trace
 	__28: vec .(0mm, L4)
 	__29: vec .(d*L2, 0mm)
 	__30: vec .(0mm, -W2)
-	pad "X" __28 .
+	pad "X" __28 . trace
 	__31: vec .(-d*W2, 0mm)
 	__32: vec __30(0mm, -L1)
-	pad "X" __31 .
+	pad "X" __31 . trace
 	frame tail .
 	__35: vec __29(d*(D3+tail), D2)
 	line . __34 w
