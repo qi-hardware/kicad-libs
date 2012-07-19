@@ -44,7 +44,7 @@ frame shield {
 	__0: vec @(x, 0mm)
 	__1: vec .(wo/2, ho/2)
 	__2: vec __0(-wo/2, -ho/2)
-	rpad "$name" . __1
+	rpad "$name" . __1 bare
 	__3: vec __0(wi/2, hi/2)
 	__4: vec __0(-wi/2, -hi/2)
 	hole . __3
