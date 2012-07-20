@@ -138,3 +138,4 @@ LibName66=./hole
 LibName67=./diode
 LibName68=./powered
 LibName69=./adxl32x
+LibName70=./xc6slx9-tqg144

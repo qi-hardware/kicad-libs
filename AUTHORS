@@ -29,6 +29,10 @@ Adam Wang <adam@qi-hardware.com>
   components/xlr-3.lib
   components/pwr.lib
 
+Azonenberg
+
+  components/xc6slx9-tqg144.lib
+
 Rene Harder <rehar@saweb.de>
 
   modules/mini-usb.fpd
