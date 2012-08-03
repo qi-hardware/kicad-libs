@@ -525,3 +525,25 @@ F: dip4of6
 # The smallest DIP socket commonly available is DIP6, but there are some
 # components that come in a DIP4 package.
 #
+
+# Micro-USB B receptacle, standard (bottom) mount (all SMT, no posts)
+F: zx62-b-5pa
+#
+# Hirose ZX62-B-5PA(11)
+# http://www.hirose.co.jp/cataloge_hp/e24200011.pdf
+#
+# Compatible (front pads are slightly narrower in recommended footprint):
+# FCI 10118192-0001LF
+# http://portal.fciconnect.com/Comergent//fci/drawing/10118192.pdf
+#
+
+# Micro-USB B receptacle, mid-mount (all SMT, no posts)
+F: zx62m-b-5p
+#
+# Known issue:
+# Rear side pads should have an empty corner. Right now, we even print silk
+# screen on them.
+#
+# Hirose ZX62M-B-5P(01)
+# http://www.hirose.co.jp/cataloge_hp/e24200011.pdf
+#
