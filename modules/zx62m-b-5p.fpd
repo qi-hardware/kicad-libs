@@ -81,6 +81,7 @@ frame outline {
 
 package "ZX62M-B-BP"
 unit mm
+
 set w = 0.2mm
 
 __0: vec @(0mm, -1.9mm)
@@ -104,3 +105,4 @@ measy pads.__0 -> signal.__0 2.3mm
 measy pads.__0 -> rear.__0 2.8mm
 measy corner.__1 -> corner.__0 -(12mm-6.9mm)/2-0.5mm
 measy signal.__1 -> signal.__0 0.5mm
+measy rear.__1 -> rear.__0 1mm
