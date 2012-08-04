@@ -19,8 +19,8 @@ sch:		$(GEN)
 DESCR-dcm:	*.dcm
 		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
 
-catalog catalog.pdf: EXPAND DESCR-dcm *.lib $(GEN)
-		genkicat -p -L . EXPAND DESCR-dcm >catalog.pdf || \
+catalog catalog.pdf: HIERARCHY DESCR-dcm *.lib $(GEN)
+		genkicat -p -L . HIERARCHY DESCR-dcm >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
 view:		catalog.pdf
@@ -30,7 +30,7 @@ upload:		catalog.pdf
 		qippl catalog.pdf tmp/kicad-libs-components.pdf
 
 missing:	$(GEN)
-		../scripts/missing-in-tree -L . EXPAND
+		../scripts/missing-in-tree -L . HIERARCHY
 
 %.lib:		%.pl
 		./$< >$@ || { rm -f $@; exit 1; }
