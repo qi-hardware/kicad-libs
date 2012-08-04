@@ -38,17 +38,22 @@ trap "rm -f _tmp1 _tmp2" 0
 
 genkicat -D "$@" >_tmp1 || exit
 
-ext=.lib
+ext=lib
 
 >_tmp2
 while [ "$1" ]; do
 	case "$1" in
-	-F)	ext=.fpd;;
+	-F)	ext=fpd;;
 	-L)	shift
-		[ "`echo \"$1\"/*.$ext`" = "$1/*.$ext" ] ||
-		    scan_lib "$1"/*.$ext;;
+		if [ "`echo \"$1\"/*.$ext`" != "$1/*.$ext" ]; then
+			if [ $ext = lib ]; then
+				scan_comp "$1"/*.$ext
+			else
+				scan_fped "$1"/*.$ext
+			fi
+		fi;;
 	-l)	shift
-		if [ $ext = .lib ]; then
+		if [ $ext = lib ]; then
 			scan_comp "$1"
 		else
 			scan_fped "$1"
