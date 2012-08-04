@@ -148,6 +148,7 @@ FPGA
 		xc6slx45-2fgg484c
 MCU
 	AVR
+		attiny87-dual
 		atmega48-mmu
 		atmega8u2
 	PIC

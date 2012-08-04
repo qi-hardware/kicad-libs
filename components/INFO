@@ -16,6 +16,13 @@ S: atmega8u2
 # ATmega48 MCU in 28MLF package
 S: atmega48-mmu
 
+# ATtiny87/167 MCU in SIOC-20/TSSOP-20 package
+S: attiny87-dual
+#
+# Data sheet:
+# http://www.atmel.com/Images/doc8265.pdf
+#
+
 # mini_usb_b (generic)
 S: mini_usb_b
 
