@@ -144,6 +144,7 @@ Sensor
 		ADXL32X
 FPGA
 	Xilinx
+		XC6SLXN-TQG144
 		xc6slx45-2fgg484c
 MCU
 	AVR
