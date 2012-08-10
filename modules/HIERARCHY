@@ -14,10 +14,11 @@ Connector
 				PAD_S_60x60
 				PAD_S_80x80
 				PAD_S_100x100
+				PAD_S_120x120
+				PAD_S_150x150
 			Rectangular
 				PAD_R_2mm
 				PAD_R_120x60
-				PAD_S_150x150
 			Array
 				2mm
 					PAD_2mm_2x50mil
