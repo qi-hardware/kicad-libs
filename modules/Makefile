@@ -2,7 +2,7 @@ MODULES=8_10-card 8_10-socket-ra \
 	bat-clip-aa-th bga \
 	c-smd c-t-smd \
 	dcjack din-5 dip dip4of6 do-214 dvi-recept-ra \
-	eus \
+	e-switch320 eus \
         fiducial \
 	header he-2row-dip he-shrouded \
 	ir \
