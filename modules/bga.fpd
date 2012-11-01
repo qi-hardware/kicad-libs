@@ -43,7 +43,7 @@ package "BGA-$pins"
 unit mm
 
 table
-    { row, rname, inner }
+    { ?row, rname, inner }
     { 0, "A", 1 }
     { 1, "B", 1 }
     { 2, "C", 1 }
@@ -71,6 +71,8 @@ table
     { pins, Nr, Nc, inner_col_start, inner_col_end, Px, Py, e, D1, E1, D, E }
     { 484, 22, 22, 10, 11, 0.6mm, 0.6mm, 1mm, 21mm, D1, 23mm, D }
     { 324, 18, 18, 8, 9, 0.5mm, 0.5mm, 0.8mm, 13.6mm, D1, 15mm, D }
+
+loop row = 0, Nr-1
 
 frame last @
 frame first @
