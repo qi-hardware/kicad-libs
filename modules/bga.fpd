@@ -1,65 +1,45 @@
 /* MACHINE-GENERATED ! */
 
 frame pad {
-	set cname = col+1
-
 	__0: vec @(col*e-Px/2, row*-e-Py/2)
 	__1: vec .(0mm, Py)
 	__2: vec __0(Px, 0mm)
 	rpad "$rname$cname" __1 .
 }
 
-frame inner {
-	loop col = inner_col_start, inner_col_end
-
-	loop enable = 1, inner
-
-	frame pad @
-}
-
-frame last {
-	loop col = inner_col_end+1, Nc-1
-
-	frame pad @
-}
-
-frame first {
-	loop col = 0, inner_col_start-1
-
-	frame pad @
-}
-
 frame pads {
 	table
-	    { ?row, rname, inner }
-	    { 0, "A", 1 }
-	    { 1, "B", 1 }
-	    { 2, "C", 1 }
-	    { 3, "D", 1 }
-	    { 4, "E", 1 }
-	    { 5, "F", 1 }
-	    { 6, "G", 1 }
-	    { 7, "H", 1 }
-	    { 8, "J", 1 }
-	    { 9, "K", 1 }
-	    { 10, "L", 1 }
-	    { 11, "M", 1 }
-	    { 12, "N", 1 }
-	    { 13, "P", 1 }
-	    { 14, "R", 1 }
-	    { 15, "T", 1 }
-	    { 16, "U", 1 }
-	    { 17, "V", 1 }
-	    { 18, "W", 1 }
-	    { 19, "Y", 1 }
-	    { 20, "AA", 1 }
-	    { 21, "AB", 1 }
+	    { ?row, rname }
+	    { 0, "A" }
+	    { 1, "B" }
+	    { 2, "C" }
+	    { 3, "D" }
+	    { 4, "E" }
+	    { 5, "F" }
+	    { 6, "G" }
+	    { 7, "H" }
+	    { 8, "J" }
+	    { 9, "K" }
+	    { 10, "L" }
+	    { 11, "M" }
+	    { 12, "N" }
+	    { 13, "P" }
+	    { 14, "R" }
+	    { 15, "T" }
+	    { 16, "U" }
+	    { 17, "V" }
+	    { 18, "W" }
+	    { 19, "Y" }
+	    { 20, "AA" }
+	    { 21, "AB" }
+
+	set cname = col+1
 
 	loop row = 0, Nr-1
 
-	frame last @
-	frame first @
-	frame inner @
+	loop col = 0, Nc-1
+
+	frame pad @
 }
 
 frame outline {
@@ -76,9 +56,9 @@ package "BGA-$pins"
 unit mm
 
 table
-    { pins, Nr, Nc, inner_col_start, inner_col_end, Px, Py, e, D1, E1, D, E }
-    { 484, 22, 22, 10, 11, 0.6mm, 0.6mm, 1mm, 21mm, D1, 23mm, D }
-    { 324, 18, 18, 8, 9, 0.5mm, 0.5mm, 0.8mm, 13.6mm, D1, 15mm, D }
+    { pins, Nr, Nc, Px, Py, e, D1, E1, D, E }
+    { 484, 22, 22, 0.6mm, 0.6mm, 1mm, 21mm, D1, 23mm, D }
+    { 324, 18, 18, 0.5mm, 0.5mm, 0.8mm, 13.6mm, D1, 15mm, D }
 
 frame outline @
 frame pads @
