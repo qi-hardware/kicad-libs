@@ -46,6 +46,7 @@ Werner Almesberger <werner@almesberger.net>
   components/74x1g07_5.lib
   components/74x1g07_4.lib
   components/74x1g07_6.lib
+  components/74x565.lib
   components/adxl32x.lib
   components/atmega8u2.lib
   components/c8051f320.lib
