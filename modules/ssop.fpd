@@ -63,6 +63,7 @@ table
     { "SSOP", 24, 8.1mm, 5.9mm, 1.1mm, 8.35mm, 7.8mm }
     { "SSOP", 28, 8.1mm, 5.9mm, 1.1mm, 8.35mm, 9.1mm }
     { "TSSOP", 14, 6.8mm, 4.6mm, 1.1mm, 7.05mm, 5mm }
+    { "TSSOP", 16, 6.8mm, 4.6mm, 1.1mm, 7.05mm, 5.5mm }
     { "TSSOP", 20, 6.8mm, 4.6mm, 1.1mm, 7.05mm, 6.75mm }
 
 frame outline @
