@@ -59,6 +59,7 @@ Werner Almesberger <werner@almesberger.net>
   components/dualbjt.lib
   components/dualpmosfet.lib
   components/micro_usb_b.lib
+  components/nmosfet-gsd.lib
   components/pmosfet-gsd.lib
   components/usb-a-pcb.lib
   components/dual_trans.lib
