@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 2012年05月17日 (週四) 09時45分27秒
+EESchema-LIBRARY Version 2.3  Date: Mon Nov  5 16:33:55 2012
 #encoding utf-8
 #
 # CONN_10X2
@@ -134,7 +134,7 @@ DEF MEMCARD8 CON 0 40 Y N 1 F N
 F0 "CON" 250 500 60 H V C CNN
 F1 "MEMCARD8" 150 -450 60 H V C CNN
 DRAW
-T 0 115 300 60 0 0 0 CD/DAT2  Normal 0 C C
+T 0 115 300 60 0 0 0 CD/DAT3  Normal 0 C C
 T 0 10 0 60 0 0 0 CLK  Normal 0 C C
 T 0 15 200 60 0 0 0 CMD  Normal 0 C C
 T 0 30 -200 60 0 0 0 DAT0  Normal 0 C C
