@@ -76,6 +76,7 @@ Werner Almesberger <werner@almesberger.net>
   components/balun.lib
   components/xtal-4.lib
   components/powered.lib
+  components/evqq7.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
@@ -87,6 +88,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/sot-323.fpd
   modules/ssop.fpd
   modules/sot.fpd
+  modules/evqq7.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
