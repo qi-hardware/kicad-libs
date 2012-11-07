@@ -142,3 +142,4 @@ LibName70=./xc6slx9-tqg144
 LibName71=./74x595
 LibName72=./nmosfet-gsd
 LibName73=./evqq7
+LibName74=./xc6slx9-csg324
