@@ -57,6 +57,7 @@ unit mm
 
 table
     { pins, Nr, Nc, Px, Py, e, D1, E1, D, E }
+    { 256, 16, 16, 0.6mm, 0.6mm, 1mm, 15mm, D1, 17mm, D }
     { 484, 22, 22, 0.6mm, 0.6mm, 1mm, 21mm, D1, 23mm, D }
     { 324, 18, 18, 0.5mm, 0.5mm, 0.8mm, 13.6mm, D1, 15mm, D }
 
