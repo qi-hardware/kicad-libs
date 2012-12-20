@@ -155,6 +155,8 @@ MCU
 		attiny87-dual
 		atmega48-mmu
 		atmega8u2
+	LP1xxx
+		LPC1100-QFN33
 	PIC
 		pic18f46j50-ml
 	SiLabs
