@@ -1,0 +1,33 @@
+#!/bin/sh -e
+#
+# modules-pro - Merge template and list of libraries to a profile
+#
+# Copyright 2012 by Werner Almesberger
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+
+
+usage()
+{
+	echo "usage: $0 template.pro module-basename ..." 1>&2
+	exit 1
+}
+
+
+scan_fped()
+{
+	for n in "$@"; do
+		fped -k $n - | sed '/^\$MODULE /s///p;d' >>_tmp2
+	done
+}
+
+
+[ -r "$1" ] || usage
+sed /LibName1/Q "$1"
+shift
+
+echo "$@" | tr ' ' '\012' | sort -f | awk '{ n++; print "LibName" n "=" $0 }'

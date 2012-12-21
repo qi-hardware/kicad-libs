@@ -19,12 +19,19 @@ MODULES=8_10-card 8_10-socket-ra \
 	zx62-b-5pa zx62m-b-5p
 
 .SUFFIXES:	.fpd .mod
-.PHONY:		all catalog view upload missing clean spotless
+.PHONY:		all brd catalog view upload missing clean spotless
 
 all:		$(MODULES:%=%.mod)
 
 .fpd.mod:
 		fped -k $< $@
+
+modules.pro:	Makefile
+		../scripts/modules-pro template.pro $(MODULES) >$@ || \
+		    { rm -f $@; exit 1; }
+
+brd:		all modules.pro
+		pcbnew `pwd`/modules.brd
 
 catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd)
 		genkicat -F -p $(MODULES:%=-l %.fpd) HIERARCHY DESCR \
@@ -45,4 +52,4 @@ clean:
 
 spotless:	clean
 		rm -f $(MODULES:%=%.mod)
-
+		rm -f modules.pro
