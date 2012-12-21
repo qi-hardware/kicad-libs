@@ -40,7 +40,8 @@ modules.pro:	Makefile
 brd:		all modules.pro
 		pcbnew `pwd`/modules.brd
 
-catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd) title.ps
+catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd)
+		$(MAKE) title.ps
 		genkicat -F -p $(MODULES:%=-l %.fpd) -t title.ps \
 		  HIERARCHY DESCR >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }

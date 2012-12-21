@@ -5,6 +5,8 @@ COMMIT_DATE := $(shell date -u +'%F %T UTC' \
 GIT_HASH := $(shell git rev-parse HEAD)
 GIT_STATUS := $(shell [ -z "`git status -s -uno`" ] || echo +)
 
+.PHONY:		title.ps
+
 title.ps:	../common/title.fig
 		fig2dev -L ps $< | \
 		    sed -e "s|<TITLE-NAME>|$(TITLE_NAME)|" \

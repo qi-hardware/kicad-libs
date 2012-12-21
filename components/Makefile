@@ -26,7 +26,8 @@ sch:		$(GEN)
 DESCR-dcm:	*.dcm
 		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
 
-catalog catalog.pdf: HIERARCHY DESCR-dcm *.lib $(GEN) title.ps
+catalog catalog.pdf: HIERARCHY DESCR-dcm *.lib $(GEN)
+		$(MAKE) title.ps
 		genkicat -p -L . -t title.ps HIERARCHY DESCR-dcm \
 		  >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
