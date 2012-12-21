@@ -18,6 +18,13 @@ MODULES=8_10-card 8_10-socket-ra \
  	xtal-2 xtal-4 \
 	zx62-b-5pa zx62m-b-5p
 
+SHELL = /bin/bash
+
+TITLE_NAME = FOOTPRINTS/MODULES
+TITLE_FILE = kicad-libs-modules.pdf
+
+include ../common/Makefile.title
+
 .SUFFIXES:	.fpd .mod
 .PHONY:		all brd catalog view upload missing clean spotless
 
@@ -33,9 +40,9 @@ modules.pro:	Makefile
 brd:		all modules.pro
 		pcbnew `pwd`/modules.brd
 
-catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd)
-		genkicat -F -p $(MODULES:%=-l %.fpd) HIERARCHY DESCR \
-		  >catalog.pdf || \
+catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd) title.ps
+		genkicat -F -p $(MODULES:%=-l %.fpd) -t title.ps \
+		  HIERARCHY DESCR >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
 view:		catalog.pdf
@@ -49,6 +56,7 @@ missing:
 
 clean:
 		rm -f *~*.fpd
+		rm -f title.ps
 
 spotless:	clean
 		rm -f $(MODULES:%=%.mod)

@@ -4,7 +4,14 @@
 # Note that we don't have the concept of a "library of everything" so far.
 #
 
+SHELL = /bin/bash
+
 GEN = gencon.lib
+
+TITLE_NAME = SYMBOLS/COMPONENTS
+TITLE_FILE = kicad-libs-components.pdf
+
+include ../common/Makefile.title
 
 .PHONY:		all sch catalog view upload missing clean spotless
 
@@ -19,8 +26,9 @@ sch:		$(GEN)
 DESCR-dcm:	*.dcm
 		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
 
-catalog catalog.pdf: HIERARCHY DESCR-dcm *.lib $(GEN)
-		genkicat -p -L . HIERARCHY DESCR-dcm >catalog.pdf || \
+catalog catalog.pdf: HIERARCHY DESCR-dcm *.lib $(GEN) title.ps
+		genkicat -p -L . -t title.ps HIERARCHY DESCR-dcm \
+		  >catalog.pdf || \
 		  { rm -f catalog.pdf; exit 1; }
 
 view:		catalog.pdf
@@ -39,7 +47,7 @@ missing:	$(GEN)
 #		./mkloe
 
 clean:
-		rm -f DESCR-dcm
+		rm -f DESCR-dcm title.ps
 
 spotless:	clean
 		rm -f catalog.pdf $(GEN)
