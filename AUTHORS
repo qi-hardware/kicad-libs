@@ -78,6 +78,7 @@ Werner Almesberger <werner@almesberger.net>
   components/powered.lib
   components/evqq7.lib
   components/lpc1100-qfn33.lib
+  components/tps6216x.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
