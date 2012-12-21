@@ -23,8 +23,6 @@ SHELL = /bin/bash
 TITLE_NAME = FOOTPRINTS/MODULES
 TITLE_FILE = kicad-libs-modules.pdf
 
-include ../common/Makefile.title
-
 .SUFFIXES:	.fpd .mod
 .PHONY:		all brd catalog view upload missing clean spotless
 
@@ -39,6 +37,8 @@ modules.pro:	Makefile
 
 brd:		all modules.pro
 		pcbnew `pwd`/modules.brd
+
+include ../common/Makefile.title
 
 catalog catalog.pdf: HIERARCHY $(MODULES:%=%.fpd)
 		$(MAKE) title.ps

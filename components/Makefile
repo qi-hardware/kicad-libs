@@ -11,8 +11,6 @@ GEN = gencon.lib
 TITLE_NAME = SYMBOLS/COMPONENTS
 TITLE_FILE = kicad-libs-components.pdf
 
-include ../common/Makefile.title
-
 .PHONY:		all sch catalog view upload missing clean spotless
 
 all:		$(GEN)
@@ -25,6 +23,8 @@ sch:		$(GEN)
 
 DESCR-dcm:	*.dcm
 		../scripts/dcm2desc -L . >$@ || { rm -f $@; exit 1; }
+
+include ../common/Makefile.title
 
 catalog catalog.pdf: HIERARCHY DESCR-dcm *.lib $(GEN)
 		$(MAKE) title.ps
