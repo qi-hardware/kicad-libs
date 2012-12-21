@@ -1,5 +1,32 @@
 /* MACHINE-GENERATED ! */
 
+frame pad_via {
+	__0: vec @(hole/2, hole/2)
+	__1: vec @(-hole/2, -hole/2)
+	hole . __0
+}
+
+frame pad_vias {
+	table
+	    { ?variant, EV, Vias, hole }
+	    { "HVQFN", 1.05mm, 20, 0.3mm }
+
+	table
+	    { dx, dy }
+	    { 1, 0 }
+	    { 0, 1 }
+	    { -1, 0 }
+	    { 0, -1 }
+
+	set CV = (Vias/4-1)/2*EV
+
+	loop i = 0, Vias/4-1
+
+	__0: vec @((-dy-dx)*CV, (dx-dy)*CV)
+	__1: vec .(dx*i*EV, dy*i*EV)
+	frame pad_via .
+}
+
 frame paste_pad {
 	__0: vec @(SX/2, SY/2)
 	__1: vec @(-SX/2, -SY/2)
@@ -100,6 +127,7 @@ frame outline {
 
 package "QFN$pins-$variant"
 unit auto
+allow holes
 
 table
     { pins, variant, X1, Y1, X2, Y2, E, C1, C2, SE, SNX, SNY, SX, SY }
@@ -109,7 +137,7 @@ table
     { 28, "SiLabs", 0.25mm, 0.9mm, 3.3mm, 3.3mm, 0.5mm, 4.8mm, 4.8mm, 1.1mm, 3, 3, 0.9mm, 0.9mm }
     { 32, "VHHD-2", 0.26mm, 0.69mm, 3.7mm, 3.7mm, 0.5mm, 5.1mm, 5.1mm, 0.8mm, 3, 3, 0.55mm, 0.55mm }
     { 32, "VHHD-6", 0.26mm, 0.69mm, 3.4mm, 3.4mm, 0.5mm, 5.1mm, 5.1mm, 1.2mm, 2, 2, 0.75mm, 0.75mm }
-    { 32, "HVQFN33", 0.3mm, 1.08mm, 4.85mm, 4.85mm, 0.65mm, 6.9mm, 6.9mm, 1.7mm, 2, 2, 1mm, 1mm }
+    { 32, "HVQFN", 0.3mm, 1.08mm, 4.85mm, 4.85mm, 0.65mm, 6.9mm, 6.9mm, 1.7mm, 2, 2, 1mm, 1mm }
 
 set w = 5mil
 
@@ -120,6 +148,7 @@ set paste_ratio_20 = SX*SY*SNX*SNY/(X2*Y2)
 frame pads @
 frame center @
 frame outline @
+frame pad_vias @
 measy side.__0 >> side.__0 3mm
 meas side.__0 -> side.__0 -1mm
 measy center.__1 >> center.__0 2.3mm
