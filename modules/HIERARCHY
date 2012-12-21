@@ -335,6 +335,7 @@ Quad
 		QFP48
 		QFP64
 BGA
+	BGA-256
 	BGA-324
 	BGA-484
 Structure
