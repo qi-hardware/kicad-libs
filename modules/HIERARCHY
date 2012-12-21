@@ -276,6 +276,8 @@ Discrete_Multi
 		TSOP348
 Dual
 	SMT
+		DFN
+			DFN-8
 		MDIP
 			MDIP-4-355mil
 			MDIP-6-355mil
