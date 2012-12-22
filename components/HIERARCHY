@@ -121,6 +121,8 @@ Connector
 	Card
 		8:10-card
 		MEMCARD8
+		MEMCARD8-SHIELD4
+		MEMCARD8-SHIELD4-SW
 	Circular
 		DIN_5_2S
 		XLR-3-F-R
