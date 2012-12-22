@@ -325,6 +325,8 @@ Dual
 		DIP-38-300mil
 		DIP-40-300mil
 Quad
+	LGA
+		LGA-16-3x3
 	QFN
 		QFN16-LFCSP_LQ
 		QFN28-Atmel

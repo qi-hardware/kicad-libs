@@ -557,3 +557,13 @@ F: e-switch320
 #
 # http://www.ck-components.com/index.php?module=media&action=Display&cmpref=13325&lang=en&width=&height=&format=&alt=
 #
+
+# ST LGA patterns (e.g., LGA-3x3-16 for LIS3DH)
+F: LGA
+#
+# http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/TECHNICAL_NOTE/CD00134799.pdf
+#
+# Instead of using an asymmetric solder mask opening, we make the pads a bit
+# larger on the outside. That way, the solder mask opens as well, plut the
+# pads can be reached with a soldering iron.
+#

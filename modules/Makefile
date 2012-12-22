@@ -6,7 +6,7 @@ MODULES=8_10-card 8_10-socket-ra \
         fiducial \
 	header he-2row-dip he-shrouded \
 	ir \
-	ledsmd \
+	lga ledsmd \
 	mdip meander-2450MHz mic-ra-dip mini-usb\
 	pads pads-array phonejack \
 	qfn qfp \
