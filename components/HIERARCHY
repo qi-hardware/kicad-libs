@@ -145,6 +145,7 @@ Electromechanical
 Sensor
 	Acceleration
 		ADXL32X
+		LIS3DH
 FPGA
 	Xilinx
 		XC6SLXN-TQG144
