@@ -80,7 +80,8 @@ Werner Almesberger <werner@almesberger.net>
   components/lpc1100-qfn33.lib
   components/tps6216x.lib
   components/lis3dh.lib
-  components/memcard-shield4.lib (based on MEMCARD8 from con.lib, by Adam Wang)
+  components/memcard-shield4.lib
+	(based on MEMCARD8 from con.lib. by Xiangfu Liu)
   components/inductor.lib (based on filter.lib by Adam Wang)
   modules/pads.fpd
   modules/stdpass.fpd
