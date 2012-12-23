@@ -5,7 +5,7 @@ MODULES=8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	e-switch320 eus evqq7 \
         fiducial \
 	header he-2row-dip he-shrouded \
-	ir \
+	inductor-2p ir \
 	lga ledsmd \
 	mdip meander-2450MHz mic-ra-dip mini-usb\
 	pads pads-array phonejack \
