@@ -147,3 +147,4 @@ LibName75=./lpc1100-qfn33
 LibName76=./tps6216x
 LibName77=./lis3dh
 LibName78=./memcard8
+LibName79=./inductor

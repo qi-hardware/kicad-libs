@@ -5,6 +5,7 @@ Passive
 		crystal
 		DIODE
 		LED
+		INDUCTOR
 		filter
 		PPTC
 		R
