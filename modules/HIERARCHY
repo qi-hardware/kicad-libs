@@ -72,6 +72,7 @@ Connector
 					PAD_120x60_10x100mil
 	SMT
 		8:10-SOCKET-RA
+		8:10-SOCKET-RA-PUSH-PULL
 		miniUSB_B
 		USB-A-PLUG-SMT
 		ZX62-B-5PA

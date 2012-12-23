@@ -95,6 +95,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/evqq7.fpd
   modules/dfn.fpd
   modules/lga.fpd
+  modules/8_10-socket-ra-push-pull.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  

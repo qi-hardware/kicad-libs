@@ -567,3 +567,8 @@ F: LGA
 # larger on the outside. That way, the solder mask opens as well, plut the
 # pads can be reached with a soldering iron.
 #
+
+F: 8_10-SOCKET-RA-PUSH-PULL
+#
+# http://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/114-00841-68.pdf
+#
