@@ -126,7 +126,7 @@ frame outline {
 }
 
 package "QFN$pins-$variant"
-unit auto
+unit mil
 allow holes
 
 table
@@ -138,6 +138,7 @@ table
     { 32, "VHHD-2", 0.26mm, 0.69mm, 3.7mm, 3.7mm, 0.5mm, 5.1mm, 5.1mm, 0.8mm, 3, 3, 0.55mm, 0.55mm }
     { 32, "VHHD-6", 0.26mm, 0.69mm, 3.4mm, 3.4mm, 0.5mm, 5.1mm, 5.1mm, 1.2mm, 2, 2, 0.75mm, 0.75mm }
     { 32, "HVQFN", 0.3mm, 1.08mm, 4.85mm, 4.85mm, 0.65mm, 6.9mm, 6.9mm, 1.7mm, 2, 2, 1mm, 1mm }
+    { 48, "Freescale", 0.25mm, 0.9mm, 5.1mm, 5.1mm, 0.5mm, 7mm, 7mm, 1.1mm, 3, 3, 0.8mm, 0.8mm }
 
 set w = 5mil
 
