@@ -70,6 +70,8 @@ Connector
 					PAD_120x60_8x100mil
 					PAD_120x60_9x100mil
 					PAD_120x60_10x100mil
+			FPC
+				ER-OLED-FPC30
 	SMT
 		8:10-SOCKET-RA
 		8:10-SOCKET-RA-PUSH-PULL

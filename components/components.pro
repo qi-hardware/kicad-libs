@@ -149,3 +149,4 @@ LibName77=./lis3dh
 LibName78=./memcard8
 LibName79=./inductor
 LibName80=./kl25-48
+LibName81=./er-oled-fpc30

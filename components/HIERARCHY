@@ -30,6 +30,8 @@ Codec
 	Audio
 		wm9707scft/v
 Connector
+	FPC
+		er-oled-fpc30
 	Generated
 		conn_1
 		conn_2
