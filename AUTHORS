@@ -83,6 +83,7 @@ Werner Almesberger <werner@almesberger.net>
   components/memcard-shield4.lib
 	(based on MEMCARD8 from con.lib. by Xiangfu Liu)
   components/inductor.lib (based on filter.lib by Adam Wang)
+  components/kl25-48.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
