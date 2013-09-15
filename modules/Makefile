@@ -2,12 +2,12 @@ MODULES=8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	bat-clip-aa-th bga \
 	c-smd c-t-smd \
 	dcjack dfn din-5 dip dip4of6 do-214 dvi-recept-ra \
-	e-switch320 eus evqq7 \
+	e-switch320 er-oled-fpc30 eus evqq7 \
         fiducial \
 	header he-2row-dip he-shrouded \
 	inductor-2p ir \
 	lga ledsmd \
-	mdip meander-2450MHz mic-ra-dip mini-usb\
+	mdip meander-2450MHz memcard8-amp-10100660 mic-ra-dip mini-usb\
 	pads pads-array phonejack \
 	qfn qfp \
 	rca-3-ra rj45 \

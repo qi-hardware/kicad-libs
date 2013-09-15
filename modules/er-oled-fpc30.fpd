@@ -11,7 +11,7 @@ frame contact {
 }
 
 frame contacts {
-	set x = (i-n/2-0.5)*e
+	set x = -(i-n/2-0.5)*e
 
 	loop i = 1, n
 

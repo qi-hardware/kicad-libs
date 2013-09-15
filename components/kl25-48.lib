@@ -1,10 +1,10 @@
-EESchema-LIBRARY Version 2.3  Date: Sat Sep 14 23:57:19 2013
+EESchema-LIBRARY Version 2.3  Date: Sun Sep 15 15:43:41 2013
 #encoding utf-8
 #
 # KL25-48
 #
-DEF KL25-48 U? 0 40 Y Y 1 F N
-F0 "U?" -1400 1600 60 H V C CNN
+DEF KL25-48 U 0 40 Y Y 1 F N
+F0 "U" -1400 1600 60 H V C CNN
 F1 "KL25-48" 0 50 60 H V C CNN
 F2 "~" 800 -150 60 H V C CNN
 F3 "~" 800 -150 60 H V C CNN
