@@ -102,6 +102,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/8_10-socket-ra-push-pull.fpd
   modules/inductor-2p.fpd
   modules/er-oled-fpc30.fpd
+  modules/memcard8-amp-10100660.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
