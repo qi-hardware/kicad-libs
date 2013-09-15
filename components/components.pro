@@ -150,3 +150,4 @@ LibName78=./memcard8
 LibName79=./inductor
 LibName80=./kl25-48
 LibName81=./er-oled-fpc30
+LibName82=./tswa

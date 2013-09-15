@@ -12,7 +12,7 @@ MODULES=8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	qfn qfp \
 	rca-3-ra rj45 \
 	soic sot23 spacer sot sot-323 ssop stdpass \
-	tactile-sw-spst-ra-dip to tsop tssop5 \
+	tactile-sw-spst-ra-dip to tsop tssop5 tswa \
 	usb-a-dual-recept-r usb-a-pcb usb_a_plug_smt \
 	xlr-plug xlr-socket \
  	xtal-2 xtal-4 \
