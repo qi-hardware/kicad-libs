@@ -1,0 +1,78 @@
+/* MACHINE-GENERATED ! */
+
+frame knob {
+	table
+	    { x }
+	    { -tx/2 }
+	    { tx/2 }
+
+	__0: vec @(x, -oy/2)
+	__1: vec .(0mm, -ky)
+	__2: vec .(-kx/2, 0mm)
+	__3: vec .(0mm, ky*0.75)
+	line . __2 w
+	__4: vec __1(kx/2, 0mm)
+	line __2 . w
+	__5: vec .(0mm, ky*0.75)
+	line . __4 w
+}
+
+frame holes {
+	table
+	    { x }
+	    { -hx/2 }
+	    { hx/2 }
+
+	__0: vec @(x, 0mm)
+	__1: vec .(hr, hr)
+	__2: vec __0(-hr, -hr)
+	hole . __1
+}
+
+frame pads {
+	set x = e*(i-2)
+
+	loop i = 1, 3
+
+	__0: vec @(x, hy)
+	__1: vec .(-px/2, 0mm)
+	__2: vec .(px, py)
+	pad "$i" __1 .
+}
+
+frame outline {
+	table
+	    { x }
+	    { -ox/2 }
+	    { ox/2 }
+
+	__0: vec @(x, -oy/2)
+	__1: vec .(0mm, oy)
+	line __0 . w
+}
+
+package "SW-${type}"
+unit mm
+
+table
+    { type, px, py, e, hx, hy, hr, ox, oy, kx, ky, tx }
+    { "JS102011SAQN", 1.2mm, 2.5mm, 2.5mm, 6.8mm, 4mm-py, 0.9mm/2, 9mm, 3.6mm, 1.5mm, 2mm, 2mm }
+
+set w = 5mil
+
+frame outline @
+frame pads @
+frame holes @
+frame knob @
+measx outline.__0 >> outline.__0 -2.5mm-ky
+measx holes.__0 >> holes.__0 -3.5mm-ky
+measx holes.__2 -> holes.__1 2*hr+0.5mm
+measy pads.__1 -> pads.__2 0.5mm
+measx pads.__1 -> pads.__2 py+0.5mm
+measy outline.__0 -> outline.__1 1mm
+measx pads.__0 -> pads.__0 -0.5mm
+measy pads.__0 << holes.__0 -2mm
+measy pads.__2 << holes.__0 -3mm
+measx knob.__1 >> knob.__1 ky
+measy knob.__2 -> knob.__0 0.5mm
+measx knob.__2 -> knob.__4 -0.7mm

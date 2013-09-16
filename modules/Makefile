@@ -11,7 +11,7 @@ MODULES=8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	pads pads-array phonejack \
 	qfn qfp \
 	rca-3-ra rj45 \
-	soic sot23 spacer sot sot-323 ssop stdpass \
+	soic sot23 spacer sot sot-323 ssop stdpass sw-spdt-smt \
 	tactile-sw-spst-ra-dip to tsop tssop5 tswa \
 	usb-a-dual-recept-r usb-a-pcb usb_a_plug_smt \
 	xlr-plug xlr-socket \

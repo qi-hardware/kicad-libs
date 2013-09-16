@@ -145,6 +145,7 @@ Electromechanical
 	Switch
 		FSMRA2JH
 		SW_PUSH
+		SW-SPDT
 		EVQQ7
 		TSWA
 	Case

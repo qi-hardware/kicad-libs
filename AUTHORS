@@ -106,6 +106,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/er-oled-fpc30.fpd
   modules/memcard8-amp-10100660.fpd
   modules/tswa.fpd
+  modules/sw-spdt-smt.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
