@@ -86,6 +86,7 @@ Werner Almesberger <werner@almesberger.net>
   components/kl25-48.lib
   components/er-oled-fpc30.lib
   components/tswa.lib
+  components/aat1217.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
