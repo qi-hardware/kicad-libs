@@ -27,10 +27,15 @@ frame pins {
 
 	set d = 1.3mm
 
+	set aspect = 2
+
 	__0: vec @(x, y)
 	__1: vec .(d/2, d/2)
 	__2: vec __0(-d/2, -d/2)
-	rpad "$pin" . __1
+	hole . __1
+	__3: vec __0(d/2*aspect, -d/2*aspect)
+	__4: vec __0(-d/2*aspect, d/2*aspect)
+	rpad "$pin" __3 .
 }
 
 frame outline {
