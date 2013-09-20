@@ -55,7 +55,7 @@ unit mm
 
 table
     { n, e, px, py, pyo }
-    { 30, 0.7mm, 0.4mm, 2mm, 0.2mm }
+    { 30, 0.7mm, 0.46mm, 2mm, 0.3mm }
 
 table
     { cx, cy, nx, ny }
