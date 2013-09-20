@@ -43,6 +43,7 @@ frame outline {
 
 	__0: vec @(0mm, d/2)
 	circ @ . w
+	__1: vec @(0mm, -d/2)
 }
 
 package "TSWA-${d}"
@@ -56,6 +57,8 @@ frame holes @
 measx pins.__0 >> pins.__0 5mm
 measx holes.__0 >> holes.__0 4mm
 measx holes.__2 -> holes.__1 -1mm
-measx pins.__2 -> pins.__1 -1mm
+measx pins.__2 -> pins.__1 -1.5mm
 measy pins.__0 >> pins.__0 14mm
 measy pins.__0 >> holes.__0 13mm
+measx pins.__4 -> pins.__3 -4.5mm
+measy outline.__1 >> outline.__0 -d/2-1.5mm
