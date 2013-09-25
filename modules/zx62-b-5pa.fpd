@@ -7,13 +7,18 @@ frame signals {
 
 	set e = 0.65mm
 
+	table
+	    { ?rev, signal }
+	    { 0, n }
+	    { 1, 6-n }
+
 	loop n = 1, 5
 
 	__0: vec @(0mm, by)
 	__1: vec .((n-3)*e, 0mm)
 	__2: vec .(-sx/2, 0mm)
 	__3: vec __1(sx/2, -sy)
-	pad "$n" __2 .
+	pad "$signal" __2 .
 }
 
 frame rpads {
@@ -40,8 +45,8 @@ frame rpads {
 frame mpads {
 	table
 	    { n, mox, mix }
-	    { 0, 9.8mm, 6.2mm }
-	    { 1, 4.3mm, 0.5mm }
+	    { 0, 9.8mm, mix0 }
+	    { 1, mox1, 0.5mm }
 
 	set my = 1.9mm
 
@@ -64,15 +69,13 @@ frame edge {
 	    { ex, ey }
 	    { 7.9mm, 1.45mm }
 
-	set _ = 0
-
 	__0: vec @(0mm, -ey)
 	__1: vec .(-ex/2, 0mm)
 	__2: vec __0(ex/2, 0mm)
 	line __1 . w
 }
 
-package "ZX62-B-5PA"
+package "ZX62$var"
 unit mm
 
 set w = 0.2mm
@@ -80,6 +83,11 @@ set w = 0.2mm
 set sx = 7.9mm
 
 set by = 3.35mm
+
+table
+    { var, rev, mix0, mox1 }
+    { "-B-5PA", 0, 6.2mm, 4.3mm }
+    { "R-B-5P", 1, 6.6mm, 3.9mm }
 
 frame edge @
 frame mpads @
