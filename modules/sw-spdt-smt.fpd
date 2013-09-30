@@ -9,11 +9,11 @@ frame knob {
 	__0: vec @(x, -oy/2)
 	__1: vec .(0mm, -ky)
 	__2: vec .(-kx/2, 0mm)
-	__3: vec .(0mm, ky*0.75)
+	__3: vec .(0mm, ky)
 	line . __2 w
 	__4: vec __1(kx/2, 0mm)
 	line __2 . w
-	__5: vec .(0mm, ky*0.75)
+	__5: vec .(0mm, ky)
 	line . __4 w
 }
 
@@ -41,14 +41,13 @@ frame pads {
 }
 
 frame outline {
-	table
-	    { x }
-	    { -ox/2 }
-	    { ox/2 }
-
-	__0: vec @(x, -oy/2)
-	__1: vec .(0mm, oy)
-	line __0 . w
+	__0: vec @(ox/2, -oy/2)
+	__1: vec __0(0mm, oy)
+	line . __0 w
+	__2: vec @(-ox/2, -oy/2)
+	line . __0 w
+	__3: vec __2(0mm, oy)
+	line . __2 w
 }
 
 package "SW-${type}"
@@ -64,15 +63,15 @@ frame outline @
 frame pads @
 frame holes @
 frame knob @
-measx outline.__0 >> outline.__0 -2.5mm-ky
 measx holes.__0 >> holes.__0 -3.5mm-ky
 measx holes.__2 -> holes.__1 2*hr+0.5mm
 measy pads.__1 -> pads.__2 0.5mm
 measx pads.__1 -> pads.__2 py+0.5mm
-measy outline.__0 -> outline.__1 1mm
 measx pads.__0 -> pads.__0 -0.5mm
 measy pads.__0 << holes.__0 -2mm
 measy pads.__2 << holes.__0 -3mm
-measx knob.__1 >> knob.__1 ky
+measx knob.__1 >> knob.__1 ky+1mm
 measy knob.__2 -> knob.__0 0.5mm
 measx knob.__2 -> knob.__4 -0.7mm
+measy outline.__2 >> outline.__3 1mm
+measx outline.__2 >> outline.__0 -ky-2.5mm
