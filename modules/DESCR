@@ -5,3 +5,6 @@ USB-A-PCB: http://www.poweredusb.org/pdf/usb20.pdf
 # unofficial copy of the specification. We reference it here because the
 # original is in a ZIP, making access less convenient:
 # http://www.usb.org/developers/docs/usb_20_071012.zip
+USB-A-MID-48258: Molex 48258-0002 and -0001
+USB-A-MID-1746311: TE 1746311
+  Note: clearance between pins 2 and 3 is only about 0.16 mm / 6 mil
