@@ -13,15 +13,22 @@
 
 usage()
 {
-	echo "usage: $0 [-F] [-L libdir ...] [-l lib ...] hierarchy" 1>&2
-	echo "       $0 -Q [-L libdir ...] [-l lib ...] project.pro" 1>&2
+	echo "usage: $0 [-F] [-x lib ...] [-L libdir ...] [-l lib ...] hierarchy" 1>&2
+	echo "       $0 -Q [-x lib ...] [-L libdir ...] [-l lib ...] project.pro" 1>&2
 	exit 1
+}
+
+
+excluded()
+{
+	[ "`eval echo \\\$exclude_\`sanitize \"$1\"\``" ]
 }
 
 
 scan_comp()
 {
 	for n in "$@"; do
+		excluded "$n" && continue
 		sed '/^DEF ~\?/{s///;s/ .*//;p;};d' <$n >>_tmp2
 	done
 }
@@ -30,6 +37,7 @@ scan_comp()
 scan_fped()
 {
 	for n in "$@"; do
+		excluded "$n" && continue
 		fped -k $n - | sed '/^\$MODULE /s///p;d' >>_tmp2
 	done
 }
@@ -41,6 +49,13 @@ scan_pro()
 		sed '/^DEF ~\?/{s///;s/ .*//;p;};d' <$n.lib
 	done
 }
+
+
+sanitize()
+{
+	basename "$1" .$ext | tr -d '\n' | tr -c 'A-Za-z0-9_[-]' _
+}
+
 
 trap "rm -f _tmp1 _tmp2" 0
 
@@ -72,6 +87,8 @@ while [ "$1" ]; do
 		else
 			scan_fped "$1"
 		fi;;
+	-x)	shift
+		eval exclude_`sanitize "$1"`=y;;
 	-*)	usage;;
 	*)	break;;
 	esac
