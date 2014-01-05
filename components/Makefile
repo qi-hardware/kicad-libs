@@ -40,6 +40,7 @@ upload:		catalog.pdf
 
 missing:	$(GEN)
 		../scripts/missing-in-tree -L . HIERARCHY
+		../scripts/missing-in-tree -Q $(GEN:%=-x %) -L . components.pro  
 
 %.lib:		%.pl
 		./$< >$@ || { rm -f $@; exit 1; }
