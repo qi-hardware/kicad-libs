@@ -166,6 +166,7 @@ MCU
 		atmega48-mmu
 		atmega8u2
 	Kinetis
+		kl25-32
 		kl25-48
 	LP1xxx
 		LPC1100-QFN33
