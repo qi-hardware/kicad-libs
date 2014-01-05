@@ -39,14 +39,18 @@ frame pins {
 	    { 3, 1mm }
 	    { 4, 3.5mm }
 
+	set aspectx = 1.85
+
+	set aspecty = 2
+
 	loop p = 1, 4
 
 	__0: vec @(px, Py)
 	__1: vec .(Pd/2, Pd/2)
 	__2: vec __0(-Pd/2, -Pd/2)
 	hole . __1
-	__3: vec __0(-Pd/2*aspect, Pd/2*aspect)
-	__4: vec __0(Pd/2*aspect, -Pd/2*aspect)
+	__3: vec __0(-Pd/2*aspectx, Pd/2*aspecty)
+	__4: vec __0(Pd/2*aspectx, -Pd/2*aspecty)
 	rpad "$pin" __3 .
 }
 
@@ -82,7 +86,7 @@ unit mm
 
 table
     { name, Cy, Bx, By, Fy, Py, Pd, ascend, Rx, Ry, Rw, Rh, Lxo, Ly }
-    { "48258", 2mm, 13.5mm, 7.5mm, 9.9mm-6.85mm, 9.95mm, 0.85mm, 1, 15.7mm, 9.1mm, 0.9mm, 2.3mm, 18.3mm, 2.6mm }
+    { "48258", 2mm, 13.5mm, 7.5mm, 9.9mm-6.85mm, 9.95mm, 0.92mm, 1, 15.7mm, 9.1mm, 0.9mm, 2.3mm, 18.3mm, 2.6mm }
     { "1746311", 4mm, 14.2mm, 5.55mm, 14.55mm-9.05mm, 10.25mm, 0.92mm, 0, 12.8mm, 9.05mm, 0.9mm, 2mm, 18mm, 2.5mm }
 
 set aspect = 2
