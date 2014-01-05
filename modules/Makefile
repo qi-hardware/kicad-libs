@@ -6,7 +6,7 @@ MODULES=8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
         fiducial \
 	header he-2row-dip he-shrouded \
 	inductor-2p ir \
-	lga ledsmd \
+	lga ledsmd lp2032sm \
 	mdip meander-2450MHz memcard8-amp-10100660 mic-ra-dip mini-usb\
 	pads pads-array phonejack \
 	qfn qfp \

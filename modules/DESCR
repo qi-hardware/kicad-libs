@@ -7,3 +7,7 @@ USB-A-PCB: http://www.poweredusb.org/pdf/usb20.pdf
 # http://www.usb.org/developers/docs/usb_20_071012.zip
 USB-A-MID-48258: Molex 48258-0002 and -0001
 USB-A-MID-1746311: TE 1746311
+BAT-BLP2032SM: MPD Surface Mount Battery Holder for CR2032
+  Note: data sheet has contradictory information - check against real part.
+BAT-LP2032SM: MPD Surface Mount Battery Holder for CR2032
+  Note: data sheet has contradictory information - check against real part.

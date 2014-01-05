@@ -112,6 +112,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/memcard8-amp-10100660.fpd
   modules/tswa.fpd
   modules/sw-spdt-smt.fpd
+  modules/lp2032sm.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
