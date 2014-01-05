@@ -140,6 +140,7 @@ Connector
 		vga
 	USB
 		usb_a_plug
+		usb_a_s4
 		mini_usb_b
 Electromechanical
 	Switch

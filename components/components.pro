@@ -157,3 +157,4 @@ LibName85=./cc2543
 LibName86=./dc_jack
 LibName87=./testpoint
 LibName88=./zener
+LibName89=./usb-a-s4

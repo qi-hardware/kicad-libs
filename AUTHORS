@@ -53,6 +53,7 @@ Werner Almesberger <werner@almesberger.net>
   components/c8051f326.lib
   components/atmega48-mmu.lib
   components/usb_a_plug.lib (based on mini_usb_b.lib by Alvaro Lopes)
+  components/usb_a_s4.lib (based on mini_usb_b.lib by Alvaro Lopes)
   components/pic18f46j50-ml.lib
   components/device_sot.lib
   components/dual_diode.lib
