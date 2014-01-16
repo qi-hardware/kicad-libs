@@ -46,6 +46,16 @@ frame paste {
 	frame paste_pad .
 }
 
+frame center_hole {
+	table
+	    { ?variant, r }
+	    { "CC2543", 0.8mm }
+
+	__0: vec @(r, r)
+	__1: vec @(-r, -r)
+	hole . __0
+}
+
 frame center {
 	set pin = pins+1
 
@@ -53,6 +63,7 @@ frame center {
 	__1: vec @(-X2/2, -Y2/2)
 	pad "$pin" . __0 bare
 	frame paste @
+	frame center_hole @
 }
 
 frame pad_round {
@@ -154,6 +165,7 @@ table
     { 28, "SiLabs", 0.25mm, 0.9mm, 3.3mm, 3.3mm, 0.5mm, 4.8mm, 4.8mm, 1.1mm, 3, 3, 0.9mm, 0.9mm, 0 }
     { 32, "VHHD-2", 0.26mm, 0.69mm, 3.7mm, 3.7mm, 0.5mm, 5.1mm, 5.1mm, 0.8mm, 3, 3, 0.55mm, 0.55mm, 0 }
     { 32, "VHHD-6", 0.26mm, 0.69mm, 3.4mm, 3.4mm, 0.5mm, 5.1mm, 5.1mm, 1.2mm, 2, 2, 0.75mm, 0.75mm, 0 }
+    { 32, "CC2543", 0.26mm, 0.69mm, 3.4mm, 3.4mm, 0.5mm, 5.1mm, 5.1mm, 1.2mm, 0, 0, 0.75mm, 0.75mm, 0 }
     { 32, "HVQFN", 0.3mm, 1.08mm, 4.85mm, 4.85mm, 0.65mm, 6.9mm, 6.9mm, 1.7mm, 2, 2, 1mm, 1mm, 0 }
     { 32, "Freescale", 0.25mm, 0.9mm, 3.6mm, 3.6mm, 0.5mm, 5mm, 5mm, 1.2mm, 2, 2, 0.9mm, 0.9mm, 1 }
     { 48, "Freescale", 0.25mm, 0.9mm, 5.1mm, 5.1mm, 0.5mm, 7mm, 7mm, 1.1mm, 3, 3, 0.8mm, 0.8mm, 0 }
