@@ -23,7 +23,7 @@ frame rear {
 	hole __1 .
 	__3: vec __0(aspect*Rw/2, aspect*Rh/2)
 	__4: vec __0(-aspect*Rw/2, -aspect*Rh/2)
-	rpad "$pin" . __3
+	rpad "$pin" . __3 bare
 }
 
 frame pins {
@@ -51,7 +51,7 @@ frame pins {
 	hole . __1
 	__3: vec __0(-Pd/2*aspectx, Pd/2*aspecty)
 	__4: vec __0(Pd/2*aspectx, -Pd/2*aspecty)
-	rpad "$pin" __3 .
+	rpad "$pin" __3 . bare
 }
 
 frame front {
