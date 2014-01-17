@@ -5,20 +5,33 @@ Connector
 		Pads
 			Round
 				PAD_C_1mm
+				PAD_C_1mm-NOSILK
 				PAD_C_60x60
+				PAD_C_60x60-NOSILK
 				PAD_C_80x80
+				PAD_C_80x80-NOSILK
 				PAD_C_100x100
+				PAD_C_100x100-NOSILK
 				PAD_C_150x150
+				PAD_C_150x150-NOSILK
 			Square
 				PAD_S_1mm
+				PAD_S_1mm-NOSILK
 				PAD_S_60x60
+				PAD_S_60x60-NOSILK
 				PAD_S_80x80
+				PAD_S_80x80-NOSILK
 				PAD_S_100x100
+				PAD_S_100x100-NOSILK
 				PAD_S_120x120
+				PAD_S_120x120-NOSILK
 				PAD_S_150x150
+				PAD_S_150x150-NOSILK
 			Rectangular
 				PAD_R_2mm
+				PAD_R_2mm-NOSILK
 				PAD_R_120x60
+				PAD_R_120x60-NOSILK
 			Array
 				2mm
 					PAD_2mm_2x50mil
