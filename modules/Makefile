@@ -8,7 +8,7 @@ MODULES=8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	inductor-2p ir \
 	lga ledsmd lp2032sm \
 	mdip meander-2450MHz memcard8-amp-10100660 mic-ra-dip mini-usb\
-	pads pads-array phonejack \
+	pads pads-array phonejack pogo \
 	qfn qfp \
 	rca-3-ra rj45 \
 	soic sot23 spacer sot sot-323 ssop stdpass sw-spdt-smt \
