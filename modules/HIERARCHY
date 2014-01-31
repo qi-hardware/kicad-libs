@@ -401,6 +401,7 @@ Switch
 	Navigation
 		EVQQ7
 Structure
+	FIDUCIAL
 	Antenna
 		MEANDER-2450MHz-right-0.8mm
 		MEANDER-2450MHz-left-0.8mm
@@ -409,7 +410,6 @@ Structure
 		MEANDER-2450MHz-right-1.6mm
 		MEANDER-2450MHz-left-1.6mm
 Mechanical
-	FIDUCIAL
 	Spacer
 		M3
 			Copper
