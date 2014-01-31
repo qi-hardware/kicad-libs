@@ -413,6 +413,7 @@ Mechanical
 	Spacer
 		M3
 			Copper
+				SPACER-3mm-7mm-7.5mm
 				SPACER-3mm-7mm-9.5mm
 				SPACER-3mm-7mm-10mm
 				SPACER-3mm-8mm-9.5mm
@@ -420,6 +421,7 @@ Mechanical
 				SPACER-3mm-9mm-9.5mm
 				SPACER-3mm-9mm-10mm
 			Bare
+				SPACER-3mm-7mm-7.5mm-BARE
 				SPACER-3mm-7mm-9.5mm-BARE
 				SPACER-3mm-7mm-10mm-BARE
 				SPACER-3mm-8mm-9.5mm-BARE
@@ -428,6 +430,7 @@ Mechanical
 				SPACER-3mm-9mm-10mm-BARE
 		M4
 			Copper
+				SPACER-4mm-7mm-7.5mm
 				SPACER-4mm-7mm-9.5mm
 				SPACER-4mm-7mm-10mm
 				SPACER-4mm-8mm-9.5mm
@@ -435,6 +438,7 @@ Mechanical
 				SPACER-4mm-9mm-9.5mm
 				SPACER-4mm-9mm-10mm
 			Bare
+				SPACER-4mm-7mm-7.5mm-BARE
 				SPACER-4mm-7mm-9.5mm-BARE
 				SPACER-4mm-7mm-10mm-BARE
 				SPACER-4mm-8mm-9.5mm-BARE

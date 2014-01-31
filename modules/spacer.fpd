@@ -33,10 +33,13 @@ set area = 10mm
 
 table
     { keepout }
+    { 7.5mm }
     { 9.5mm }
     { 10mm }
 
 set w = 5mil
+
+loop if = 0.01, (keepout-disc)/10mm
 
 __0: vec @(hole/2, hole/2)
 __1: vec @(-hole/2, -hole/2)
