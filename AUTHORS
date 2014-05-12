@@ -114,6 +114,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/sw-spdt-smt.fpd
   modules/lp2032sm.fpd
   modules/pogo.fpd
+  modules/sod.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  

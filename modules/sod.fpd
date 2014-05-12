@@ -1,0 +1,59 @@
+/* MACHINE-GENERATED ! */
+
+frame pads {
+	table
+	    { n, dx }
+	    { 1, -1 }
+	    { 2, 1 }
+
+	set x = dx*Cx/2
+
+	__0: vec @(x, 0mm)
+	__1: vec .(Px/2, Py/2)
+	__2: vec __0(-Px/2, -Py/2)
+	pad "$n" . __1
+}
+
+frame outline {
+	set _ = 0
+
+	loop i = 0, 1
+
+	__0: vec @(-H/2, B*(i-0.5))
+	__1: vec .(H, 0mm)
+	line __0 . w
+}
+
+frame symbol {
+	set s = B/2-w*2
+
+	__0: vec @(-s, s)
+	__1: vec @(-s, -s)
+	line . __0 w
+	__2: vec @(s, 0mm)
+	line __0 . w
+	line __1 . w
+	__3: vec .(0mm, s)
+	__4: vec __2(0mm, -s)
+	line __3 . w
+}
+
+package "SOD-$name"
+unit mm
+
+table
+    { name, B, H, Cx, Px, Py, C }
+    { "323", 1.3mm, 1.7mm, 2.4mm, 0.6mm, 0.6mm, 2.4mm }
+
+set w = 5mil
+
+frame pads @
+frame outline @
+frame symbol @
+measy outline.__0 >> outline.__0 1mm
+measx outline.__1 << outline.__0 0.5mm
+measx pads.__0 >> pads.__0 -B/2-0.5mm
+measy pads.__2 -> pads.__1 0.2mm
+measx pads.__2 -> pads.__1 -0.2mm
+measx pads.__1 >> pads.__2 (B-Py)/2+0.7mm
+measx pads.__2 >> pads.__1 -(B-Py)/2-0.7mm

@@ -284,6 +284,7 @@ Discrete_2P
 		Diode
 			DO-214AA
 			LEDSMD-0603R
+			SOD-323
 		Crystal
 			xtal2-11.5mmx4.83mm
 	TH
