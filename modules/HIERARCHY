@@ -286,6 +286,7 @@ Discrete_2P
 			LEDSMD-0603R
 			SOD-323
 		Crystal
+			xtal2-3.2mmx1.5mm
 			xtal2-11.5mmx4.83mm
 	TH
 		Special
