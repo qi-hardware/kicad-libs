@@ -73,7 +73,7 @@ frame corners {
 	line . __2 w
 }
 
-package "$name"
+package "KS-$name"
 unit mm
 
 set batr = 10mm

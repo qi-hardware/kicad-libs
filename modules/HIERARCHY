@@ -91,7 +91,7 @@ Connector
 			8:10-SOCKET-RA-PUSH-PULL
 			MEMCARD8-AMP-10100660
 		Battery
-			1059
+			KS-1059
 			BAT-LP2032SM
 			BAT-BLP2032SM
 		USB
@@ -107,7 +107,7 @@ Connector
 			he-shrouded-7x2pins-2mm
 	TH
 		Battery
-			1060
+			KS-1060
 			BAT-CLIP-AA-TH
 			BAT-CLIP-AA-TH-PAIR
 		USB
