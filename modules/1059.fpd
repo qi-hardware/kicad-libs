@@ -1,0 +1,107 @@
+/* MACHINE-GENERATED ! */
+
+frame smt {
+	table
+	    { Cx, Px, Py }
+	    { 29.31mm, 2.59mm+add, 3.61mm+add }
+
+	table
+	    { pad, dx }
+	    { 1, -1 }
+	    { 2, 1 }
+
+	set add = 0.1mm
+
+	loop if = th, 0
+
+	__0: vec @(Cx/2*dx, 0mm)
+	__1: vec .(Px/2, Py/2)
+	__2: vec __0(-Px/2, -Py/2)
+	pad "$pad" . __1
+}
+
+frame th {
+	table
+	    { Cx, Cy, Hd }
+	    { 26.92mm, 2.54mm, 0.97mm }
+
+	set aspect = 2.5
+
+	set Rd = Hd*aspect
+
+	table
+	    { pin, dx, dy }
+	    { 1, -1, 0 }
+	    { 2, 1, 1 }
+	    { 2, 1, -1 }
+
+	loop if = 1, th
+
+	__0: vec @(Cx/2*dx, Cy/2*dy)
+	__1: vec .(Hd/2, Hd/2)
+	__2: vec __0(-Hd/2, -Hd/2)
+	hole . __1
+	__3: vec __0(-Rd/2, Rd/2)
+	__4: vec __0(Rd/2, -Rd/2)
+	rpad "$pin" __3 .
+}
+
+frame battery {
+	__0: vec @(batr, 0mm)
+	circ @ . w
+}
+
+frame corners {
+	table
+	    { dx, dy, corner }
+	    { -1, -1, 0mm }
+	    { -1, 1, 0mm }
+	    { 1, -1, 0mm }
+	    { 1, 1, 1.5mm }
+
+	set h = My/2*dy
+
+	__0: vec @(Mx/2*dx, My/2*dy)
+	__1: vec .(0mm, corner*-dy)
+	__2: vec __0(corner*-dx, 0mm)
+	line . __1 w
+	__3: vec __0(0mm, (My-Ty)/2*-dy)
+	line __1 . w
+	__5: vec .((Tx-Mx)/2*dx, 0mm)
+	line . __3 w
+	__4: vec @(sqrt(batr*batr-h*h)*dx, h)
+	line . __2 w
+}
+
+package "$name"
+unit mm
+
+set batr = 10mm
+
+set w = 5mil
+
+table
+    { Mx, My, Tx, Ty }
+    { 22mm, 16mm, 28.4mm, 7mm }
+
+table
+    { name, th }
+    { "1059", 1 }
+    { "1060", 0 }
+
+frame battery @
+frame corners @
+frame th @
+frame smt @
+measx corners.__0 -> corners.__0 -4mm
+measx corners.__5 -> corners.__5 -10mm
+measy corners.__0 -> corners.__0 9mm
+measy corners.__5 -> corners.__5 4mm
+measy smt.__2 -> smt.__1 -3.6mm
+measx smt.__2 -> smt.__1 -1mm
+measx smt.__0 >> smt.__0 12mm
+measx th.__0 >> th.__0 12mm
+measx th.__3 >> th.__4 12mm
+measy th.__2 -> th.__1 -3mm
+measx th.__3 -> th.__4 -3.5mm
+measx smt.__2 >> smt.__1 15mm

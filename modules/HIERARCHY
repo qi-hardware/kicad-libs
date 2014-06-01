@@ -88,6 +88,7 @@ Connector
 	SMT
 		8:10-SOCKET-RA
 		8:10-SOCKET-RA-PUSH-PULL
+		1059
 		BAT-LP2032SM
 		BAT-BLP2032SM
 		MEMCARD8-AMP-10100660
@@ -102,6 +103,7 @@ Connector
 			he-shrouded-3x2pins-2mm
 			he-shrouded-7x2pins-2mm
 	TH
+		1060
 		BAT-CLIP-AA-TH
 		BAT-CLIP-AA-TH-PAIR
 		DCJACK-14.4mmx9mm
