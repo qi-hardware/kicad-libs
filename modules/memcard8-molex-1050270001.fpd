@@ -1,0 +1,110 @@
+/* MACHINE-GENERATED ! */
+
+frame contacts {
+	table
+	    { pin, x }
+	    { 1, 3.85mm }
+	    { 2, 2.75mm }
+	    { 3, 1.65mm }
+	    { 4, 0.9mm }
+	    { "SW", 0.2mm }
+	    { 5, -0.55mm }
+	    { 6, -1.65mm }
+	    { 7, -2.75mm }
+	    { 8, -3.85mm }
+
+	set y = 7.15mm
+
+	table
+	    { px, py }
+	    { 0.5mm, 1mm }
+
+	__0: vec @(0mm, -y)
+	__1: vec .(x, 0mm)
+	__2: vec .(-px/2, 0mm)
+	__3: vec __1(px/2, py)
+	pad "$pin" . __2
+}
+
+frame shield {
+	table
+	    { dx }
+	    { -1 }
+	    { 1 }
+
+	table
+	    { dy }
+	    { 0 }
+	    { -1 }
+
+	table
+	    { x, y }
+	    { dx*5.75mm, dy*4.45mm }
+
+	table
+	    { px, py }
+	    { 1.05mm, 1.2mm }
+
+	set n = (dx+1)/2-dy*2+1
+
+	__0: vec @(x, y)
+	__1: vec .(-dx*px, -py)
+	pad "S$n" __0 .
+}
+
+frame card {
+	table
+	    { x, y }
+	    { 11mm, 15.35mm }
+
+	__0: vec @(-x/2, -y)
+	__1: vec @(x/2, -y)
+	line __0 . w
+}
+
+frame outline {
+	table
+	    { ox, oy }
+	    { 11.24mm, 6.05mm }
+
+	set xt = ox/2-1.2mm
+
+	table
+	    { yst, ysb }
+	    { 1.4mm, 4.25mm }
+
+	set xb = 4.85mm
+
+	table
+	    { dx }
+	    { -1 }
+	    { 1 }
+
+	__0: vec @(dx*xt, 0mm)
+	line . @ w
+	__1: vec @(dx*ox/2, -yst)
+	__2: vec __1(0mm, yst-ysb)
+	line __1 . w
+	__3: vec @(dx*ox/2, -oy)
+	__4: vec __3(dx*(xb-ox/2), 0mm)
+	line . __3 w
+}
+
+package "MEMCARD8-MOLEX-1050270001"
+unit mm
+
+set w = 5mil
+
+__0: vec @(0mm, 0mm)
+frame contacts @
+frame shield @
+frame card @
+frame outline @
+measy shield.__0 -> shield.__0 1mm
+measy contacts.__2 -> outline.__0 3.5mm
+measy shield.__1 -> shield.__0 2.05mm
+measx __0 >> shield.__0 1mm
+measy contacts.__1 -> contacts.__3 1mm
+measx shield.__0 -> shield.__1 1mm
+measx contacts.__2 -> contacts.__3 -1mm
+measy card.__1 >> outline.__0 -1mm

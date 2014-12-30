@@ -110,6 +110,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/inductor-2p.fpd
   modules/er-oled-fpc30.fpd
   modules/memcard8-amp-10100660.fpd
+  modules/memcard8-molex-1050270001.fpd
   modules/tswa.fpd
   modules/sw-spdt-smt.fpd
   modules/lp2032sm.fpd
