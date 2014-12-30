@@ -159,3 +159,4 @@ LibName87=./testpoint
 LibName88=./zener
 LibName89=./usb-a-s4
 LibName90=./kl25-32
+LibName91=./kl16-32
