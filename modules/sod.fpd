@@ -42,8 +42,9 @@ package "SOD-$name"
 unit mm
 
 table
-    { name, B, H, Cx, Px, Py, C }
-    { "323", 1.3mm, 1.7mm, 2.4mm, 0.6mm, 0.6mm, 2.4mm }
+    { name, B, H, Cx, Px, Py }
+    { "323", 1.3mm, 1.7mm, 2.4mm, 0.6mm, 0.6mm }
+    { "123", 1.8mm, 3mm, 3.3mm, 1mm, 1.2mm }
 
 set w = 5mil
 
