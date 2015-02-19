@@ -10,6 +10,16 @@ frame hole {
 	hole . __0
 }
 
+frame silk {
+	set r = (cd*aspect+clear)/2
+
+	loop if = 1, silk
+
+	__0: vec @(r, 0mm)
+	circ @ . w
+	__1: vec @(-r, 0mm)
+}
+
 frame pad {
 	set r = cd*aspect/2
 
@@ -18,7 +28,7 @@ frame pad {
 	rpad "1" . __0
 }
 
-package "POGO-$name"
+package "POGO-$name$ext"
 unit mm
 
 table
@@ -37,7 +47,18 @@ set aspect = 1.4
 
 set slack = 0.05mm
 
+set clear = 0.5mm
+
+table
+    { silk, ext }
+    { 0, "" }
+    { 1, "-SILK" }
+
+set w = 5mil
+
 frame pad @
 frame hole @
+frame silk @
 measx pad.__1 >> pad.__0 -1mm
 measx hole.__1 >> hole.__0 -(cd*aspect-ph-slack)/2-0.5mm
+measx silk.__1 >> silk.__0 cd*aspect/2+1mm
