@@ -1,0 +1,55 @@
+/* MACHINE-GENERATED ! */
+
+frame pad {
+	__0: vec @(-Px/2, -Py/2)
+	__1: vec @(Px/2, Py/2)
+	pad "$n" __0 .
+}
+
+frame pads {
+	table
+	    { n, x, y }
+	    { 1, 1, 1 }
+	    { 2, 0, 1 }
+	    { 3, -1, 1 }
+	    { 4, -1, -1 }
+	    { 5, 0, -1 }
+	    { 6, 1, -1 }
+
+	set sy = (Py+Gy)/2
+
+	__0: vec @(x*e, y*sy)
+	frame pad .
+}
+
+frame outline {
+	set L = A+2*clear
+
+	set W = 2*Py+Gy+2*clear
+
+	set clear = 5mil
+
+	set width = 5mil
+
+	__0: vec @(-L/2, -W/2)
+	__1: vec @(L/2, W/2)
+	rect __0 . width
+}
+
+package "0805-6"
+unit mm
+
+table
+    { A, B, a, c, e, Px, Py, Gy }
+    { 2mm, 1.25mm, 0.35mm, 0.3mm, 0.65mm, 0.35mm, 0.8mm, 0.8mm }
+
+frame pads @
+frame outline @
+measx pad.__0 -> pad.__1 -1mm
+measy pad.__1 -> pad.__0 1.5mm
+measx pad.__1 -> pad.__0 -1.5mm
+measx pad.__0 >> pad.__1 -1.5mm
+measy pad.__0 -> pad.__1 1.1mm
+measy pad.__0 >> pad.__1 1.5mm
+measx outline.__0 >> outline.__1 -1.5mm
+measy outline.__0 >> outline.__1 1.5mm

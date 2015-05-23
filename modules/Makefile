@@ -1,4 +1,4 @@
-MODULES=1059 8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
+MODULES=0805-6 1059 8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	bat-clip-aa-th bga \
 	c-smd c-t-smd \
 	dcjack dfn din-5 dip dip4of6 do-214 dvi-recept-ra \
