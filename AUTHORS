@@ -92,6 +92,7 @@ Werner Almesberger <werner@almesberger.net>
   components/cc2543.lib
   components/kl16-32.lib
   components/aat4282.lib
+  components/tlv61220.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd

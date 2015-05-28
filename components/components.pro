@@ -161,3 +161,4 @@ LibName89=./usb-a-s4
 LibName90=./kl25-32
 LibName91=./kl16-32
 LibName92=./aat4282
+LibName93=./tlv61220
