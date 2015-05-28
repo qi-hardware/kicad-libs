@@ -106,6 +106,35 @@ Connector
 			he-shrouded-2x2pins-2mm
 			he-shrouded-3x2pins-2mm
 			he-shrouded-7x2pins-2mm
+		DF40
+			Male
+				DF40-10DP
+				DF40-12DP
+				DF40-20DP
+				DF40-24DP
+				DF40-30DP
+				DF40-34DP
+				DF40-40DP
+				DF40-50DP
+				DF40-60DP
+				DF40-70DP
+				DF40-80DP
+				DF40-90DP
+				DF40-100DP
+			Female
+				DF40-10DS
+				DF40-12DS
+				DF40-20DS
+				DF40-24DS
+				DF40-30DS
+				DF40-34DS
+				DF40-40DS
+				DF40-50DS
+				DF40-60DS
+				DF40-70DS
+				DF40-80DS
+				DF40-90DS
+				DF40-100DS
 	TH
 		Battery
 			KS-1060

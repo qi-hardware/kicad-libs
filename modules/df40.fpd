@@ -1,0 +1,144 @@
+/* MACHINE-GENERATED ! */
+
+frame pad {
+	set px = X/2
+
+	set py = Y/2
+
+	__0: vec @(px, py)
+	__1: vec @(-px, -py)
+	pad "$n" . __0
+}
+
+frame pads {
+	set x = e*(xi-pins/4+0.5)
+
+	set y = (Yi+Yo)/2*(yi-0.5)
+
+	set n = 2*xi+yi+1
+
+	loop xi = 0, pins/2-1
+
+	loop yi = 0, 1
+
+	__0: vec @(x, y)
+	frame pad .
+}
+
+frame outline {
+	table
+	    { dx }
+	    { -1 }
+	    { 1 }
+
+	set x = dx*A/2
+
+	set y = Yout/2
+
+	__0: vec @(x, y)
+	__1: vec @(x, -y)
+	line __0 . w
+}
+
+frame corner_pad {
+	set py = Y/2
+
+	set x = cpx/2
+
+	set y = Y/2
+
+	__0: vec @(x, y)
+	__1: vec @(-x, -y)
+	pad "0" . __0
+}
+
+frame corner {
+	set cpx = 0.65mm
+
+	table
+	    { dx }
+	    { -1 }
+	    { 1 }
+
+	table
+	    { dy }
+	    { -1 }
+	    { 1 }
+
+	set x = dx*((pins/2-1)*e/2+0.3mm+cpx/2)
+
+	set y = (Yi+Yo)/4*dy
+
+	loop if = 1, corners
+
+	__0: vec @(x, y)
+	frame corner_pad .
+}
+
+frame keepout {
+	table
+	    { dx }
+	    { -1 }
+	    { 1 }
+
+	set x = ((pins/2-1)*e+X)/2
+
+	set y = K/2*dx
+
+	loop if = 1, keepout
+
+	__0: vec @(-x, y)
+	__1: vec @(x, y)
+	line __0 . w
+}
+
+package "DF40-${pins}${type}"
+unit mm
+
+table
+    { pins }
+    { 10 }
+    { 12 }
+    { 20 }
+    { 24 }
+    { 30 }
+    { 34 }
+    { 40 }
+    { 50 }
+    { 60 }
+    { 70 }
+    { 80 }
+    { 90 }
+    { 100 }
+
+set e = 0.4mm
+
+set A = pins*e/2+side
+
+set K = 1.5mm
+
+set X = 0.2mm
+
+set Y = (Yo-Yi)/2
+
+set w = 5mil
+
+table
+    { type, Yi, Yo, Yout, side, keepout, corners }
+    { "DS", 2.38mm, 3.78mm, 2.94mm, 2.6mm, 1, 0 }
+    { "DP", 2.05mm, 3.37mm, 1.85mm, 1.52mm, 0, 1 }
+
+frame pads @
+frame keepout @
+frame outline @
+frame corner @
+measy pad.__1 -> pad.__0 side/2+0.5mm
+measx pads.__0 >> pads.__0 -Y/2-0.5mm
+measx pad.__1 -> pad.__0 Y+0.5mm
+measy keepout.__0 >> keepout.__0 0mm
+measx outline.__0 >> outline.__0 0.5mm
+measy pad.__1 >> pad.__0 side/2+1mm
+measy pad.__0 -> pad.__1 side/2+X+0.5mm
+measx corner_pad.__1 -> corner_pad.__0 -0.5mm
+measx corner_pad.__0 -> pads.__0 -Y-0.5mm
+measy outline.__1 -> outline.__0 -0.5mm
