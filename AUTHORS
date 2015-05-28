@@ -121,6 +121,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/1059.fpd
   modules/0805-6.fpd
   modules/df40.fpd
+  modules/rev-led.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  

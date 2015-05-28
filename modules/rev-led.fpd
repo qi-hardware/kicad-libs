@@ -1,0 +1,46 @@
+/* MACHINE-GENERATED ! */
+
+frame marker {
+	set gap = 0.3mm
+
+	__0: vec @(Hx/2+Px+gap+w/2, 0mm)
+	__1: vec .(0mm, Py/2)
+	__2: vec __0(0mm, -Py/2)
+	line __1 . w
+}
+
+frame hole {
+	__0: vec @(Hx/2, Hy/2)
+	__1: vec @(-Hx/2, -Hy/2)
+	rect . __0 w
+}
+
+frame pads {
+	table
+	    { n, dx }
+	    { 1, -1 }
+	    { 2, 1 }
+
+	__0: vec @(Hx/2*dx, 0mm)
+	__1: vec .(Px*dx, Py/2)
+	__2: vec __0(0mm, -Py/2)
+	pad "$n" __1 .
+}
+
+package "LED-$size-REV"
+unit mm
+
+table
+    { size, Px, Py, Hx, Hy }
+    { 1206, 1.5mm, 1.6mm, 5.1mm-2*Px, 2.3mm }
+
+set w = 5mil
+
+frame hole @
+frame pads @
+frame marker @
+measx hole.__1 >> hole.__0 -0.5mm
+measy hole.__1 >> hole.__0 Px+1mm
+measy pads.__2 -> pads.__1 Px+0.5mm
+measx pads.__1 -> pads.__2 0.5mm
+measx pads.__1 >> pads.__1 1mm

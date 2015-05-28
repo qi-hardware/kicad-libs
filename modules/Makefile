@@ -11,7 +11,7 @@ MODULES=0805-6 1059 8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	mic-ra-dip mini-usb\
 	pads pads-array phonejack pogo \
 	qfn qfp \
-	rca-3-ra rj45 \
+	rca-3-ra rev-led rj45 \
 	sod soic sot23 spacer sot sot-323 ssop stdpass sw-spdt-smt \
 	tactile-sw-spst-ra-dip to tsop tssop5 tswa \
 	usb-a-dual-recept-r usb-a-pcb usb_a_plug_smt usb_a_rcpt_smt \

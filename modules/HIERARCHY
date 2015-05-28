@@ -332,6 +332,8 @@ Discrete_2P
 			LEDSMD-0603R
 			SOD-123
 			SOD-323
+		LED-Reverse
+			LED-1206-REV
 		Crystal
 			xtal2-3.2mmx1.5mm
 			xtal2-11.5mmx4.83mm
