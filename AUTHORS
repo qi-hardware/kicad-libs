@@ -123,6 +123,8 @@ Werner Almesberger <werner@almesberger.net>
   modules/0805-6.fpd
   modules/df40.fpd
   modules/rev-led.fpd
+  modules/rev-led.fpd
+  modules/tact-4-rect-smt.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
