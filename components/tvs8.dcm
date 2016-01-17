@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TVS8
+D TVS with 8 diodes: TI TPD8E003, Semtech uClamp0508T, Vishay VESD05A8A
+$ENDCMP
+#
+#End Doc Library
