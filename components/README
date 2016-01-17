@@ -17,4 +17,6 @@ When adding a new schematics symbol, please do the following:
    LibName#=./name.lib
    where # is the number of the highest-numbered entry, minus one
 
-4) Record your authorship in ../AUTHORS
+4) Add the new symbol to HIERARCHY
+
+5) Record your authorship in ../AUTHORS
