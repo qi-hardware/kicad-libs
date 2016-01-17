@@ -93,6 +93,7 @@ Werner Almesberger <werner@almesberger.net>
   components/kl16-32.lib
   components/aat4282.lib
   components/tlv61220.lib
+  components/tvs8.fpd
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
@@ -125,7 +126,6 @@ Werner Almesberger <werner@almesberger.net>
   modules/rev-led.fpd
   modules/rev-led.fpd
   modules/tact-4-rect-smt.fpd
-  modules/tvs8.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
