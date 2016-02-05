@@ -93,7 +93,8 @@ Werner Almesberger <werner@almesberger.net>
   components/kl16-32.lib
   components/aat4282.lib
   components/tlv61220.lib
-  components/tvs8.fpd
+  components/tvs8.lib
+  components/nrf51822.lib
   modules/pads.fpd
   modules/stdpass.fpd
   modules/8_10-card.fpd
