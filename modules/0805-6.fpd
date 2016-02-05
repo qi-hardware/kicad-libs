@@ -36,12 +36,13 @@ frame outline {
 	rect __0 . width
 }
 
-package "0805-6"
+package "$Name-6"
 unit mm
 
 table
-    { A, B, a, c, e, Px, Py, Gy }
-    { 2mm, 1.25mm, 0.35mm, 0.3mm, 0.65mm, 0.35mm, 0.8mm, 0.8mm }
+    { Name, A, B, e, Px, Py, Gy }
+    { "0603", 1.6mm, 0.8mm, 0.5mm, 0.25mm, 0.55mm, 0.3mm }
+    { "0805", 2mm, 1.25mm, 0.65mm, 0.35mm, 0.8mm, 0.8mm }
 
 frame pads @
 frame outline @
