@@ -429,6 +429,7 @@ Quad
 		QFN32-HVQFN
 		QFN32-Freescale
 		QFN48-Freescale
+		QFN48-nRF51
 	QFP
 		QFP32
 		QFP48
