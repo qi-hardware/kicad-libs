@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP POR-809
+D Reset generator, active-low push-pull output. 809 series.
+$ENDCMP
+#
+#End Doc Library

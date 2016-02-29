@@ -96,6 +96,7 @@ Werner Almesberger <werner@almesberger.net>
   components/tvs8.lib
   components/nrf51822.lib
   components/2450bm14e0003.lib
+  components/por.lib
 
   modules/pads.fpd
   modules/stdpass.fpd
