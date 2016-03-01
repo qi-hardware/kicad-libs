@@ -32,6 +32,7 @@ unit mm
 table
     { sizex, sizey, px, py, gap }
     { 3mm, 3mm, 2.7mm, 1mm, 1.2mm }
+    { 6mm, 6mm, 5.7mm, 1.6mm, 3.1mm }
 
 set clear = 0.1mm+w/2
 
@@ -44,4 +45,5 @@ measx pads.__2 -> pads.__1 -1mm
 measy pads.__2 -> pads.__1 1mm
 measy pads.__1 >> pads.__2 px+1mm
 measx outline.__6 >> outline.__2 -1.5mm
-measy outline.__2 >> outline.__0 -1mm
+measy outline.__2 >> outline.__0 -2mm
+measy pads.__0 >> pads.__0 -sizex/2-1mm

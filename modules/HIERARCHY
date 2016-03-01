@@ -327,6 +327,7 @@ Discrete_2P
 				c-smd-10mmx10.5mm
 		Inductor
 				inductor-2p-3mmx3mm
+				inductor-2p-6mmx6mm
 		Diode
 			DO-214AA
 			LEDSMD-0603R
