@@ -1,0 +1,210 @@
+/* MACHINE-GENERATED ! */
+
+frame outline {
+	set fx = 13.5mm
+
+	table
+	    { sfy, sby }
+	    { 1mm, 10mm }
+
+	set clear = 0.2mm
+
+	set xswl = 1.3mm-1mm/2-clear
+
+	set xswr = 1.3mm+1mm/2+clear
+
+	__0: vec @(0mm, -16.2mm)
+	__1: vec .(-fx/2, 0mm)
+	__5: vec .(0mm, sfy)
+	line . __1 w
+	__2: vec __0(fx/2, 0mm)
+	line __1 . w
+	__6: vec .(0mm, sfy)
+	line . __2 w
+	__3: vec @(6.45mm, 0mm)
+	__7: vec .(0mm, -sby)
+	line . __3 w
+	__4: vec @(-7.7mm, 0mm)
+	__8: vec .(0mm, -sby)
+	line . __4 w
+	__9: vec @(xswl, 0mm)
+	line __4 . w
+	__10: vec @(xswr, 0mm)
+	line . __3 w
+}
+
+frame ko_pads {
+	table
+	    { i }
+	    { 1 }
+	    { 2 }
+	    { 3 }
+	    { 4 }
+	    { 8 }
+
+	__0: vec @(kbx0-kbe*(i-1), 0mm)
+	__1: vec .(-kbx/2, 0mm)
+	__2: vec __0(kbx/2, kby)
+	rect __1 . w
+}
+
+frame ko_t {
+	set xl = kbx0-6*kbe-kbx/2
+
+	set xr = kbx0-4*kbe+kbx/2
+
+	set y2 = -1.25mm-kby0
+
+	__0: vec @(xl, 0mm)
+	__1: vec .(0mm, kby)
+	line . __0 w
+	__2: vec @(xr, 0mm)
+	line __0 . w
+	__3: vec .(0mm, y2)
+	line . __2 w
+}
+
+frame keepout {
+	table
+	    { kfxi, kfxo }
+	    { 10.8mm, 14.2mm }
+
+	table
+	    { kby0, kby1 }
+	    { -3.7mm, -2.5mm }
+
+	table
+	    { kbe, kbg }
+	    { 1.1mm, 0.3mm }
+
+	table
+	    { kbx, kby }
+	    { kbe-kbg, kby1-kby0 }
+
+	set kbx0 = 3.2mm
+
+	__0: vec @(0mm, -11.3mm)
+	__1: vec @(0mm, -14mm)
+	__2: vec __0(kfxo/2, 0mm)
+	__3: vec __0(-kfxo/2, 0mm)
+	__4: vec __1(kfxi/2, 0mm)
+	rect . __2 w
+	__5: vec __1(-kfxi/2, 0mm)
+	rect __3 . w
+	__6: vec @(0mm, kby0)
+	frame ko_pads .
+	frame ko_t .
+}
+
+frame switch {
+	set px = 1mm
+
+	set py = 1.5mm
+
+	__0: vec @(1.3mm, 0mm)
+	__1: vec .(0mm, 1.2mm)
+	__2: vec .(px/2, py)
+	__3: vec __1(-px/2, 0mm)
+	pad "SW" . __2
+}
+
+frame ground {
+	set py12 = 1.2mm
+
+	set py34 = 1.4mm
+
+	__1: vec @(-3.2mm, 0mm)
+	__2: vec .(0mm, py12/2)
+	__3: vec @(-4.8mm, 0mm)
+	__4: vec .(0mm, -py12/2)
+	pad "S2" . __2
+	__5: vec @(1.9mm, 0mm)
+	__6: vec .(0mm, py12/2)
+	__7: vec @(3.5mm, 0mm)
+	__8: vec .(0mm, -py12/2)
+	pad "S1" __6 .
+	__9: vec @(0mm, -12.8mm)
+	__10: vec .(-8.3mm/2, 0mm)
+	__14: vec .(0mm, py34/2)
+	__11: vec __9(8.3mm/2, 0mm)
+	__15: vec .(0mm, -py34/2)
+	__12: vec __9(-4.7mm/2, 0mm)
+	__16: vec .(0mm, -py34/2)
+	pad "S4" __14 .
+	__13: vec __9(4.7mm/2, 0mm)
+	__17: vec .(0mm, py34/2)
+	pad "S3" . __15
+}
+
+frame signals {
+	table
+	    { y1, y0 }
+	    { -9.9mm, -11.7mm }
+
+	table
+	    { px, e }
+	    { 0.8mm, 1.1mm }
+
+	set x = (4.5-i)*e
+
+	loop i = 1, 8
+
+	__0: vec @(x, y1)
+	__1: vec .(px/2, 0mm)
+	__2: vec __0(-px/2, y0-y1)
+	pad "$i" . __1
+}
+
+package "MEMCARD8-JAE-ST1W008S4B"
+unit mm
+
+set w = 5mil
+
+table
+    { uy, padyref }
+    { 8.5mm, -1.7mm }
+
+set s = 0.8mm
+
+__0: vec @(0mm, uy)
+frame keepout .
+frame outline .
+__1: vec .(0mm, padyref)
+frame ground .
+frame switch .
+frame signals .
+measy __1 << signals.__1 -4mm
+measx ground.__1 >> __1 5mm
+measx __1 >> ground.__5 5mm
+measx ground.__3 >> __1 5mm+s
+measx __1 >> ground.__7 5mm+s
+measx ground.__12 >> ground.__13 -3mm
+measx ground.__10 >> ground.__11 -3mm-s
+measx signals.__2 -> signals.__1 3mm+s
+measy signals.__2 -> signals.__1 0.5mm
+measx signals.__0 -> signals.__0 1mm
+measy ground.__11 >> ground.__7 -4.1mm-2*s
+measy __1 << signals.__1 -4mm
+measy __1 << signals.__2 -4.8mm-s
+measy keepout.__3 >> __0 2mm
+measy keepout.__5 >> __0 3.7mm+s
+measx ko_pads.__0 >> ko_pads.__0 -1mm-s
+measx outline.__1 >> outline.__2 -1.3mm-3*s
+measx __0 >> outline.__3 3.3mm+2*s
+measx outline.__4 >> __0 3.3mm+2*s
+measy ko_t.__3 >> __0 4.5mm
+measy ko_pads.__2 >> __0 1.2mm+s
+measy ko_pads.__1 >> __0 0.4mm+2*s
+measx ko_t.__2 -> ko_pads.__1 -1mm
+measy ground.__8 >> ground.__6 -1mm
+measy __1 >> switch.__1
+measy switch.__1 >> switch.__2 1.3mm
+measx switch.__3 >> switch.__2 2mm
+measx __1 >> switch.__0 3.2mm+s
+measx keepout.__3 >> keepout.__2 -6.2mm-4*s
+measx keepout.__5 >> keepout.__4 -3.5mm-2*s
+measx outline.__1 -> signals.__0 5.6mm
+measy ground.__15 >> ground.__17 2.5mm
+measy __1 >> __0 s
+measy outline.__1 >> outline.__4 2.35mm+2*s
+measx keepout.__6 >> ko_pads.__0 -1mm

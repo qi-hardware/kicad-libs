@@ -7,7 +7,8 @@ MODULES=0805-6 1059 8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	header he-2row-dip he-shrouded \
 	inductor-2p ir \
 	lga ledsmd lp2032sm \
-	mdip meander-2450MHz memcard8-amp-10100660 memcard8-molex-1050270001 \
+	mdip meander-2450MHz memcard8-amp-10100660 memcard8-jae-st1w008s4b \
+	memcard8-molex-1050270001 \
 	mic-ra-dip mini-usb\
 	pads pads-array phonejack pogo \
 	qfn qfp \
