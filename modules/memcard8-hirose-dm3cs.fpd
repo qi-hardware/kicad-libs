@@ -1,0 +1,186 @@
+/* MACHINE-GENERATED ! */
+
+frame card {
+	table
+	    { width, y }
+	    { 11mm, -15.45mm }
+
+	set cx = -refx
+
+	__0: vec @(cx, y)
+	__1: vec .(width/2, 0mm)
+	__2: vec __0(-width/2, 0mm)
+	line . __1 w
+}
+
+frame outline {
+	table
+	    { x0, dx, nx, y }
+	    { -refx-13.8mm/2+xoff, 1, 6.3mm+2.7mm/2+clear, -7.8mm }
+	    { -refx+13.8mm/2+xoff, -1, 1.65mm+1.2mm/2+clear, -7.8mm }
+
+	set x = nx*-dx
+
+	set xoff = 0.2mm
+
+	__0: vec @(x0, 0mm)
+	__2: vec @(x, 0mm)
+	line . __0 w
+	__1: vec __0(0mm, y)
+	line __0 . w
+	__3: vec __0(dx*13.8mm/2, 0mm)
+}
+
+frame keepout {
+	table
+	    { ux0, ux1, uy0, uy1 }
+	    { -8.25mm, 0.55mm, -5.4mm, -2.9mm }
+
+	table
+	    { llx0, llx1, lrx0, lrx1 }
+	    { -10.1mm, -9.5mm, 3.5mm, 4.1mm }
+
+	table
+	    { ly1, ly0 }
+	    { -7.8mm, -12.9mm+2.6mm/2+clear }
+
+	__0: vec @(ux0, uy0)
+	__1: vec @(ux1, uy1)
+	rect __0 . w
+	__2: vec @(0mm, ly0)
+	__3: vec @(0mm, ly1)
+	__4: vec .(llx0, 0mm)
+	__5: vec __3(llx1, 0mm)
+	line __4 . w
+	__6: vec __2(llx0, 0mm)
+	line . __4 w
+	__7: vec __2(llx1, 0mm)
+	line __5 . w
+	__8: vec __3(lrx0, 0mm)
+	__9: vec __3(lrx1, 0mm)
+	line __8 . w
+	__10: vec __2(lrx0, 0mm)
+	line . __8 w
+	__11: vec __2(lrx1, 0mm)
+	line __9 . w
+}
+
+frame switch {
+	table
+	    { xc, y0 }
+	    { 1.65mm, -1.2mm }
+
+	set px = 1.2mm
+
+	__0: vec @(xc, 0mm)
+	__1: vec .(-px/2, y0)
+	__2: vec __0(px/2, 0mm)
+	pad "SW" __1 .
+}
+
+frame ground {
+	table
+	    { pxll, pxlr, pyl }
+	    { 1mm, 1.5mm, 2.6mm }
+
+	table
+	    { x1ll, x0lr, cyl }
+	    { -9.3mm, 2.8mm, -12.9mm }
+
+	table
+	    { pxu, pyu }
+	    { 2.7mm, 1.4mm }
+
+	table
+	    { xcul, xcur }
+	    { -6.3mm, -1.4mm }
+
+	__0: vec @(x1ll, cyl)
+	__1: vec .(0mm, -pyl/2)
+	__2: vec .(-pxll, pyl)
+	pad "S1" . __1
+	__3: vec @(x0lr, cyl)
+	__4: vec .(0mm, -pyl/2)
+	__5: vec .(pxlr, pyl)
+	pad "S2" __4 .
+	__6: vec @(xcul, 0mm)
+	__7: vec @(xcur, 0mm)
+	__8: vec __6(-pxu/2, -pyu)
+	__9: vec __6(pxu/2, 0mm)
+	pad "S4" __8 .
+	__10: vec __7(pxu/2, -pyu)
+	__11: vec __7(-pxu/2, 0mm)
+	pad "S3" . __10
+}
+
+frame signals {
+	table
+	    { y0, y1 }
+	    { -14.4mm, -12.4mm }
+
+	table
+	    { e, px }
+	    { 1.1mm, 0.7mm }
+
+	set x = -e*(i-1)
+
+	loop i = 1, 8
+
+	__0: vec @(0mm, y0)
+	__1: vec .(x-px/2, 0mm)
+	__2: vec @(0mm, y1)
+	__3: vec .(x+px/2, 0mm)
+	pad "$i" __1 .
+}
+
+package "MEMCARD8-HIROSE-DM3CS"
+unit mm
+
+set w = 5mil
+
+set s = 0.8mm
+
+set clear = 0.2mm
+
+table
+    { refx, refy }
+    { 3.2mm, 6mm }
+
+__0: vec @(refx, refy)
+frame signals .
+frame ground .
+frame switch .
+frame keepout .
+frame outline .
+frame card .
+measx keepout.__4 >> keepout.__3 s
+measx keepout.__5 >> keepout.__3
+meas keepout.__3 >> keepout.__8
+measx keepout.__3 >> keepout.__9 s
+measx outline.__3 >> __0 1mm+2*s
+measx outline.__0 >> outline.__0 1mm+4*s
+measx ground.__8 >> ground.__9 2.4mm
+measx ground.__11 >> ground.__10 1mm
+measx switch.__1 >> switch.__2 2.2mm
+measy switch.__1 >> switch.__2 -4mm
+measy ground.__10 >> ground.__7 -5.1mm-s
+measx ground.__6 >> __0 1mm+3*s
+measx ground.__7 >> __0 1mm+s
+measx __0 >> switch.__0 1mm+s
+measy keepout.__1 >> outline.__0 11.4mm
+measy keepout.__0 -> outline.__0 2.6mm+s
+measx keepout.__0 >> __0 1mm
+measx __0 >> keepout.__1 -4.4mm
+measy keepout.__4 >> __0 0.8mm+2*s
+measy ground.__0 -> outline.__0 1.6mm+3*s
+measy ground.__4 >> ground.__5 1mm
+measx ground.__2 >> ground.__1 -5.8mm-s
+measx ground.__4 >> ground.__5 -3.2mm-s
+measx signals.__1 -> signals.__3 -3mm
+measx ground.__1 >> __0 -3.2mm-s
+measx __0 >> ground.__4 -17.4mm-s
+measy signals.__0 >> __0 -5.1mm-3*s
+measy signals.__2 >> __0 -5.1mm-2*s
+measx signals.__1 -> signals.__1 3mm
+measx card.__2 >> card.__1 -1mm
+measy card.__2 -> outline.__0 2.2mm+4*s

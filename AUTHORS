@@ -131,6 +131,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/rev-led.fpd
   modules/tact-4-rect-smt.fpd
   modules/memcard8-jae-st1w008s4b.fpd
+  modules/memcard8-hirose-dm3cs.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
