@@ -1,0 +1,133 @@
+/* MACHINE-GENERATED ! */
+
+frame wings {
+	table
+	    { dx }
+	    { -1 }
+	    { 1 }
+
+	table
+	    { dy }
+	    { -1 }
+	    { 1 }
+
+	set x = (cx+wx)/2*dx
+
+	set y = wiy/2*dy
+
+	__0: vec @(x, y)
+	__1: vec .(wx/2, wy/2)
+	__2: vec __0(-wx/2, -wy/2)
+	pad "$num" . __1
+}
+
+frame holes {
+	table
+	    { dx, dy }
+	    { 0, 0 }
+	    { -1, -1 }
+	    { -1, 1 }
+	    { 1, -1 }
+	    { 1, 1 }
+
+	set x = hx/2*dx
+
+	set y = hy/2*dy
+
+	__0: vec @(x, y)
+	__1: vec .(hd/2, hd/2)
+	__2: vec __0(-hd/2, -hd/2)
+	hole . __1
+}
+
+frame thermal {
+	set num = n+1
+
+	__0: vec @(cx/2, cy/2)
+	__1: vec @(-cx/2, -cy/2)
+	pad "$num" . __0
+	frame wings @
+	frame holes @
+}
+
+frame pads {
+	table
+	    { dy }
+	    { -1 }
+	    { 1 }
+
+	set num = -dy*i+(dy+1)*(n/2+0.5)
+
+	set x = (i-0.5-n/4)*e
+
+	set y = dy*(iy+py)/2
+
+	loop i = 1, n/2
+
+	__0: vec @(x, y)
+	__1: vec .(px/2, py/2)
+	__2: vec __0(-px/2, -py/2)
+	pad "$num" . __1
+}
+
+frame outline {
+	table
+	    { dx, dy }
+	    { -1, 1 }
+	    { 1, -1 }
+	    { 1, 1 }
+
+	set x = ox/2*dx
+
+	set yo = oy/2*dy
+
+	set yi = (wiy/2+wy+gap+w/2)*dy
+
+	__0: vec @(x, yo)
+	__1: vec @(x, yi)
+	line __0 . w
+}
+
+frame marker {
+	set r = 0.25mm
+
+	set x = -cx/2-gap-r-w/2
+
+	set y = -(iy/2+py)+r+w/2
+
+	__0: vec @(x, y)
+	__1: vec .(r, 0mm)
+	circ __0 . w
+}
+
+package "VSON-POWERPAD-$n"
+unit mm
+allow overlap
+allow holes
+
+table
+    { n, e, px, py, iy, cx, cy, wx, wy, wiy, hx, hy, hd, ox, oy }
+    { 10, 0.5mm, 0.28mm, 0.85mm, 2.1mm, 2.4mm, 1.65mm, 0.7mm, 0.28mm, 0.5mm, 1.5mm, 1mm, 0.3mm, 3mm, 3mm }
+
+set w = 5mil
+
+set gap = 0.3mm
+
+frame pads @
+frame thermal @
+frame marker @
+frame outline @
+measx outline.__0 >> outline.__0 2mm
+measy outline.__0 >> outline.__0 -2mm
+measy wings.__0 -> wings.__0 1mm
+measy thermal.__1 >> thermal.__0 3mm
+measx thermal.__1 >> thermal.__0 -3mm
+measy pads.__2 -> pads.__1 1mm
+measx pads.__2 -> pads.__1 -1mm
+measx pads.__0 -> pads.__0 -1mm
+measy pads.__1 -> pads.__2 4mm
+measy wings.__2 -> wings.__1 1mm
+measx wings.__2 -> wings.__1 -0.5mm
+measx holes.__0 >> holes.__0 3mm
+measy holes.__0 >> holes.__0 -3.5mm
+measx holes.__2 -> holes.__1 0.5mm
