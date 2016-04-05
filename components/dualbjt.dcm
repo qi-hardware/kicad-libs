@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DUALNPN
+D Dual BC846/BC847 on SOT-363, or similar.
+$ENDCMP
+#
+#End Doc Library
