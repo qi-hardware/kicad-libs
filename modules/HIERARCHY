@@ -335,6 +335,7 @@ Discrete_2P
 			LEDSMD-0603R
 			SOD-123
 			SOD-323
+			SOD-523
 		LED-Reverse
 			LED-1206-REV
 		Crystal
