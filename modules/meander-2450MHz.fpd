@@ -78,13 +78,13 @@ frame antenna {
 	frame via @
 }
 
-package "MEANDER-2450MHz-$orient-$pcb"
+package "MEANDER-2450MHz-$orient-$pcb$relaxed"
 unit mm
 allow touch
 
 table
     { L1, L2, L3, L4, L5, L6 }
-    { 3.94mm, 2.7mm, 5mm, 2.64mm, 2mm, 4.9mm }
+    { 3.94mm, 2.7mm, 5mm, 2.64mm, 2mm, 4.9mm+relax }
 
 table
     { W1, W2 }
@@ -92,7 +92,7 @@ table
 
 table
     { D1, D2, D3, D4, D5, D6 }
-    { 0.5mm, 0.3mm, 0.3mm, 0.5mm, 1.4mm, 1.7mm }
+    { 0.5mm, 0.3mm, 0.3mm, 0.5mm+relax, 1.4mm, 1.7mm }
 
 table
     { pcb, L1seg, have_tail, tail }
@@ -104,6 +104,11 @@ table
     { orient, d }
     { "right", 1 }
     { "left", -1 }
+
+table
+    { relaxed, relax }
+    { "", 0mm }
+    { "-RELAXED", 0.1mm }
 
 __0: vec @(0mm, 0.1mm)
 frame antenna .
