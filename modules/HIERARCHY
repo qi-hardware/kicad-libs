@@ -472,6 +472,13 @@ Structure
 		MEANDER-2450MHz-left-1.0mm
 		MEANDER-2450MHz-right-1.6mm
 		MEANDER-2450MHz-left-1.6mm
+		MEANDER-2450MHz-left-0.8mm-RELAXED
+		MEANDER-2450MHz-left-1.0mm-RELAXED
+		MEANDER-2450MHz-left-1.6mm-RELAXED
+		MEANDER-2450MHz-right-0.8mm-RELAXED
+		MEANDER-2450MHz-right-1.0mm-RELAXED
+		MEANDER-2450MHz-right-1.6mm-RELAXED
+
 Mechanical
 	Spacer
 		M3
