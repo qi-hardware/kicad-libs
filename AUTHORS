@@ -133,7 +133,8 @@ Werner Almesberger <werner@almesberger.net>
   modules/tact-4-rect-smt.fpd
   modules/memcard8-jae-st1w008s4b.fpd
   modules/memcard8-hirose-dm3cs.fpd
-  modulesvson-powerpad.fpd
+  modules/vson-powerpad.fpd
+  modules/stqfn20.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
