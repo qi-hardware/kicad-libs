@@ -47,9 +47,9 @@ frame outline {
 	__2: vec @(-sx/2, -sy/2)
 	__3: vec .(-gap, -gap)
 	rect . __1 w
-	__4: vec @(-sx/2, sy/2)
-	__5: vec .(-gap, gap)
-	__6: vec .(corner, 0mm)
+	__4: vec @((cw*2-1)*sx/2, sy/2)
+	__5: vec .((cw*2-1)*gap, gap)
+	__6: vec .((1-cw*2)*corner, 0mm)
 	__7: vec __5(0mm, -corner)
 	line . __6 w
 }
