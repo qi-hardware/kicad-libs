@@ -1,7 +1,10 @@
 /* MACHINE-GENERATED ! */
 
 frame piny {
-	set name = i*f+a
+	table
+	    { ?cw, name }
+	    { 0, i*f+a }
+	    { 1, pins-a-i*f-nx+1 }
 
 	__0: vec @(dx*(py/2+pe), px/2)
 	__1: vec @(-dx*py/2, -px/2)
@@ -25,7 +28,10 @@ frame pinsy {
 }
 
 frame pinx {
-	set name = i*f+a
+	table
+	    { ?cw, name }
+	    { 0, i*f+a }
+	    { 1, a+(nx-i-1)*f }
 
 	__0: vec @(px/2, -dy*py/2)
 	__1: vec @(-px/2, dy*py/2)
@@ -68,9 +74,9 @@ package "LGA-$pins-${sizex}x${sizey}${variant}"
 unit mm
 
 table
-    { variant, nx, ny, sx, sy, e, b, px, py, pe }
-    { "", 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, 0.2mm }
-    { "-BME280", 0, 4, 2.5mm, 2.5mm, 0.65mm, 0.125mm, 0.35mm, 0.35mm, 0.15mm }
+    { variant, nx, ny, sx, sy, e, b, px, py, pe, cw }
+    { "", 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, 0.2mm, 0 }
+    { "-BME280", 0, 4, 2.5mm, 2.5mm, 0.65mm, 0.125mm, 0.35mm, 0.35mm, 0.15mm, 1 }
 
 set pins = 2*(nx+ny)
 
