@@ -37,9 +37,9 @@ frame outline {
 	set corner = gap*2-(w+0.2mm)/sqrt(2)
 
 	__0: vec @(sx/2, sy/2)
-	__1: vec __0(gap, gap)
+	__1: vec .(gap, gap)
 	__2: vec @(-sx/2, -sy/2)
-	__3: vec __2(-gap, -gap)
+	__3: vec .(-gap, -gap)
 	rect . __1 w
 	__4: vec @(-sx/2, sy/2)
 	__5: vec .(-gap, gap)
@@ -64,12 +64,13 @@ frame pinsx {
 	frame pinx .
 }
 
-package "LGA-$pins-${sizex}x${sizey}"
+package "LGA-$pins-${sizex}x${sizey}${variant}"
 unit mm
 
 table
-    { nx, ny, sx, sy, e, b, px, py, pe }
-    { 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, 0.2mm }
+    { variant, nx, ny, sx, sy, e, b, px, py, pe }
+    { "", 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, 0.2mm }
+    { "-BME280", 0, 4, 2.5mm, 2.5mm, 0.65mm, 0.125mm, 0.35mm, 0.35mm, 0.15mm }
 
 set pins = 2*(nx+ny)
 
@@ -93,3 +94,7 @@ measy pinx.__2 -> pinx.__1 0.2mm
 measy outline.__3 >> outline.__5 1.5mm
 measx outline.__3 >> outline.__1 -1.5mm
 measy pinx.__1 >> outline.__2 -0.5mm
+measx piny.__0 -> piny.__1
+measx piny.__1 -> piny.__1 0.8mm
+measx piny.__0 -> piny.__0 1mm
+measy pinsy.__0 -> pinsy.__0 1mm

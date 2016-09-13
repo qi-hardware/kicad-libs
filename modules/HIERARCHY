@@ -424,6 +424,7 @@ Dual
 Quad
 	LGA
 		LGA-16-3x3
+		LGA-8-2.5x2.5-BME280
 	QFN
 		QFN16-LFCSP_LQ
 		QFN28-Atmel
