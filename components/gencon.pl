@@ -35,5 +35,26 @@ for ($x = 1; $x <= 40; $x++) {
 		print "ENDDRAW\n";
 		print "ENDDEF\n";
 	}
+
+	next if $x == 1;
+
+	$name = "CONN_$x" . "_" . ($x - 1);
+	print "#\n# $name\n#\n";
+	print "DEF $name CON 0 40 Y N 1 F N\n";
+	$h = $x / 2 * 100;
+	print "F0 \"CON\" 0 " . ($h + 50) . " 60 H V C CNN\n";
+	print "F1 \"$name\" 0 " . (-$h - 50) . " 60 H V C CNN\n";
+	print "DRAW\n";
+	print "S -100 -$h 100 $h 0 1 0 N\n";
+	for ($px = 1; $px <= $x; $px++) {
+		print "X $px $px -400 " .
+		    ($h - $px * 100 + 50) . " 300 R 50 50 1 1 P\n";
+		next if $px == $x;
+		$n = $px + $x;
+		print "X $n $n 400 " .
+		    ($h - $px * 100) . " 300 L 50 50 1 1 P\n";
+	}
+	print "ENDDRAW\n";
+	print "ENDDEF\n";
 }
 print "#\n#End Library\n";

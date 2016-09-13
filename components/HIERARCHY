@@ -113,6 +113,45 @@ Connector
 		conn_38x2
 		conn_39x2
 		conn_40x2
+		conn_2_1
+		conn_3_2
+		conn_4_3
+		conn_5_4
+		conn_6_5
+		conn_7_6
+		conn_8_7
+		conn_9_8
+		conn_10_9
+		conn_11_10
+		conn_12_11
+		conn_13_12
+		conn_14_13
+		conn_15_14
+		conn_16_15
+		conn_17_16
+		conn_18_17
+		conn_19_18
+		conn_20_19
+		conn_21_20
+		conn_22_21
+		conn_23_22
+		conn_24_23
+		conn_25_24
+		conn_26_25
+		conn_27_26
+		conn_28_27
+		conn_29_28
+		conn_30_29
+		conn_31_30
+		conn_32_31
+		conn_33_32
+		conn_34_33
+		conn_35_34
+		conn_36_35
+		conn_37_36
+		conn_38_37
+		conn_39_38
+		conn_40_39
 	Generic
 		TESTPOINT
 		conn_2
