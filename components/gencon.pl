@@ -18,17 +18,17 @@ for ($x = 1; $x <= 40; $x++) {
 		$name .= "X$y" if $y > 1;
 		print "#\n# $name\n#\n";
 		print "DEF $name CON 0 40 Y N 1 F N\n";
-		$h = $x/2*100;
-		print "F0 \"CON\" 0 ".($h+50)." 60 H V C CNN\n";
-		print "F1 \"$name\" 0 ".(-$h-50)." 60 H V C CNN\n";
+		$h = $x / 2 * 100;
+		print "F0 \"CON\" 0 " . ($h + 50) . " 60 H V C CNN\n";
+		print "F1 \"$name\" 0 " . (-$h - 50) . " 60 H V C CNN\n";
 		print "DRAW\n";
 		print "S -100 -$h 100 $h 0 1 0 N\n";
 		$n = 1;
 		for ($px = 1; $px <= $x; $px++) {
 			for ($py = 1; $py <= $y; $py++) {
-				print "X $n $n ".(400*($py-1.5)*2)." ".
-				    ($h-$px*100+50)." 300 ".
-				    ("?", "R", "L")[$py]." 50 50 1 1 P\n";
+				print "X $n $n " . (400 * ($py - 1.5) * 2) .
+				    " " . ($h - $px * 100 + 50) . " 300 " .
+				    ("?", "R", "L")[$py] . " 50 50 1 1 P\n";
 				$n++;
 			}
 		}
