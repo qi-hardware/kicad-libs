@@ -6,15 +6,15 @@ frame piny {
 	    { 0, i*f+a }
 	    { 1, pins-a-i*f-nx+1 }
 
-	__0: vec @(dx*(py/2+pe), px/2)
-	__1: vec @(-dx*py/2, -px/2)
+	__0: vec @(dx*(pyy/2+pe), pyx/2)
+	__1: vec @(-dx*pyy/2, -pyx/2)
 	pad "$name" . __0
 }
 
 frame pinsy {
 	set y = e*(i-(ny-1)/2)
 
-	set x = sx/2-py/2-b
+	set x = sx/2-pyy/2-b
 
 	table
 	    { dx, f, a }
@@ -33,8 +33,8 @@ frame pinx {
 	    { 0, i*f+a }
 	    { 1, a+(nx-i-1)*f }
 
-	__0: vec @(px/2, -dy*py/2)
-	__1: vec @(-px/2, dy*py/2)
+	__0: vec @(pxx/2, -dy*pxy/2)
+	__1: vec @(-pxx/2, dy*pxy/2)
 	__2: vec .(0mm, dy*pe)
 	pad "$name" . __0
 }
@@ -57,7 +57,7 @@ frame outline {
 frame pinsx {
 	set x = e*(i-(nx-1)/2)
 
-	set y = sy/2-py/2-b
+	set y = sy/2-pxy/2-b
 
 	table
 	    { dy, f, a }
@@ -74,9 +74,10 @@ package "LGA-$pins-${sizex}x${sizey}${variant}"
 unit mm
 
 table
-    { variant, nx, ny, sx, sy, e, b, px, py, pe, cw }
-    { "", 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, 0.2mm, 0 }
-    { "-BME280", 0, 4, 2.5mm, 2.5mm, 0.65mm, 0.125mm, 0.35mm, 0.35mm, 0.15mm, 1 }
+    { variant, nx, ny, sx, sy, e, b, pxx, pxy, pyx, pyy, pe, cw }
+    { "", 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, pxx, pxy, 0.2mm, 0 }
+    { "-BME280", 0, 4, 2.5mm, 2.5mm, 0.65mm, 0.125mm, 0.35mm, 0.35mm, pxx, pxy, 0.15mm, 1 }
+    { "-BMX055", 3, 7, 3mm, 4.5mm, 0.5mm, 0.1mm, 0.25mm, 0.375mm, pxx, 0.475mm, 0.2mm, 1 }
 
 set pins = 2*(nx+ny)
 
@@ -94,7 +95,7 @@ frame outline @
 measx outline.__2 >> outline.__0 -1.5mm
 measy outline.__2 >> outline.__0 1.5mm
 measx pinsx.__0 -> pinsx.__0 -1.5mm
-measx pinx.__2 -> pinx.__0 py+0.5mm
+measx pinx.__2 -> pinx.__0 pxy+0.5mm
 measy pinx.__1 -> pinx.__0 0.2mm
 measy pinx.__2 -> pinx.__1 0.2mm
 measy outline.__3 >> outline.__5 1.5mm
@@ -104,3 +105,4 @@ measx piny.__0 -> piny.__1
 measx piny.__1 -> piny.__1 0.8mm
 measx piny.__0 -> piny.__0 1mm
 measy pinsy.__0 -> pinsy.__0 1mm
+measy pinx.__0 -> pinx.__0 2.2mm
