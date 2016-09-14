@@ -1,0 +1,79 @@
+/* MACHINE-GENERATED ! */
+
+frame pads {
+	table
+	    { n, long, rx, ry, py }
+	    { 1, 1, -1, 3, pys }
+	    { 2, 1, -1, 2, pys }
+	    { 3, 1, -1, 1, pyl }
+	    { 4, 1, -1, 0, pym }
+	    { 5, 1, -1, -1, pym }
+	    { 6, 1, -1, -2, pys }
+	    { 7, 1, -1, -3, pys }
+	    { 8, 0, -1, -1, pym }
+	    { 9, 0, 0, -1, pym }
+	    { 10, 0, 1, -1, pym }
+	    { 11, 1, 1, -3, pys }
+	    { 12, 1, 1, -2, pys }
+	    { 13, 1, 1, -1, pym }
+	    { 14, 1, 1, 0, pym }
+	    { 15, 1, 1, 1, pym }
+	    { 16, 1, 1, 2, pys }
+	    { 17, 1, 1, 3, pys }
+	    { 18, 0, 1, 1, pym }
+	    { 19, 0, 0, 1, pym }
+	    { 20, 0, -1, 1, pym }
+
+	table
+	    { ?long, dx, dy }
+	    { 0, 0, -ry }
+	    { 1, -rx, 0 }
+
+	table
+	    { ?long, x, y }
+	    { 0, e*rx-dy*px/2, (cy/2+b)*ry }
+	    { 1, (cx/2+b)*rx, e*ry-dx*px/2 }
+
+	set vx = dx*py+dy*px
+
+	set vy = dx*px+dy*py
+
+	__0: vec @(x, y)
+	__1: vec .(vx, vy)
+	pad "$n" __0 .
+}
+
+frame outline {
+	set w = 0.1mm
+
+	table
+	    { x, y, dx }
+	    { -cx/2, cy/2, 1 }
+	    { cx/2, cy/2, -1 }
+	    { -cx/2, -cy/2, 1 }
+	    { cx/2, -cy/2, -1 }
+
+	__0: vec @(x, y)
+	__1: vec .(dx*(0.325mm-w/2), 0mm)
+	line __0 . w
+}
+
+package "STQFN-20"
+unit mm
+
+table
+    { e, px, pys, pym, pyl, pxo }
+    { 0.4mm, 0.23mm, 0.485mm, 0.775mm, 0.975mm, 0.15mm }
+
+table
+    { cx, cy }
+    { 2mm, 3mm }
+
+set b = (3.3mm-cy)/2
+
+frame pads @
+frame outline @
+measy pads.__1 >> pads.__1 2.5mm
+measx outline.__0 -> outline.__0 -1mm
+measy pads.__1 -> pads.__0 -1mm
+measx pads.__0 -> pads.__1 0.5mm
