@@ -1,0 +1,61 @@
+/* MACHINE-GENERATED ! */
+
+frame pins_outer {
+	table
+	    { n }
+	    { 1 }
+	    { 7 }
+
+	set x = (4-n)/3*(pox/2+ogap+2*igap+2.5*pix)
+
+	__0: vec @(x, 0mm)
+	__1: vec .(-pox/2, 0mm)
+	__2: vec __0(pox/2, -poy)
+	pad "$n" __1 .
+}
+
+frame pins_inner {
+	set x = (pix+igap)*(4-n)
+
+	loop n = 2, 6
+
+	__0: vec @(x, 0mm)
+	__1: vec .(-pix/2, -piy)
+	__2: vec __0(pix/2, 0mm)
+	pad "$n" __1 .
+}
+
+frame outline {
+	set w = 0.1mm
+
+	table
+	    { ox, oy }
+	    { 6.4mm, 0.7mm }
+
+	__0: vec @(-ox/2, oy)
+	__1: vec .(ox, 0mm)
+	line __0 . w
+}
+
+package "MSL0104"
+unit mm
+
+table
+    { pix, piy, pox, poy }
+    { 0.6mm, 2.18mm, 1.06mm, 1.58mm }
+
+table
+    { igap, ogap }
+    { 0.3mm, 0.32mm }
+
+frame pins_inner @
+frame pins_outer @
+frame outline @
+measx pins_outer.__1 -> pins_outer.__2 -1mm-piy
+measy pins_outer.__2 -> pins_outer.__1 2mm
+measx outline.__0 >> outline.__1 1mm
+measx pins_outer.__2 -> pins_inner.__1 -1mm-(piy-poy)
+measx pins_inner.__1 -> pins_inner.__2 -1mm
+measx pins_inner.__2 -> pins_inner.__1 -1mm-piy
+measy pins_inner.__1 -> pins_outer.__1 3mm
+measy pins_outer.__1 >> outline.__0 0.5mm

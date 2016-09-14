@@ -366,6 +366,8 @@ Discrete_Multi
 			xtal4-3.2mmx2.5mm
 			xtal4-5mmx3.2mm
 			xtal4-6mmx3.6mm
+		LED
+			MSL0104
 	TH
 		EUS
 		TSOP348

@@ -135,6 +135,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/memcard8-hirose-dm3cs.fpd
   modules/vson-powerpad.fpd
   modules/stqfn20.fpd
+  modules/msl0104.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  
