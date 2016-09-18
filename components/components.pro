@@ -167,3 +167,4 @@ LibName95=./nrf51822
 LibName96=./2450bm14e0003
 LibName97=./por
 LibName98=./tps6102x
+LibName99=./gencon
