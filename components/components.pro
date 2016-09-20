@@ -168,3 +168,4 @@ LibName96=./2450bm14e0003
 LibName97=./por
 LibName98=./tps6102x
 LibName99=./gencon
+LibName100=./74x2g07_6
