@@ -169,3 +169,4 @@ LibName97=./por
 LibName98=./tps6102x
 LibName99=./gencon
 LibName100=./74x2g07_6
+LibName101=./74x1g32_6
