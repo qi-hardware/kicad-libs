@@ -41,6 +41,7 @@ Werner Almesberger <werner@almesberger.net>
 
   components/8_10-card.lib
   components/vga.lib
+  components/74x1g04_6.lib
   components/74x1g08_5.lib (based on 74x1g00_5.lib)
   components/74x1g08_6.lib (based on 74x1g00_5.lib)
   components/74x1g07_5.lib
