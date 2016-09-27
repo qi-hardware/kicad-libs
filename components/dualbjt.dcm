@@ -4,4 +4,8 @@ $CMP DUALNPN
 D Dual BC846/BC847 on SOT-363, or similar.
 $ENDCMP
 #
+$CMP DUALPNP
+D Dual PNP in 6 pin package
+$ENDCMP
+#
 #End Doc Library
