@@ -171,3 +171,4 @@ LibName99=./gencon
 LibName100=./74x2g07_6
 LibName101=./74x1g32_6
 LibName102=./74x1g04_6
+LibName103=./dualnmosfet

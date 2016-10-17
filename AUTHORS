@@ -101,6 +101,7 @@ Werner Almesberger <werner@almesberger.net>
   components/2450bm14e0003.lib
   components/por.lib
   components/tps6102x.lib
+  components/dualnmosfet.lib
 
   modules/pads.fpd
   modules/stdpass.fpd
