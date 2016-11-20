@@ -140,6 +140,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/vson-powerpad.fpd
   modules/stqfn20.fpd
   modules/msl0104.fpd
+  modules/jtrace.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  

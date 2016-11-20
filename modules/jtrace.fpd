@@ -1,0 +1,20 @@
+/* MACHINE-GENERATED ! */
+
+package "JUMPER-TRACE-$name"
+unit mm
+allow touch
+
+table
+    { name, width, length }
+    { "150x500um", 0.15mm, 0.5mm }
+
+set _ = 0
+
+loop i = 1, 2
+
+__0: vec @(length*(i-1.5)/2, 0mm)
+__1: vec .(length/4, width/2)
+__2: vec __0(-length/4, -width/2)
+pad "$i" . __1 bare
+measx __2 >> __1 -0.1mm
+measy __2 >> __1 0.1mm

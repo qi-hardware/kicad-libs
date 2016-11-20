@@ -6,6 +6,7 @@ MODULES=0805-6 1059 8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
         fiducial \
 	header he-2row-dip he-shrouded \
 	inductor-2p ir \
+	jtrace \
 	lga ledsmd lp2032sm \
 	mdip meander-2450MHz memcard8-amp-10100660 memcard8-hirose-dm3cs \
 	memcard8-jae-st1w008s4b memcard8-molex-1050270001 \

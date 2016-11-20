@@ -483,7 +483,8 @@ Structure
 		MEANDER-2450MHz-right-0.8mm-RELAXED
 		MEANDER-2450MHz-right-1.0mm-RELAXED
 		MEANDER-2450MHz-right-1.6mm-RELAXED
-
+	Jumper_trace
+		JUMPER-TRACE-150x500um
 Mechanical
 	Spacer
 		M3
