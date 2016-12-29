@@ -1,11 +1,24 @@
 /* MACHINE-GENERATED ! */
 
+frame thermal {
+	table
+	    { ?features, dx, d }
+	    { "-TH", -0.4mm, 0.2mm }
+	    { "-TH", 0.4mm, 0.2mm }
+
+	__0: vec @(dx, 0mm)
+	__1: vec .(d/2, d/2)
+	__2: vec __0(-d/2, -d/2)
+	hole . __1
+}
+
 frame pad {
 	set n = pins+1
 
 	__0: vec @(cx/2, cy/2)
 	__1: vec @(-cx/2, -cy/2)
 	pad "$n" . __0
+	frame thermal @
 }
 
 frame pin {
@@ -52,14 +65,16 @@ frame outline {
 	circ __4 . w
 }
 
-package "DFN-$pins$variant"
+package "DFN-$pins$variant$features"
 unit mm
+allow holes
 
 table
-    { pins, variant, X, Y, e, iy, oy, px, cx, cy, gap_base }
-    { 8, "", 2mm, 2mm, 0.5mm, 1.4mm, 2.4mm, 0.28mm, 1.3mm, 0.7mm, 0.2mm }
-    { 8, "-0.4mm", 1.7mm, 1.35mm, 0.4mm, 0.8mm, 1.75mm, 0.2mm, 1mm, 0.4mm, 0.1mm }
-    { 6, "-0.65mm", 2.2mm, 2.3mm, 0.65mm, 1.7mm, 2.9mm, 0.25mm, 1.2mm, 0.75mm, 0mm }
+    { pins, variant, features, X, Y, e, iy, oy, px, cx, cy, gap_base }
+    { 8, "", "", 2mm, 2mm, 0.5mm, 1.4mm, 2.4mm, 0.28mm, 1.3mm, 0.7mm, 0.2mm }
+    { 8, "-0.4mm", "", 1.7mm, 1.35mm, 0.4mm, 0.8mm, 1.75mm, 0.2mm, 1mm, 0.4mm, 0.1mm }
+    { 6, "-0.65mm", "", 2.2mm, 2.3mm, 0.65mm, 1.7mm, 2.9mm, 0.25mm, 1.2mm, 0.75mm, 0mm }
+    { 6, "-0.65mm", "-TH", 2mm, 2.1mm, 0.65mm, 1.4mm, 2.8mm, 0.3mm, 1.6mm, 1mm, 0mm }
 
 set py = (oy-iy)/2
 
@@ -82,3 +97,5 @@ measx pins.__0 -> pins.__0 oy+0.5mm
 measy outline.__1 >> outline.__0 -1mm
 measx outline.__3 >> outline.__0 1.5mm
 measx pad.__1 >> pad.__0 cy/2
+measx thermal.__0 >> thermal.__0 -0.3mm
+measx thermal.__2 -> thermal.__1 0.4mm
