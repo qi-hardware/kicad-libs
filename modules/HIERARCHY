@@ -374,6 +374,7 @@ Discrete_Multi
 Dual
 	SMT
 		DFN
+			DFN-6-0.65mm
 			DFN-8
 			DFN-8-0.4mm
 			VSON-POWERPAD-10

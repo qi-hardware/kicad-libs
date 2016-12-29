@@ -59,6 +59,7 @@ table
     { pins, variant, X, Y, e, iy, oy, px, cx, cy, gap_base }
     { 8, "", 2mm, 2mm, 0.5mm, 1.4mm, 2.4mm, 0.28mm, 1.3mm, 0.7mm, 0.2mm }
     { 8, "-0.4mm", 1.7mm, 1.35mm, 0.4mm, 0.8mm, 1.75mm, 0.2mm, 1mm, 0.4mm, 0.1mm }
+    { 6, "-0.65mm", 2.2mm, 2.3mm, 0.65mm, 1.7mm, 2.9mm, 0.25mm, 1.2mm, 0.75mm, 0mm }
 
 set py = (oy-iy)/2
 
