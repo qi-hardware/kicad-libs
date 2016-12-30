@@ -160,6 +160,7 @@ allow holes
 table
     { pins, variant, X1, Y1, X2, Y2, E, C1, C2, SE, SNX, SNY, SX, SY, round }
     { 16, "LFCSP_LQ", 0.35mm, 1.2mm, 2.43mm, 2.43mm, 0.65mm, 4.1mm, 4.1mm, 1mm, 2, 2, 0.7mm, 0.7mm, 0 }
+    { 20, "UEEE", 0.2mm, 0.8mm, 1.8mm, 1.8mm, 0.4mm, 3.1mm, 3.1mm, 0.7mm, 2, 2, 0.45mm, 0.45mm, 0 }
     { 28, "Atmel", 0.24mm, 0.7mm, 2.4mm, 2.4mm, 0.45mm, 4.1mm, 4.1mm, 1mm, 2, 2, 0.8mm, 0.8mm, 0 }
     { 28, "MCHP-ML", 0.37mm, 1mm, 4.25mm, 4.25mm, 0.65mm, 5.7mm, 5.7mm, 1mm, 3, 3, 0.65mm, 0.65mm, 0 }
     { 28, "SiLabs", 0.25mm, 0.9mm, 3.3mm, 3.3mm, 0.5mm, 4.8mm, 4.8mm, 1.1mm, 3, 3, 0.9mm, 0.9mm, 0 }
