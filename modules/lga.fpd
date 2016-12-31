@@ -72,12 +72,14 @@ frame pinsx {
 
 package "LGA-$pins-${sizex}x${sizey}${variant}"
 unit mm
+allow overlap
 
 table
     { variant, nx, ny, sx, sy, e, b, pxx, pxy, pyx, pyy, pe, cw }
     { "", 3, 5, 3mm, 3mm, 0.5mm, 0.1mm, 0.25mm, 0.35mm, pxx, pxy, 0.2mm, 0 }
     { "-BME280", 0, 4, 2.5mm, 2.5mm, 0.65mm, 0.125mm, 0.35mm, 0.35mm, pxx, pxy, 0.15mm, 1 }
     { "-BMX055", 3, 7, 3mm, 4.5mm, 0.5mm, 0.1mm, 0.25mm, 0.375mm, pxx, 0.475mm, 0.2mm, 1 }
+    { "-RUT", 1, 5, 1.7mm, 2mm, 0.4mm, -0.1mm, 0.2mm, 0.6mm, pxx, pxy, 0mm, 0 }
 
 set pins = 2*(nx+ny)
 
