@@ -188,6 +188,26 @@ Connector
 				HDR-18x1-50mil
 				HDR-19x1-50mil
 				HDR-20x1-50mil
+				HDR-21x1-50mil
+				HDR-22x1-50mil
+				HDR-23x1-50mil
+				HDR-24x1-50mil
+				HDR-25x1-50mil
+				HDR-26x1-50mil
+				HDR-27x1-50mil
+				HDR-28x1-50mil
+				HDR-29x1-50mil
+				HDR-30x1-50mil
+				HDR-31x1-50mil
+				HDR-32x1-50mil
+				HDR-33x1-50mil
+				HDR-34x1-50mil
+				HDR-35x1-50mil
+				HDR-36x1-50mil
+				HDR-37x1-50mil
+				HDR-38x1-50mil
+				HDR-39x1-50mil
+				HDR-40x1-50mil
 			100mil
 				HDR-1x1-100mil
 				HDR-2x1-100mil
@@ -209,6 +229,26 @@ Connector
 				HDR-18x1-100mil
 				HDR-19x1-100mil
 				HDR-20x1-100mil
+				HDR-21x1-100mil
+				HDR-22x1-100mil
+				HDR-23x1-100mil
+				HDR-24x1-100mil
+				HDR-25x1-100mil
+				HDR-26x1-100mil
+				HDR-27x1-100mil
+				HDR-28x1-100mil
+				HDR-29x1-100mil
+				HDR-30x1-100mil
+				HDR-31x1-100mil
+				HDR-32x1-100mil
+				HDR-33x1-100mil
+				HDR-34x1-100mil
+				HDR-35x1-100mil
+				HDR-36x1-100mil
+				HDR-37x1-100mil
+				HDR-38x1-100mil
+				HDR-39x1-100mil
+				HDR-40x1-100mil
 			200mil
 				HDR-1x1-200mil
 				HDR-2x1-200mil
@@ -230,6 +270,26 @@ Connector
 				HDR-18x1-200mil
 				HDR-19x1-200mil
 				HDR-20x1-200mil
+				HDR-21x1-200mil
+				HDR-22x1-200mil
+				HDR-23x1-200mil
+				HDR-24x1-200mil
+				HDR-25x1-200mil
+				HDR-26x1-200mil
+				HDR-27x1-200mil
+				HDR-28x1-200mil
+				HDR-29x1-200mil
+				HDR-30x1-200mil
+				HDR-31x1-200mil
+				HDR-32x1-200mil
+				HDR-33x1-200mil
+				HDR-34x1-200mil
+				HDR-35x1-200mil
+				HDR-36x1-200mil
+				HDR-37x1-200mil
+				HDR-38x1-200mil
+				HDR-39x1-200mil
+				HDR-40x1-200mil
 		Array_x2
 			50mil
 				HDR-1x2-50mil
@@ -252,6 +312,26 @@ Connector
 				HDR-18x2-50mil
 				HDR-19x2-50mil
 				HDR-20x2-50mil
+				HDR-21x2-50mil
+				HDR-22x2-50mil
+				HDR-23x2-50mil
+				HDR-24x2-50mil
+				HDR-25x2-50mil
+				HDR-26x2-50mil
+				HDR-27x2-50mil
+				HDR-28x2-50mil
+				HDR-29x2-50mil
+				HDR-30x2-50mil
+				HDR-31x2-50mil
+				HDR-32x2-50mil
+				HDR-33x2-50mil
+				HDR-34x2-50mil
+				HDR-35x2-50mil
+				HDR-36x2-50mil
+				HDR-37x2-50mil
+				HDR-38x2-50mil
+				HDR-39x2-50mil
+				HDR-40x2-50mil
 			100mil
 				HDR-1x2-100mil
 				HDR-2x2-100mil
@@ -273,6 +353,26 @@ Connector
 				HDR-18x2-100mil
 				HDR-19x2-100mil
 				HDR-20x2-100mil
+				HDR-21x2-100mil
+				HDR-22x2-100mil
+				HDR-23x2-100mil
+				HDR-24x2-100mil
+				HDR-25x2-100mil
+				HDR-26x2-100mil
+				HDR-27x2-100mil
+				HDR-28x2-100mil
+				HDR-29x2-100mil
+				HDR-30x2-100mil
+				HDR-31x2-100mil
+				HDR-32x2-100mil
+				HDR-33x2-100mil
+				HDR-34x2-100mil
+				HDR-35x2-100mil
+				HDR-36x2-100mil
+				HDR-37x2-100mil
+				HDR-38x2-100mil
+				HDR-39x2-100mil
+				HDR-40x2-100mil
 			200mil
 				HDR-1x2-200mil
 				HDR-2x2-200mil
@@ -294,6 +394,26 @@ Connector
 				HDR-18x2-200mil
 				HDR-19x2-200mil
 				HDR-20x2-200mil
+				HDR-21x2-200mil
+				HDR-22x2-200mil
+				HDR-23x2-200mil
+				HDR-24x2-200mil
+				HDR-25x2-200mil
+				HDR-26x2-200mil
+				HDR-27x2-200mil
+				HDR-28x2-200mil
+				HDR-29x2-200mil
+				HDR-30x2-200mil
+				HDR-31x2-200mil
+				HDR-32x2-200mil
+				HDR-33x2-200mil
+				HDR-34x2-200mil
+				HDR-35x2-200mil
+				HDR-36x2-200mil
+				HDR-37x2-200mil
+				HDR-38x2-200mil
+				HDR-39x2-200mil
+				HDR-40x2-200mil
 		Pogo
 			POGO-0906
 			POGO-0906-SILK
