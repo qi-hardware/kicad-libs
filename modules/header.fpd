@@ -54,6 +54,7 @@ table
 
 table
     { P, hole, ratio }
+    { 50mil, 0.4mm, 2.5 }
     { 100mil, 0.65mm, 2.5 }
     { 200mil, 1.1mm, 2.5 }
 

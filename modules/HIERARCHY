@@ -167,6 +167,27 @@ Connector
 			HE-10x2-100mil
 			HE-20x2-100mil
 		Array_x1
+			50mil
+				HDR-1x1-50mil
+				HDR-2x1-50mil
+				HDR-3x1-50mil
+				HDR-4x1-50mil
+				HDR-5x1-50mil
+				HDR-6x1-50mil
+				HDR-7x1-50mil
+				HDR-8x1-50mil
+				HDR-9x1-50mil
+				HDR-10x1-50mil
+				HDR-11x1-50mil
+				HDR-12x1-50mil
+				HDR-13x1-50mil
+				HDR-14x1-50mil
+				HDR-15x1-50mil
+				HDR-16x1-50mil
+				HDR-17x1-50mil
+				HDR-18x1-50mil
+				HDR-19x1-50mil
+				HDR-20x1-50mil
 			100mil
 				HDR-1x1-100mil
 				HDR-2x1-100mil
@@ -210,6 +231,27 @@ Connector
 				HDR-19x1-200mil
 				HDR-20x1-200mil
 		Array_x2
+			50mil
+				HDR-1x2-50mil
+				HDR-2x2-50mil
+				HDR-3x2-50mil
+				HDR-4x2-50mil
+				HDR-5x2-50mil
+				HDR-6x2-50mil
+				HDR-7x2-50mil
+				HDR-8x2-50mil
+				HDR-9x2-50mil
+				HDR-10x2-50mil
+				HDR-11x2-50mil
+				HDR-12x2-50mil
+				HDR-13x2-50mil
+				HDR-14x2-50mil
+				HDR-15x2-50mil
+				HDR-16x2-50mil
+				HDR-17x2-50mil
+				HDR-18x2-50mil
+				HDR-19x2-50mil
+				HDR-20x2-50mil
 			100mil
 				HDR-1x2-100mil
 				HDR-2x2-100mil
