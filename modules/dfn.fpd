@@ -36,7 +36,7 @@ frame pins {
 
 	table
 	    { dy, f, a }
-	    { 1, -1, 8 }
+	    { 1, -1, pins }
 	    { -1, 1, 1 }
 
 	loop i = 0, pins/2-1
