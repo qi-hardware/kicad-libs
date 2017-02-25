@@ -141,6 +141,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/stqfn20.fpd
   modules/msl0104.fpd
   modules/jtrace.fpd
+  modules/memcard8-molex-47309.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  

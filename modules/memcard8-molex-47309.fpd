@@ -1,0 +1,103 @@
+/* MACHINE-GENERATED ! */
+
+frame card {
+	__0: vec @(-4.85mm, -15.3mm)
+	__1: vec .(11mm, 0mm)
+	line __0 . w
+}
+
+frame outline {
+	set clear = 0.3mm
+
+	__0: vec @(-ol, 0mm)
+	__1: vec __0(0mm, -1.91mm+clear)
+	line . __0 w
+	__2: vec @(or, 0mm)
+	line __0 . w
+	__3: vec __2(0mm, -2.35mm+clear)
+	line __2 . w
+	__4: vec @(0mm, -oy)
+	__5: vec .(-(5.6mm-1.2mm-clear), 0mm)
+	__6: vec __4(4.3mm-clear, 0mm)
+	line __5 . w
+}
+
+frame shield {
+	__0: vec @(-5.6mm, -1.91mm)
+	__1: vec .(1.2mm, -3.79mm)
+	pad "S1" __0 .
+	__3: vec @(6.2mm, -2.35mm)
+	__4: vec .(-1.45mm, -1.4mm)
+	pad "S2" . __3
+	__2: vec @(4.3mm, -1.91mm-3.79mm)
+	__5: vec .(0.95mm, 0.85mm)
+	pad "S3" __2 .
+}
+
+frame switch {
+	__0: vec @(5.2mm, -4mm)
+	__1: vec .(1mm, -0.6mm)
+	pad "SW" __0 .
+}
+
+frame pins {
+	table
+	    { px, py, e }
+	    { 0.6mm, 1.25mm, 1.1mm }
+
+	set x = (8/2-i+0.5)*e
+
+	set y = 0.7mm+py/2
+
+	loop i = 1, 8
+
+	__0: vec @(x, -y)
+	__1: vec .(px/2, py/2)
+	__2: vec __0(-px/2, -py/2)
+	pad "$i" . __1
+}
+
+package "MEMCARD8-MOLEX-47309"
+unit mm
+allow overlap
+
+table
+    { ox, oy }
+    { 11.4mm, 5.5mm }
+
+table
+    { ol, or }
+    { 5.4mm, 6mm }
+
+set w = 5mil
+
+__0: vec @((ol-or)/2, oy/2)
+frame pins .
+frame shield .
+frame switch .
+frame outline .
+frame card .
+measy shield.__1 >> shield.__0 2.2mm
+measy switch.__1 >> switch.__0 -2mm
+measy shield.__4 >> shield.__3 -2.45mm
+measy shield.__2 >> shield.__5 -2mm
+measx shield.__2 >> shield.__5 -1mm
+measx shield.__0 >> shield.__1 -4.79mm
+measx shield.__4 >> shield.__3 2.4mm
+measx switch.__0 >> switch.__1
+measx outline.__0 >> __0 1mm
+measx __0 >> outline.__2 1mm
+measx shield.__0 >> __0 3.91mm
+measx __0 >> shield.__3 2mm
+measy shield.__0 >> outline.__0 1mm
+measx pins.__0 -> pins.__0 -2mm
+measx pins.__2 -> pins.__1 -0.5mm
+measy pins.__2 -> pins.__1 0.2mm
+measy card.__0 >> outline.__0 2.5mm
+measx card.__0 >> __0 5mm
+measx card.__0 >> card.__1 1mm
+measy shield.__3 >> outline.__2 -1mm
+measy switch.__0 >> outline.__2 -3mm
+measx __0 >> switch.__0 -4mm
+measx __0 >> shield.__2 -4.85mm
+measy pins.__1 >> __0
