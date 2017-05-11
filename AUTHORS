@@ -142,6 +142,7 @@ Werner Almesberger <werner@almesberger.net>
   modules/msl0104.fpd
   modules/jtrace.fpd
   modules/memcard8-molex-47309.fpd
+  modules/header-50mil-pin.fpd
 
 Xiangfu  <xiangfu@openmobilefree.net>
  

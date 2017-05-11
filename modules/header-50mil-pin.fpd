@@ -1,0 +1,49 @@
+/* MACHINE-GENERATED ! */
+
+frame pin {
+	table
+	    { h, w, d }
+	    { 45mil+5mil, 35mil+5mil, 22mil }
+
+	loop n = 1, c
+
+	__0: vec @(((1-c)/2+n-1)*50mil, 0mm)
+	__1: vec .(w/2, h/2)
+	__2: vec __0(-w/2, -h/2)
+	rpad "$n" . __1
+	__3: vec __0(-d/2, d/2)
+	__4: vec __0(d/2, -d/2)
+	hole __3 .
+}
+
+frame outline {
+	set w = 5mil
+
+	set x = c*50mil
+
+	set y = 2.5mm
+
+	__0: vec @(x/2, y/2)
+	__1: vec @(-x/2, -y/2)
+	rect . __0 w
+	__2: vec @(-x/2, y/2-3*w)
+	__3: vec .(50mil, 0mm)
+	line . __2 w
+	__4: vec @(-x/2, -y/2+3*w)
+	__5: vec .(50mil, 0mm)
+	line . __4 w
+}
+
+package "HDR-${c}x1-50mil-PIN"
+unit mil
+
+loop c = 1, 40
+
+frame pin @
+frame outline @
+measx outline.__1 >> outline.__0 -1.5mm
+measy outline.__1 >> outline.__0 1mm
+measy pin.__2 -> pin.__1 0.6mm
+measx pin.__2 -> pin.__1 -1.5mm
+measy pin.__3 << pin.__4 -1mm
+measx pin.__0 -> pin.__0 2mm

@@ -4,7 +4,7 @@ MODULES=0805-6 1059 8_10-card 8_10-socket-ra 8_10-socket-ra-push-pull \
 	dcjack df40 dfn din-5 dip dip4of6 do-214 dvi-recept-ra \
 	e-switch320 er-oled-fpc30 eus evqq7 \
         fiducial \
-	header he-2row-dip he-shrouded \
+	header he-2row-dip he-shrouded header-50mil-pin \
 	inductor-2p ir \
 	jtrace \
 	lga ledsmd lp2032sm \
