@@ -102,6 +102,7 @@ Werner Almesberger <werner@almesberger.net>
   components/por.lib
   components/tps6102x.lib
   components/dualnmosfet.lib
+  components/ldo-3.lib
 
   modules/pads.fpd
   modules/stdpass.fpd

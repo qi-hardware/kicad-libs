@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LDO-3-OIG
+D Basic fixed-voltage LDO with OUT-IN-GND pin assignment. E.g., TLV760.
+$ENDCMP
+#
+#End Doc Library

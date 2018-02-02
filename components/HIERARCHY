@@ -241,6 +241,8 @@ Power
 Power-Management
 	Power-On-Reset
 		POR-809
+	LDO
+		LDO-3-OIG
 Vendor
 	Analog
 		AD1580BRTZ
