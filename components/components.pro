@@ -173,3 +173,4 @@ LibName101=./74x1g32_6
 LibName102=./74x1g04_6
 LibName103=./dualnmosfet
 LibName104=./ldo-3
+LibName105=./halley2
