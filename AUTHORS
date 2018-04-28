@@ -104,6 +104,7 @@ Werner Almesberger <werner@almesberger.net>
   components/dualnmosfet.lib
   components/ldo-3.lib
   components/halley2.lib
+  components/stm32.lib
 
   modules/pads.fpd
   modules/stdpass.fpd
