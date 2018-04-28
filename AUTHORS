@@ -105,6 +105,7 @@ Werner Almesberger <werner@almesberger.net>
   components/ldo-3.lib
   components/halley2.lib
   components/stm32.lib
+  components/mcp73811.lib
 
   modules/pads.fpd
   modules/stdpass.fpd
