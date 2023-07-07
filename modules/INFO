@@ -198,6 +198,7 @@ F: qfn
 # - NXP's SOT617-1 and SOT617-3, for package and land pattern:
 #   http://www.nxp.com/package/SOT617-1.html
 #   http://www.nxp.com/package/SOT617-3.html
+# - Boufallo Labs BL808 data sheet
 #
 # Solder paste:
 #
@@ -266,7 +267,7 @@ F: qfp
 #	0.5mm	0.6mm	0.7mm	KS8001
 #	0.45mm	0.6mm	0.75mm	ADV7125
 #
-# so a combination of both ackage drawping and land pattern from Maxim
+# so a combination of both ackage drawing and land pattern from Maxim
 # the lad pattern for QFP48 is 0.27mm for "b", 1.45mm for "L"
 # it should be safe.
 #
