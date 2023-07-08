@@ -578,10 +578,3 @@ F: INDUCTOR-2P-3mmx3mm
 #
 # http://www.bourns.com/data/global/pdfs/SRN3015.pdf
 #
-
-# FPC connectors (SMT)
-F: fpc-smt
-# CviLux CF31nn1Dxx0-05, CF50nnxD0xx-05, CF20nn1D0x0
-# GCT FFC2B35-nn
-# Amphenol/FCI 10051922-nn
-# Hirose FH12-nnS-0.5SH
